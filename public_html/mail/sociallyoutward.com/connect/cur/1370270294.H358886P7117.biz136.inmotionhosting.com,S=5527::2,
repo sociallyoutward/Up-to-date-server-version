@@ -1,0 +1,102 @@
+Return-path: <1789management@gmail.com>
+Envelope-to: connect@sociallyoutward.com
+Delivery-date: Mon, 03 Jun 2013 07:38:14 -0700
+Received: from mail-vc0-f170.google.com ([209.85.220.170]:37166)
+	by biz136.inmotionhosting.com with esmtps (TLSv1:RC4-SHA:128)
+	(Exim 4.80)
+	(envelope-from <1789management@gmail.com>)
+	id 1UjVtm-0001p4-4D
+	for connect@sociallyoutward.com; Mon, 03 Jun 2013 07:38:14 -0700
+Received: by mail-vc0-f170.google.com with SMTP id hf12so1243618vcb.15
+        for <connect@sociallyoutward.com>; Mon, 03 Jun 2013 07:38:13 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:cc:content-type;
+        bh=gk7Wq07E8YBqaJuzWnBJa5M4mswS0cDYhOV0TZJB3ow=;
+        b=aboc2/Krkxzq+Pz9DDrbbvF6HLdscbyEiU1ax0LZU1s3dLbo/YYzocqGhkDtIHZPND
+         UtHzt+5pFMDuQG6E+5rOrhaenVR27ICgSXwzBjyTZz8ot7Iry/kJwrwFQlbWMXOxbKJo
+         koSMgWmlqnkSIYIA/52071KjGV/R20RnCYxTlqVYyPSodNDNE/Kr21+ldDVqOcnK5dig
+         oZIe7dFmEUTIx5x8QZ+XZ0r2RTRj2n6eZY1dXwMlV2TwQsGusd37mYuiesK3EBsV0dfp
+         px+SoBKXshvolGBWlVJgPpNxJuwlpt6rFV0SaQmtFZmVw0gtIKKAzISc5Y9CzD3KhAX8
+         aZXg==
+MIME-Version: 1.0
+X-Received: by 10.52.20.77 with SMTP id l13mr14496226vde.21.1370270293696;
+ Mon, 03 Jun 2013 07:38:13 -0700 (PDT)
+Received: by 10.220.79.10 with HTTP; Mon, 3 Jun 2013 07:38:13 -0700 (PDT)
+Date: Mon, 3 Jun 2013 10:38:13 -0400
+Message-ID: <CALDhpUjEanxmmtcwMk1B709zUdv1d3RFarv67_OmtQ3JsnkMMA@mail.gmail.com>
+Subject: Reminder: Training today
+From: 1789 Management Team <1789management@gmail.com>
+To: connect@sociallyoutward.com, bley@biddrocket.com, 
+	Lawson Kuehnert <lawsonk@live.unc.edu>, ekahihu@live.unc.edu, hamlett@live.unc.edu, 
+	njyothinagaram@yahoo.com, tfndraleigh@gmail.com, marissa.heyl@gmail.com, 
+	benmctier@whirltimemusic.com, nthomas@filmlab.tv, colgan@live.unc.edu, 
+	Elizabeth Chen <lizccchen@gmail.com>, Ryan Cocca <ryan@simplysea.com>, 
+	Joseph Thomas <info@theoremconsulting.com>, van_duong@kenan-flagler.unc.edu, 
+	ohhyojin@live.unc.edu, ssivaku@live.unc.edu, Corey@mobilewebie.com, 
+	kjohall@live.unc.edu, Andrew Stuart <acstuart@gmail.com>, 
+	minhaj_boqai@kenan-flagler.unc.edu, krheine@live.unc.edu, 
+	Ann Johnston <ann@local-ventures.com>, Jasmin Jones <jasminmjones@gmail.com>, 
+	Patrick Gray <pgrayobx@gmail.com>, jtkimball@gmail.com, cmcgirt@live.unc.edu, 
+	Katie Harp <katie@spifferoni.com>
+Cc: Aaron Scarboro <aaronscarboro@gmail.com>, Kailey Izard <kizard09@gmail.com>, 
+	Taylor Smith <twsmith89@gmail.com>, me.lovelace@gmail.com, 
+	Jim Kitchen <jim@jimkitchen.org>
+Content-Type: multipart/alternative; boundary=20cf307cfd841a264a04de40eae1
+
+--20cf307cfd841a264a04de40eae1
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hi all,
+
+Happy Monday! Just wanted to remind everyone that the required training
+session "Ideation & Start up Plan" is *today (June 3) at 1789 from 4:00 pm
+- 6:30 pm*. If you have not registered for the event, you must do so at the
+EventBrite page here <http://www.eventbrite.com/event/6835682711>. This is
+a mandatory event for all 1789 ventures! If you are not able to attend,
+please email us (using this address) and let us know.
+
+Also, if you still haven't signed up for a Needs Assessment meeting, please
+do so using this
+GoogleDoc<https://docs.google.com/spreadsheet/ccc?key=0AoWB2uuZnAGrdDUtaDRqRFc3U0RYQjROQmVjbHlCVHc#gid=0>.
+These meetings are designed for you to tell us more about your venture and
+what we can do to help you this summer.
+
+Thanks so much and let us know if you have any questions. We look forward
+to seeing you all this afternoon!
+
+Best,
+Mary Elizabeth, Taylor, Aaron, and Kailey
+
+--20cf307cfd841a264a04de40eae1
+Content-Type: text/html; charset=ISO-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><font face=3D"arial, helvetica, sans-serif">Hi all,</font>=
+<div><font face=3D"arial, helvetica, sans-serif"><br></font></div><div styl=
+e><font face=3D"arial, helvetica, sans-serif">Happy Monday! Just wanted to =
+remind everyone that the required training session &quot;Ideation &amp; Sta=
+rt up Plan&quot; is <b>today (June 3) at 1789 from 4:00 pm - 6:30 pm</b>. I=
+f you have not registered for the event, you must do=A0so at the EventBrite=
+ page=A0<a href=3D"http://www.eventbrite.com/event/6835682711" target=3D"_b=
+lank">here</a>. This is a mandatory event for all 1789 ventures! If you are=
+ not able to attend, please email us (using this address) and let us know.=
+=A0</font></div>
+<div style><font face=3D"arial, helvetica, sans-serif"><br></font></div><di=
+v style><font face=3D"arial, helvetica, sans-serif">Also, if you still have=
+n&#39;t signed up for a Needs Assessment meeting, please do so using this <=
+/font><a href=3D"https://docs.google.com/spreadsheet/ccc?key=3D0AoWB2uuZnAG=
+rdDUtaDRqRFc3U0RYQjROQmVjbHlCVHc#gid=3D0">GoogleDoc</a>. These meetings are=
+ designed for you to tell us more about your venture and what we can do to =
+help you this summer.=A0</div>
+<div style><font face=3D"arial, helvetica, sans-serif"><br></font></div><di=
+v style><font face=3D"arial, helvetica, sans-serif">Thanks so much and let =
+us know if you have any questions. We look forward to seeing you all this a=
+fternoon!</font></div>
+<div style><font face=3D"arial, helvetica, sans-serif"><br></font></div><di=
+v style><font face=3D"arial, helvetica, sans-serif">Best,</font></div><div =
+style><font face=3D"arial, helvetica, sans-serif">Mary Elizabeth, Taylor, A=
+aron, and Kailey</font></div>
+</div>
+
+--20cf307cfd841a264a04de40eae1--

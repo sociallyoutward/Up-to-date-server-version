@@ -1,0 +1,39 @@
+head	1.2;
+access;
+symbols;
+locks
+	socia150:1.2; strict;
+comment	@# @;
+
+
+1.2
+date	2013.05.14.12.42.42;	author socia150;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2013.05.14.12.42.42;	author socia150;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.2
+log
+@"Modified by /usr/local/cpanel/cpanel "
+@
+text
+@connect:262144000
+@
+
+
+1.1
+log
+@"Modified by /usr/local/cpanel/cpanel "
+@
+text
+@d1 1
+@

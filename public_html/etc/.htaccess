@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "etc"
+AuthUserFile "/home/socia150/.htpasswds/etc/passwd"
+require valid-user

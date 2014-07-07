@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "mail"
+AuthUserFile "/home/socia150/.htpasswds/mail/passwd"
+require valid-user

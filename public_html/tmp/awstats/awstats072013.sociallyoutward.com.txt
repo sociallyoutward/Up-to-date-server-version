@@ -1,0 +1,330 @@
+AWSTATS DATA FILE 7.0 (build 1.971)
+# If you remove this file, all statistics for date 201307 will be lost/reset.
+# Last config file used to build this data file was /home/socia150/tmp/awstats/awstats.sociallyoutward.com.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 27
+POS_GENERAL 2013                
+POS_TIME 2699                
+POS_VISITOR 3484                
+POS_DAY 4562                
+POS_DOMAIN 5024                
+POS_LOGIN 5336                
+POS_ROBOT 5491                
+POS_WORMS 5913                
+POS_EMAILSENDER 6044                
+POS_EMAILRECEIVER 6187                
+POS_SESSION 6263                
+POS_SIDER 6422                
+POS_FILETYPES 6592                
+POS_DOWNLOADS 6743                
+POS_OS 6813                
+POS_BROWSER 6959                
+POS_SCREENSIZE 7249                
+POS_UNKNOWNREFERER 7323                
+POS_UNKNOWNREFERERBROWSER 7651                
+POS_ORIGIN 7887                
+POS_SEREFERRALS 8020                
+POS_PAGEREFS 8175                
+POS_SEARCHWORDS 8419                
+POS_KEYWORDS 8590                
+POS_MISC 2363                
+POS_ERRORS 8670                
+POS_CLUSTER 5192                
+POS_SIDER_404 8765                
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20130801074405 6134 1407773 9161151672448
+FirstTime 20130701065446
+LastTime 20130730201310
+LastUpdate 20131205142931 6134 0 6133 0 0
+TotalVisits 26                  
+TotalUnique 26                  
+MonthHostsKnown 0                   
+MonthHostsUnknown 26                  
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+QuickTimeSupport 0 0 0
+JavaEnabled 0 0 0
+JavascriptDisabled 0 0 0
+PDFSupport 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+AddToFavourites 0 0 0
+RealPlayerSupport 0 0 0
+TotalMisc 0 0 0
+DirectorSupport 0 0 0
+FlashSupport 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 1 1 1239 2 6 2598
+1 0 0 0 2 4 2538
+2 1 1 1239 2 6 13158
+3 0 0 0 1 2 1269
+4 0 0 0 2 4 4553
+5 1 1 1239 1 5 4345
+6 3 8 236319 1 3 1269
+7 1 1 1239 1 3 10620
+8 0 0 0 3 5 3777
+9 0 0 0 3 8 50295
+10 0 0 0 3 5 2538
+11 0 0 0 4 6 1299
+12 2 7 235080 2 4 2508
+13 1 1 1239 1 3 1299
+14 3 8 236319 3 4 41
+15 2 2 2478 1 5 1329
+16 1 1 1239 1 1 1239
+17 4 9 237558 4 11 6913
+18 1 1 1239 4 9 5882
+19 10 31 944843 5 9 1433
+20 2 7 235080 3 12 14741
+21 4 7 10077 0 0 0
+22 0 0 0 4 12 76600
+23 0 0 0 4 5 3747
+END_TIME
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 25 first Hits must be first (order not required for others)
+BEGIN_VISITOR 26
+24.225.39.221 3 8 236319 20130713181539
+168.215.114.50 2 7 235080 20130724144311
+99.173.144.254 2 7 235080 20130715190049
+69.58.178.59 2 2 2478 20130720153832
+166.205.68.38 2 7 235080 20130709191103
+174.97.241.91 2 7 235080 20130730201310
+75.177.129.249 2 7 235080 20130710123923
+71.70.186.35 2 7 235080 20130718191959
+69.255.217.98 2 7 235080 20130713190659
+204.84.10.17 2 7 235080 20130716065318
+80.86.88.172 1 1 1239 20130717071231
+70.147.152.103 1 1 1239 20130724135917
+5.135.125.180 1 1 1239 20130716172115
+130.185.109.154 1 1 1239 20130713195238
+202.46.62.20 1 1 1239 20130711215109
+178.255.87.241 1 1 1239 20130729160834
+176.123.3.34 1 2 3284 20130730194305
+192.95.47.180 1 1 1239 20130705140705
+95.211.216.72 1 1 1239 20130726175646
+192.95.22.19 1 1 1239 20130712005329
+192.95.22.206 1 1 1239 20130713022608
+131.253.24.81 1 3 4315 20130711215300
+199.80.54.252 1 1 1239 20130701065446
+119.63.193.194 1 1 1239 20130711215141
+38.100.21.66 1 2 3284 20130715211425
+8.35.201.119 1 1 1239 20130724051915
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 16
+20130701 1 1 1239 1
+20130705 1 1 1239 1
+20130709 2 7 235080 1
+20130710 2 7 235080 1
+20130711 3 5 6793 3
+20130712 1 1 1239 1
+20130713 7 17 473877 4
+20130715 3 9 238364 2
+20130716 3 8 236319 2
+20130717 1 1 1239 1
+20130718 2 7 235080 1
+20130720 2 2 2478 1
+20130724 4 9 237558 3
+20130726 1 1 1239 1
+20130729 1 1 1239 1
+20130730 3 9 238364 2
+END_DAY
+
+# Domain - Pages - Hits - Bandwidth
+# The 25 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 8
+us 29 77 2134470
+de 2 2 2478
+jp 1 1 1239
+cn 1 1 1239
+ru 1 2 3284
+gb 1 1 1239
+sa 1 1 1239
+nl 1 1 1239
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 25 first Hits must be first (order not required for others)
+BEGIN_ROBOT 8
+googlebot 49 39339 20130730182840 20
+bot[\s_+:,\.\;\/\\-] 24 13989 20130728224749 12
+msnbot\-media 14 152488 20130713223009 7
+spider 13 2478 20130722143541 0
+unknown 9 270 20130726004627 9
+no_user_agent 2 2478 20130709234002 0
+crawl 2 1269 20130724082751 1
+netcraft 1 1239 20130708081431 0
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Session range - Number of visits
+BEGIN_SESSION 2
+0s-30s 25
+15mn-30mn 1
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 25 first Pages must be first (order not required for others)
+BEGIN_SIDER 2
+/ 28 34692 26 18
+/css/segoeprint.ttf 9 1552032 0 8
+END_SIDER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 5
+css 12 24540 0 0
+ttf 9 1552032 0 0
+html 28 34692 0 0
+jpg 27 524853 0 0
+js 10 10310 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 1
+/robots.txt 49 0 1470
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS 11
+blackberry 1
+winlong 2
+winxp 5
+java 1
+linux 1
+win7 39
+winme 1
+macosx 28
+win2003 2
+linuxdebian 1
+Unknown 5
+END_OS
+
+# Browser ID - Hits
+BEGIN_BROWSER 18
+msie6.0 2
+blackberry 1
+firefox21.0 1
+epiphany 1
+safari6.0 7
+chrome28.0.1500.71 7
+chrome28.0.1500.72 14
+msie8.0 1
+safari6.0.5 7
+mozilla 2
+netscape5.0 1
+firefox14.0.1 1
+safari5.1.2 7
+msie7.0 7
+firefox22.0 21
+msie9.0 2
+Unknown 3
+firefox3.1 1
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 4
+Mozilla/5.0 20130726175646
+Mozilla/5.0_(compatible;_Genieo/1.0_http://www.genieo.com/webfilter.html) 20130724135917
+Python-urllib/2.6 20130701065446
+AppEngine-Google;_(_http://code.google.com/appengine;_appid:_s~getfavicon27) 20130724051915
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 3
+Python-urllib/2.6 20130701065446
+AppEngine-Google;_(_http://code.google.com/appengine;_appid:_s~getfavicon27) 20130724051915
+Java/1.6.0_43 20130729160834
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 22 24
+From1 0 0
+From2 4 4
+From3 2 2
+From4 9 56
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 1
+google 4 4
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 25 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 2
+http://www.linkedin.com/company/3129983 1 1
+http://name911.com/research/sociallyoutward.com 1 1
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 1
+socially+outward 1
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 25 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 2
+outward 1
+socially 1
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 2
+400 5 205
+404 1 236
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referer
+BEGIN_SIDER_404 1
+/apple-touch-icon.png 1 -
+END_SIDER_404

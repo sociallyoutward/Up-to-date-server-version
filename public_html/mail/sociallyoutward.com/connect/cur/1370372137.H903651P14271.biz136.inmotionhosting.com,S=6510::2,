@@ -1,0 +1,138 @@
+Return-path: <corey@mobilewebie.com>
+Envelope-to: connect@sociallyoutward.com
+Delivery-date: Tue, 04 Jun 2013 11:55:37 -0700
+Received: from mail-qa0-f54.google.com ([209.85.216.54]:64926)
+	by biz136.inmotionhosting.com with esmtps (TLSv1:RC4-SHA:128)
+	(Exim 4.80)
+	(envelope-from <corey@mobilewebie.com>)
+	id 1UjwOP-0003bc-J5
+	for connect@sociallyoutward.com; Tue, 04 Jun 2013 11:55:37 -0700
+Received: by mail-qa0-f54.google.com with SMTP id n20so430245qaj.6
+        for <connect@sociallyoutward.com>; Tue, 04 Jun 2013 11:55:36 -0700 (PDT)
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=google.com; s=20120113;
+        h=mime-version:x-originating-ip:in-reply-to:references:date
+         :message-id:subject:from:to:cc:content-type:x-gm-message-state;
+        bh=B+tn03qiq6tAnFDW1+IJsX9daHI87zUWH1ebqsbSw7o=;
+        b=FxYIHQz+FoOTcnP0oEjcgkEOiaBDnejiGEMq/HhaadCUcy4veDhBc1iF2SYYL7gd+S
+         orNOsntY6Jp76EgfwH640nFgd+0SZI8HX1yF95AHxI0B5M3N2P0WSwGZrq1Q6cSe3X/W
+         Af5UXceVEoEoAMJWh2jkl/pdAEQ7YG2mjKwbnKVdTR0kPQ/059Wf6J3kTsXhQAaYPyAW
+         yqlvS64/IET2c16RrZoOkV7zMqDlinyFrq+trapABaTS41UXI1siuquB1mCUnGVAdxc8
+         MVo4CFH7fPLAYQfidBeP+SgRTQYXPQVznKtFo/2C8orRHfocALZK0gSPBndLVlVNncr5
+         EhqQ==
+MIME-Version: 1.0
+X-Received: by 10.224.205.202 with SMTP id fr10mr24719831qab.48.1370372136810;
+ Tue, 04 Jun 2013 11:55:36 -0700 (PDT)
+Received: by 10.224.190.6 with HTTP; Tue, 4 Jun 2013 11:55:36 -0700 (PDT)
+X-Originating-IP: [66.87.105.60]
+Received: by 10.224.190.6 with HTTP; Tue, 4 Jun 2013 11:55:36 -0700 (PDT)
+In-Reply-To: <CALDhpUiV7s3zP-bga-OngK2hrSqHmrsXdKyAYhsf_6MJEB70zA@mail.gmail.com>
+References: <CALDhpUiV7s3zP-bga-OngK2hrSqHmrsXdKyAYhsf_6MJEB70zA@mail.gmail.com>
+Date: Tue, 4 Jun 2013 14:55:36 -0400
+Message-ID: <CAJ4PJk9CEk52oPcCCJRZq-Gj7Ou60gnxVdWQ4F+t1epL45WGTQ@mail.gmail.com>
+Subject: Re: 1789 GoogleGroup and Paradoxos Festival
+From: Corey Harris <corey@mobilewebie.com>
+To: 1789 Management Team <1789management@gmail.com>
+Cc: hamlett@live.unc.edu, Brian Ley <bley@biddrocket.com>, ssivaku@live.unc.edu, 
+	jtkimball@gmail.com, minhaj_baqai@kenan-flagler.unc.edu, 
+	connect@sociallyoutward.com, krheine@live.unc.edu, colgan@live.unc.edu, 
+	Lawson Kuehnert <lawsonk@live.unc.edu>, Andrew Stuart <acstuart@gmail.com>, 
+	seventeeneightynine@googlegroups.com, ekahihu@live.unc.edu, 
+	benmctier@whirltimemusic.com, ohhyojin@live.unc.edu, 
+	van_duong@kenan-flagler.unc.edu, nthomas@filmlab.tv, 
+	Elizabeth Chen <lizccchen@gmail.com>, marissa.heyl@gmail.com, 
+	Patrick Gray <pgrayobx@gmail.com>, Ryan Cocca <ryan@simplysea.com>, 
+	Jasmin Jones <jasminmjones@gmail.com>, cmcgirt@live.unc.edu, 
+	Ann Johnston <ann@local-ventures.com>, kjohall@live.unc.edu, tfndraleigh@gmail.com, 
+	njyothinagaram@yahoo.com, Joseph Thomas <info@theoremconsulting.com>
+Content-Type: multipart/alternative; boundary=20cf300faffb6ccdb504de58a039
+X-Gm-Message-State: ALoCoQmGpb4EUqHfnwPfCK87D+nZHaCAAqMm6ty1uIfPPrVv+hPe6WyTn2Ff6jWX5JKOvZlzR4UJ
+
+--20cf300faffb6ccdb504de58a039
+Content-Type: text/plain; charset=ISO-8859-1
+
+I have an extra ticket for the pitch day. Let me know if you need it.
+
+Corey
+On Jun 4, 2013 1:53 PM, "1789 Management Team" <1789management@gmail.com>
+wrote:
+
+> Hi all,
+>
+> I apologize if you are getting this email twice. We are trying to make
+> sure we have everyone on the 1789 GoogleGroup list serve. If you have not
+> accepted the invitation, please do so ASAP. If you need an invitation,
+> please let us know. It will be much easier to communicate with all of the
+> 1789 community if everyone is on the list serve. Thanks so much!
+>
+> Also, there is a cool festival called Paradoxos going on in Durham this
+> Thursday and Friday. There is an event called Pitch Day, Thursday from
+> 10:00 am - 12:00 pm and The Next on Friday from 1:00 pm - 5:00 pm. We think
+> it would be great for ventures to attend either of these events! You must
+> register/buy tickets by this evening.
+>
+> More details and tickets here: http://paradoxos.co
+>
+>
+> Best,
+> Mary Elizabeth, Aaron, Taylor, and Kailey
+>
+> --
+> You received this message because you are subscribed to the Google Groups
+> "1789" group.
+> To unsubscribe from this group and stop receiving emails from it, send an
+> email to seventeeneightynine+unsubscribe@googlegroups.com.
+> For more options, visit https://groups.google.com/groups/opt_out.
+>
+>
+>
+
+--20cf300faffb6ccdb504de58a039
+Content-Type: text/html; charset=ISO-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+<p dir=3D"ltr">I have an extra ticket for the pitch day. Let me know if you=
+ need it.</p>
+<p dir=3D"ltr">Corey</p>
+<div class=3D"gmail_quote">On Jun 4, 2013 1:53 PM, &quot;1789 Management Te=
+am&quot; &lt;<a href=3D"mailto:1789management@gmail.com">1789management@gma=
+il.com</a>&gt; wrote:<br type=3D"attribution"><blockquote class=3D"gmail_qu=
+ote" style=3D"margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex=
+">
+<div dir=3D"ltr">Hi all,<div><br></div><div>I apologize if you are getting =
+this email twice. We are trying to make sure we have everyone on the 1789 G=
+oogleGroup list serve. If you have not accepted the invitation, please do s=
+o ASAP. If you need an invitation, please let us know. It will be much easi=
+er to communicate with all of the 1789 community if everyone is on the list=
+ serve. Thanks so much!</div>
+
+<div><br></div><div>Also, there is a cool festival called Paradoxos going o=
+n in Durham this Thursday and Friday. There is an event called Pitch Day, T=
+hursday from 10:00 am - 12:00 pm and The Next on Friday from 1:00 pm - 5:00=
+ pm. We think it would be great for ventures to attend either of these even=
+ts! You must register/buy tickets by this evening.=A0</div>
+
+<div><br></div><div>More details and tickets here:=A0<a href=3D"http://para=
+doxos.co" target=3D"_blank">http://paradoxos.co</a></div><div><br></div><di=
+v><br></div><div>Best,</div><div>Mary Elizabeth, Aaron, Taylor, and Kailey=
+=A0</div>
+
+</div>
+
+<p></p>
+
+-- <br>
+You received this message because you are subscribed to the Google Groups &=
+quot;1789&quot; group.<br>
+To unsubscribe from this group and stop receiving emails from it, send an e=
+mail to <a href=3D"mailto:seventeeneightynine%2Bunsubscribe@googlegroups.co=
+m" target=3D"_blank">seventeeneightynine+unsubscribe@googlegroups.com</a>.<=
+br>
+
+For more options, visit <a href=3D"https://groups.google.com/groups/opt_out=
+" target=3D"_blank">https://groups.google.com/groups/opt_out</a>.<br>
+=A0<br>
+=A0<br>
+</blockquote></div>
+
+--20cf300faffb6ccdb504de58a039--

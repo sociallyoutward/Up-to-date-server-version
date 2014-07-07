@@ -1,0 +1,12 @@
+--- 
+__version: '2.1'
+sociallyoutward.com: 
+  account_count: 1
+  accounts: 
+    connect: 
+      disk_mtime: '1404431769'
+      diskquota: 262144000
+      diskused: 3144993
+  disk_mtime: '1404431769'
+  passwd_mtime: '1404431769'
+  quota_mtime: '1404431769'

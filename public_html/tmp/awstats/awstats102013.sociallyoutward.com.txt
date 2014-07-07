@@ -1,0 +1,386 @@
+AWSTATS DATA FILE 7.0 (build 1.971)
+# If you remove this file, all statistics for date 201310 will be lost/reset.
+# Last config file used to build this data file was /home/socia150/tmp/awstats/awstats.sociallyoutward.com.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 27
+POS_GENERAL 2013                
+POS_TIME 2699                
+POS_VISITOR 3527                
+POS_DAY 4785                
+POS_DOMAIN 5334                
+POS_LOGIN 5703                
+POS_ROBOT 5858                
+POS_WORMS 6208                
+POS_EMAILSENDER 6339                
+POS_EMAILRECEIVER 6482                
+POS_SESSION 6558                
+POS_SIDER 6731                
+POS_FILETYPES 7221                
+POS_DOWNLOADS 7414                
+POS_OS 7484                
+POS_BROWSER 7616                
+POS_SCREENSIZE 8097                
+POS_UNKNOWNREFERER 8171                
+POS_UNKNOWNREFERERBROWSER 8285                
+POS_ORIGIN 8367                
+POS_SEREFERRALS 8503                
+POS_PAGEREFS 8669                
+POS_SEARCHWORDS 8914                
+POS_KEYWORDS 9097                
+POS_MISC 2363                
+POS_ERRORS 9195                
+POS_CLUSTER 5559                
+POS_SIDER_404 9302                
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20131101011505 7613 1713152 8517884278455
+FirstTime 20131002085101
+LastTime 20131029063920
+LastUpdate 20131205142931 7613 0 7612 0 0
+TotalVisits 40                  
+TotalUnique 30                  
+MonthHostsKnown 0                   
+MonthHostsUnknown 30                  
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+QuickTimeSupport 0 0 0
+JavaEnabled 0 0 0
+JavascriptDisabled 0 0 0
+PDFSupport 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+AddToFavourites 0 0 0
+RealPlayerSupport 0 0 0
+TotalMisc 0 0 0
+DirectorSupport 0 0 0
+FlashSupport 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 2 12 125264 1 3 1283
+1 0 0 0 3 9 4073
+2 0 0 0 2 4 23077
+3 0 0 0 3 5 10728
+4 2 2 2462 0 2 2075
+5 1 1 1239 4 5 1269
+6 2 5 206575 5 7 2478
+7 7 19 618742 5 17 4429
+8 11 29 475658 11 18 8529
+9 0 0 0 8 11 37118
+10 7 18 246292 2 8 1988
+11 5 5 6195 0 1 30
+12 7 24 515922 2 10 6672
+13 22 82 334594 1 17 7413
+14 68 302 1895868 8 22 20901
+15 32 65 136707 4 6 2991
+16 6 22 482750 0 4 30
+17 6 12 9983 7 12 7723
+18 31 77 980546 6 11 1108
+19 0 0 0 4 9 6091
+20 9 18 437553 1 4 266
+21 1 1 1223 7 8 7684
+22 2 2 2478 1 1 1239
+23 0 0 0 3 5 15012
+END_TIME
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 25 first Hits must be first (order not required for others)
+BEGIN_VISITOR 30
+108.169.152.223 122 467 2864077 20131027150800
+71.70.186.35 37 68 519565 20131027153034
+152.16.208.87 10 26 284847 20131028140643
+199.231.217.107 5 9 213977 20131023185323
+121.97.111.179 4 10 392672 20131029063920
+208.82.15.2 4 14 470160 20131015084752
+54.211.60.23 3 3 3717 20131012111700
+70.193.11.172 3 7 197565 20131024071116
+107.15.63.147 3 7 197565 20131023185629
+95.220.130.173 2 12 125264 20131017001427
+69.58.178.56 2 2 2478 20131020115424
+122.54.238.34 2 7 235080 20131016075156
+198.100.150.90 2 2 2478 20131022152727
+95.220.162.149 2 12 125264 20131016132235
+107.15.234.180 2 7 235080 20131022201422
+63.150.227.63 2 12 296473 20131021125248
+174.97.241.34 2 14 112904 20131027185800
+46.19.136.212 2 2 2478 20131011182457
+150.70.75.212 1 1 1223 20131023202148
+91.196.95.18 1 1 1239 20131008052240
+94.23.157.166 1 1 1239 20131011224902
+71.254.156.7 1 1 1223 20131024045101
+95.211.216.72 1 1 1239 20131003134351
+54.221.106.253 1 1 1239 20131014201508
+199.30.24.34 1 4 184874 20131026140535
+150.70.75.32 1 1 1223 20131023201239
+80.77.95.46 1 1 1223 20131028213723
+212.145.64.56 1 1 1223 20131024151507
+188.138.84.140 1 1 1239 20131020045129
+150.70.97.112 1 1 1223 20131023201141
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 19
+20131002 7 15 5498 1
+20131003 2 2 2478 2
+20131008 3 8 236319 2
+20131009 2 5 232004 1
+20131011 2 2 2478 2
+20131012 3 3 3717 1
+20131014 9 20 248770 3
+20131015 4 14 470160 1
+20131016 4 19 360344 2
+20131017 2 12 125264 1
+20131020 3 3 3717 2
+20131021 2 12 296473 1
+20131022 3 8 236319 2
+20131023 42 94 1315845 7
+20131024 8 18 394314 5
+20131026 1 4 184874 1
+20131027 118 440 1874330 3
+20131028 4 12 280572 2
+20131029 2 5 206575 1
+END_DAY
+
+# Domain - Pages - Hits - Bandwidth
+# The 25 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 12
+us 198 642 5585744
+ph 6 17 627752
+ru 4 24 250528
+jp 3 3 3669
+ch 2 2 2478
+ca 2 2 2478
+ua 1 1 1239
+es 1 1 1223
+fr 1 1 1239
+gb 1 1 1223
+nl 1 1 1239
+de 1 1 1239
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 25 first Hits must be first (order not required for others)
+BEGIN_ROBOT 6
+googlebot 44 73607 20131031141920 15
+bot[\s_+:,\.\;\/\\-] 33 46886 20131030233754 16
+spider 24 32171 20131031080944 0
+unknown 8 240 20131031202124 8
+msnbot\-media 2 10620 20131015143444 1
+crawl 2 2462 20131027215927 0
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Session range - Number of visits
+BEGIN_SESSION 4
+1h+ 2
+30s-2mn 1
+2mn-5mn 1
+0s-30s 36
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 25 first Pages must be first (order not required for others)
+BEGIN_SIDER 13
+/newmember.php 91 909349 3 9
+/ 54 59053 35 19
+/css/segoeprint.ttf 26 3793856 1 9
+/php/iNodes.php 16 957 0 2
+/php/members.php 6 646 1 0
+/php/setCookie.php 5 50 0 0
+/updates/ 5 3250 0 0
+/updates/captchatest.php 5 5055 0 0
+/captchatest.php 3 2789 0 0
+/php/m_is.php 3 185 0 0
+/updates/bubble2.php 3 1878 0 0
+/updates/bubbletest.php 3 5658 0 1
+/updates/bubble3.php 1 724 0 0
+END_SIDER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 7
+css 119 161597 0 0
+php 136 927291 0 0
+png 146 646484 0 0
+ttf 26 3793856 0 0
+html 59 62303 0 0
+jpg 47 844017 0 0
+js 163 44503 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 1
+/robots.txt 40 0 1200
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS 9
+linuxandroid 7
+winlong 1
+winxp 30
+winvista 71
+linux 21
+win7 164
+winme 1
+macosx 400
+Unknown 1
+END_OS
+
+# Browser ID - Hits
+BEGIN_BROWSER 27
+msie6.0 4
+chrome21.0.1180.90 2
+firefox4.0.1 1
+chrome29.0.1547.76 26
+chrome18.0.1025.166 7
+chrome28.0.1500.63 1
+firefox3.6.6 1
+firefox21.0 1
+firefox7.0.1 1
+firefox24.0 413
+chrome30.0.1599.69 41
+opera9.80 24
+safari5.0.2 1
+msie8.0 2
+safari6.0.5 12
+mozilla 4
+firefox25.0 1
+netscape5.0 1
+chrome32.0.1679.0 7
+firefox14.0.1 2
+firefox22.0 12
+msie10.0 22
+firefox16.0 1
+firefox3.6.3 1
+msie9.0 12
+chrome30.0.1599.101 91
+chrome21.0.1180.89 5
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 1
+Mozilla/5.0 20131003134351
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 0
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 62 63
+From1 0 0
+From2 5 5
+From3 4 4
+From4 150 624
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 2
+google 3 3
+yandex 2 2
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 25 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 2
+http://www.linkedin.com/company/3129983 3 3
+http://www.linkedin.com/company/socially-outward 1 1
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 1
+me+logged+in+forgot+password 2
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 25 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 5
+password 2
+in 2
+forgot 2
+me 2
+logged 2
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 3
+400 4 164
+301 3 741
+404 46 7316
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referer
+BEGIN_SIDER_404 27
+/apple-touch-icon-precomposed.png 3 -
+/newmember.html 2 http://sociallyoutward.com/
+/webmanage/FCKeditor/editor/filemanager/connectors/uploadtest.html 1 -
+/user 1 -
+/apple-touch-icon.png 4 -
+/admin/fckeditor/editor/filemanager/connectors/test.html 1 -
+/editor/editor/filemanager/upload/test.html 1 -
+/admin/FCKeditor/editor/filemanager/connectors/uploadtest.html 1 -
+/assets/logo.png 1 http://www.sociallyoutward.com/newmember.php
+/admin 1 -
+/fckeditor/editor/filemanager/connectors/test.html 1 -
+/blog/ 1 http://SOCIALLYOUTWARD.COM/blog/
+/editor/editor/filemanager/browser/default/connectors/test.html 1 -
+/administrator 1 -
+/MuraProxy.cfc 1 -
+/FCKeditor/editor/filemanager/upload/test.html 1 -
+/js/testanimation.js 13 http://sociallyoutward.com/newmember.php
+/admin/FCKeditor/editor/filemanager/upload/test.html 1 -
+/admin/fckeditor/editor/filemanager/browser/default/connectors/test.html 1 -
+/fckeditor/editor/filemanager/browser/default/connectors/test.html 1 -
+/editor/editor/filemanager/connectors/test.html 1 -
+/webmanage/fckeditor/editor/filemanager/connectors/test.html 1 -
+/wp-login.php 2 sociallyoutward.com
+/FCKeditor/editor/filemanager/connectors/uploadtest.html 1 -
+/webmanage/fckeditor/editor/filemanager/browser/default/connectors/test.html 1 -
+/css/newmember.css 1 http://www.sociallyoutward.com/newmember.php
+/editor/editor/filemanager/connectors/uploadtest.html 1 -
+END_SIDER_404

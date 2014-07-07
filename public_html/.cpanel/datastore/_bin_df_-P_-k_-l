@@ -1,0 +1,6 @@
+Filesystem     1024-blocks       Used Available Capacity Mounted on
+/dev/sda3       2875204368 2804825484  70368884      98% /
+tmpfs             49507028          0  49507028       0% /dev/shm
+/dev/sda1           297485     252164     29961      90% /boot
+tmpfs             49507028       3084  49503944       1% /var/mod_security/secdata
+/usr/tmpDSK        4128448    2508768   1409968      65% /tmp

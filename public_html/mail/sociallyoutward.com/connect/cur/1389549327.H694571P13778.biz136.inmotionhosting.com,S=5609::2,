@@ -1,0 +1,134 @@
+Return-path: <bounces+connect=sociallyoutward.com@dynect-mailer.net>
+Envelope-to: connect@sociallyoutward.com
+Delivery-date: Sun, 12 Jan 2014 09:55:28 -0800
+Received: from mtaout-022-pao.sendlabs.com ([208.76.63.22]:37316)
+	by biz136.inmotionhosting.com with esmtp (Exim 4.80.1)
+	(envelope-from <bounces+connect=sociallyoutward.com@dynect-mailer.net>)
+	id 1W2PFv-0003WU-6P
+	for connect@sociallyoutward.com; Sun, 12 Jan 2014 09:55:27 -0800
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=dynexp; d=experience.com;
+ h=From:Sender:To:Message-ID:Subject:MIME-Version:Content-Type:Date; i=mail@experience.com;
+ bh=MRFQKc8syoudR6AhgepIpfTtVoc=;
+ b=Vl/jGKMbNH99q/eG7cJBl/mIg8INnHobzsPlaKgEcQPI9uIsdSyeeTMBlzAYBUmI+aAXt0bf2ZeB
+   mS07k0wqqotXtiPIRK76iNBjXfb1FOR8sYMx0cgdQLI7H/xoKcREdOcro1o/n988zBUO3AeDJTh5
+   U770A+mrTXeZgZSVmgQ=
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=dynexp; d=experience.com;
+ b=YdBJn+p4I/A36c7pkYJ3stJ42nLA/cerbgnwDxUHEeWVwhRqejJXJJi0BTOMUUNzyijvRigDs2PT
+   IYJRhFpv8wdbLIsrPudduFJ19lQ9O5amjUzYeq780JIqin8twCikwvzLNMkVqajlvQ3PxdZNquXM
+   Ylm/xNb0Vnk749xsKcY=;
+From: Experience <notifications@experience.com>
+Sender: mail@experience.com
+To: connect@sociallyoutward.com
+X-DynectEmail-Msg-Key: 20140112175526.681B43750015@mail6-05-pao
+Message-ID:
+ <22719756.824.1389549325617.JavaMail.root@special1.experience.com>
+Subject: Experience Account Confirmation
+MIME-Version: 1.0
+Content-Type: multipart/mixed;  boundary="----=_Part_822_8999184.1389549325615"
+Date: Sun, 12 Jan 2014 12:55:25 -0500 (EST)
+X-DynectEmail-Msg-Hash:
+ vC56V7JaBiC4puBjrtwf0Lk9E+4zSctGIn26ijOHTQyeHpF/2mXtnfxiT4XsGdCuIKLqhfXKS3n7/UsV60Y8trTAxwIYVjkpeF4fhoW/g1ZNvln4Movggw==
+X-DynectEmail-X-Headers: 
+X-Feedback-ID: Q2VkdVZNVEFz:403674:134269:dyn06
+
+------=_Part_822_8999184.1389549325615
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_823_5711215.1389549325616"
+
+------=_Part_823_5711215.1389549325616
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+
+Dear Kenneth:
+
+Thank you for creating your account with Experience.
+
+Here is your login information:
+
+Username: connect@sociallyoutward.com
+
+Please retain this email for your records.
+
+To log in go to: http://www.experience.com/emp/login
+
+If we can be of further assistance, please contact us using the Employer Support Form (http://www.experience.com/popup/client_support?from=employer) or call us Monday through Friday, 9 am to 6 pm EST 1-800-583-7741.
+
+***This is a post-only message.  Please do not reply to this email.***
+=====
+Experience the largest college recruiting network
+http://www.experience.com
+------=_Part_823_5711215.1389549325616
+Content-Type: text/html; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+
+<html>
+<head>
+	<title>Experience, Inc.</title>
+	<style>body, table, tr, th, td, p, a {font-family:Arial; font-size:11px;}</style>
+    <META NAME="MSSmartTagsPreventParsing" CONTENT="TRUE">
+</head>
+
+<body style="font" bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#990099" alink="#FF0000" leftmargin="20" topmargin="20" rightmargin="0" bottommargin="0" marginwidth="0" marginheight="0">
+<img src="[email_analytic]" width="0" height="0" alt="" border="0" />
+<!-- header begins here -->
+<table width="700" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+        <td><img src="http://images.experience.com/images2/mail_temp/header.gif" alt="" border="0" /></td>
+	</tr>
+</table>
+<table width="700" border="0" cellspacing="0" cellpadding="5" style="border:1px solid #CCCCCC;">
+    <tr>
+        <td>Dear Kenneth:<br>
+<br>
+Thank you for creating your account with Experience.<br>
+<br>
+Here is your login information:<br>
+<br>
+Username: connect@sociallyoutward.com<br>
+<br>
+Please retain this email for your records.<br>
+<br>
+To log in go to: 
+
+<a href="http://www.experience.com/emp/login">http://www.experience.com/emp/login</a>
+
+<br>
+<br>
+If we can be of further assistance, please contact us using the Employer Support Form (
+
+<a href="http://www.experience.com/popup/client_support?from=employer)">http://www.experience.com/popup/client_support?from=employer)</a>
+
+ or call us Monday through Friday, 9 am to 6 pm EST 1-800-583-7741. <br>
+***This is a post-only message. Please do not reply to this email.***<br>
+=====<br>
+Experience the largest college recruiting network<br>
+<a href="http://www.experience.com">http://www.experience.com</a>        </td>
+    </tr>
+</table>
+
+<!-- footer begins here -->
+<table width="700" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td colspan="2"><img src="http://images.experience.com/images2/mail_temp/footer.gif" alt="" border="0" /></td>
+	</tr>
+	<tr>
+	    <td valign="top" style="color:#999999;">Copyright &copy; 2014</td>
+	    <td valign="top" align="right" style="color:#999999;">Two Faneuil Hall Marketplace, Boston, MA 02109</td>
+	</tr>
+	<tr>
+		<td colspan="2" style="color:#999999; padding:10px 0 10px 0;">
+			<p><strong>About Experience</strong><br />
+			Founded in 1996, Experience is the only career site specifically for college students & alumni that provides 
+			extraordinary opportunities, real-world insights, and a network of inspirational role-models to help them explore 
+			and launch careers they love. Experience's web-based platform spans more than 3,800 universities, 3 million registered 
+			candidates, 100,000 employers, and 800,000 job and internship opportunities. For more information, visit 
+			<a href="http://www.experience.com?newsletter=" target="_blank">www.experience.com</a>.
+			</p>
+		</td>
+	</tr>
+</table>
+</body>
+</html>
+------=_Part_823_5711215.1389549325616--
+
+------=_Part_822_8999184.1389549325615--

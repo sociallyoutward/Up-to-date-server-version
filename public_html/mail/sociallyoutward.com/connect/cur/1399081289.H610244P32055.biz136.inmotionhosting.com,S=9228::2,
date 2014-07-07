@@ -1,0 +1,142 @@
+Return-path: <bounces+connect=sociallyoutward.com@dynect-mailer.net>
+Envelope-to: connect@sociallyoutward.com
+Delivery-date: Fri, 02 May 2014 18:41:29 -0700
+Received: from mtaout-022-pao.sendlabs.com ([208.76.63.22]:50127)
+	by biz136.inmotionhosting.com with esmtp (Exim 4.82)
+	(envelope-from <bounces+connect=sociallyoutward.com@dynect-mailer.net>)
+	id 1WgOxF-0008C4-DO
+	for connect@sociallyoutward.com; Fri, 02 May 2014 18:41:29 -0700
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=dynexp; d=experience.com;
+ h=From:Sender:Reply-To:To:Message-ID:Subject:MIME-Version:Content-Type:Date; i=mail@experience.com;
+ bh=iw2cTtVWssaJ+1m3MOuWh5dcdn8=;
+ b=TYy844PEoMWmACRe2GbqYqaC89k87waVy61GfMFjtzkjd6Lr07IbWk7u1CR77WlXbIqDU9v/wzAw
+   0WPTM9fs+3nwmAiWj4gzOqiWNjOVnZiP6dOm/MyTaF+qIS1y2ItJaEEG+8sun7xn5o6IajdPYjPP
+   U5COuXdiIvdLz8B7dNU=
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=dynexp; d=experience.com;
+ b=ADjpUhCTo0iE35b3rk23cnXR89lZOyTlvJ/d/kQw6iCVF2R07B/Sj7EMY3g0GYh56L6e63+ZQSNq
+   PU5cjBe1ixINYCNqiMb5el0k8JsoJ7+3Ci5/LaJXxGnNircvdq0qkti16OFIcISEYCe7iclsF/Qe
+   zRBjzgbqY0RQbbvovMQ=;
+From: Duke University <notifications@experience.com>
+Sender: mail@experience.com
+Reply-To: career-employer@studentaffairs.duke.edu
+To: connect@sociallyoutward.com
+X-DynectEmail-Msg-Key: 20140503014120.010C197B000A@mail6-08-ewr
+Message-ID:
+ <29839936.82589.1399081280236.JavaMail.root@special2.experience.com>
+Subject: Duke Career Center Important Service Update Regarding Experience.com
+MIME-Version: 1.0
+Content-Type: multipart/mixed;  boundary="----=_Part_82587_27065805.1399081280231"
+Date: Fri,  2 May 2014 21:41:20 -0400 (EDT)
+X-DynectEmail-Msg-Hash:
+ tiMleQXvuhG3cVWUKKJFwgesMDniOk1PibIJ8q/AhCmSHJEOfWBg0jTxCIYOCUJUjDrOskAFgtoCLTqdrNPAs00BJ9qZkwCOe+WJE/YE9pVpChBaL7RN8g==
+X-DynectEmail-X-Headers: 
+X-Feedback-ID: Q2VkdVZNVEFz:403674:134269:dyn06
+
+------=_Part_82587_27065805.1399081280231
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_82588_22380048.1399081280235"
+
+------=_Part_82588_22380048.1399081280235
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+
+<p style="margin:0; padding: 0;">&#160;</p>
+<p style="margin:0; padding: 0;">Employers,</p>
+<p style="margin:0; padding: 0;">&#160;</p>
+<p style="margin:0; padding: 0;">As you may already be aware, ConnectEDU unexpectedly filed for bankruptcy on April 29, 2014. This news puts in doubt the status of <a href="http://Experience.com">Experience.com</a>, the online eRecruiting platform contracted by the Duke Career Center.&#160;</p>
+<p style="margin:0; padding: 0;">&#160;</p>
+<p style="margin:0; padding: 0;">If you have a live posting or an active account in eRecruiting, we highly recommend you take the following actions:</p>
+<ul>
+<li>Download the resumes of students that have already applied</li>
+<li>Change your application settings to have students apply directly to your website or to a&#160;company&#160;email&#160;address</li>
+<li>Download copies of any information or materials you may have stored in the system</li>
+<li>Contact <a href="mailto:career-employer@studentaffairs.duke.edu">career-employer@studentaffairs.duke.edu</a> if you need assistance reaching one of our students, should the system go down.</li>
+</ul>
+<p style="margin:0; padding: 0;">&#160;</p>
+<p style="margin:0; padding: 0;">We assure you that Duke Career Center staff are working aggressively on a transition plan, should <a href="http://Experience.com">Experience.com</a> go offline. We will post updated information to <a href="http://studentaffairs.duke.edu/career/erecruitingupdates">studentaffairs.duke.edu/career/erecruitingupdates</a> as we have it.</p>
+<p style="margin:0; padding: 0;">&#160;</p>
+<p style="margin:0; padding: 0;">We apologize for any inconvenience caused by this situation. Please let us know if you have questions or concerns. We are here and ready to help. <a href="mailto:career-student@studentaffairs.duke.edu">career-employer@studentaffairs.duke.edu</a><span style="text-decoration: underline;">.</span></p>
+<p style="margin:0; padding: 0;">&#160;</p>
+<p style="margin:0; padding: 0;">Sincerely,</p>
+<p style="margin:0; padding: 0;">The&#160;Duke&#160;Career&#160;Center</p>
+<p style="margin:0; padding: 0;">&#160;</p>
+------=_Part_82588_22380048.1399081280235
+Content-Type: text/html; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+
+<html>
+<head>
+	<title>Experience, Inc.</title>
+	<style>body, table, tr, th, td, p, a {font-family:Arial; font-size:11px;}</style>
+    <META NAME="MSSmartTagsPreventParsing" CONTENT="TRUE">
+</head>
+
+<body style="font" bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#990099" alink="#FF0000" leftmargin="20" topmargin="20" rightmargin="0" bottommargin="0" marginwidth="0" marginheight="0">
+<img src="http://tracking.experience.com/images/clear.gif?type=mailopen&mailing=mq39423583&email=connect@sociallyoutward.com" width="0" height="0" alt="" border="0" />
+<!-- header begins here -->
+<table width="700" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+        <td><img src="http://images.experience.com/images2/schools/000/014/14272.gif" alt="" border="0" /></td>
+    </tr>
+	<tr>
+        <td><img src="http://images.experience.com/images2/mail_temp/header.gif" alt="" border="0" /></td>
+	</tr>
+</table>
+<table width="700" border="0" cellspacing="0" cellpadding="5" style="border:1px solid #CCCCCC;">
+    <tr>
+        <td><p style="margin:0; padding: 0;">&nbsp;</p>
+
+<p style="margin:0; padding: 0;">Employers,</p>
+
+<p style="margin:0; padding: 0;">&nbsp;</p>
+
+<p style="margin:0; padding: 0;">As you may already be aware, ConnectEDU unexpectedly filed for bankruptcy on April 29, 2014. This news puts in doubt the status of <a href="http://tracking.experience.com/opsweb/uncgi/mailaction?type=clickthru&mailing=mq39423583&email=connect@sociallyoutward.com&newurl=http%3A%2F%2FExperience.com">Experience.com</a>, the online eRecruiting platform contracted by the Duke Career Center.&nbsp;</p>
+
+<p style="margin:0; padding: 0;">&nbsp;</p>
+
+<p style="margin:0; padding: 0;">If you have a live posting or an active account in eRecruiting, we highly recommend you take the following actions:</p>
+
+<ul>
+<li>Download the resumes of students that have already applied</li>
+
+<li>Change your application settings to have students apply directly to your website or to a&nbsp;company&nbsp;email&nbsp;address</li>
+
+<li>Download copies of any information or materials you may have stored in the system</li>
+
+<li>Contact <a href="mailto:career-employer@studentaffairs.duke.edu">career-employer@studentaffairs.duke.edu</a> if you need assistance reaching one of our students, should the system go down.</li>
+</ul>
+
+<p style="margin:0; padding: 0;">&nbsp;</p>
+
+<p style="margin:0; padding: 0;">We assure you that Duke Career Center staff are working aggressively on a transition plan, should <a href="http://tracking.experience.com/opsweb/uncgi/mailaction?type=clickthru&mailing=mq39423583&email=connect@sociallyoutward.com&newurl=http%3A%2F%2FExperience.com">Experience.com</a> go offline. We will post updated information to <a href="http://tracking.experience.com/opsweb/uncgi/mailaction?type=clickthru&mailing=mq39423583&email=connect@sociallyoutward.com&newurl=http%3A%2F%2Fstudentaffairs.duke.edu%2Fcareer%2Ferecruitingupdates">studentaffairs.duke.edu/career/erecruitingupdates</a> as we have it.</p>
+
+<p style="margin:0; padding: 0;">&nbsp;</p>
+
+<p style="margin:0; padding: 0;">We apologize for any inconvenience caused by this situation. Please let us know if you have questions or concerns. We are here and ready to help. <a href="mailto:career-student@studentaffairs.duke.edu">career-employer@studentaffairs.duke.edu</a><span style="text-decoration: underline;">.</span></p>
+
+<p style="margin:0; padding: 0;">&nbsp;</p>
+
+<p style="margin:0; padding: 0;">Sincerely,</p>
+
+<p style="margin:0; padding: 0;">The&nbsp;Duke&nbsp;Career&nbsp;Center</p>
+
+<p style="margin:0; padding: 0;">&nbsp;</p>        </td>
+    </tr>
+</table>
+
+<!-- footer begins here -->
+<table width="700" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td colspan="2"><img src="http://images.experience.com/images2/mail_temp/footer.gif" alt="" border="0" /></td>
+	</tr>
+	<tr>
+	    <td valign="top" style="color:#999999;">Copyright &copy; 2014</td>
+	    <td valign="top" align="right" style="color:#999999;">Two Faneuil Hall Marketplace, Boston, MA 02109</td>
+	</tr>
+</table>
+</body>
+</html>
+<table width="700" cellpadding="0" cellspacing="0" border="0"><tr><td width="550" valign="middle" align="right" style="color:#999; font-size:12px;"><br />Stay Connected with Duke University</td><td width="150" valign="middle" align="right"><br /><a href="https://twitter.com/DukeCareers"><img src="http://images.experience.com/images2/home/twitter_32_2.png" width="32" height="32" border="0"></a><a href="https://www.facebook.com/DukeCareers"><img src="http://images.experience.com/images2/home/facebook_32.png" width="32" height="32" border="0"></a><a href="http://www.youtube.com/dukecareers"><img src="http://images.experience.com/images2/home/youtube_32.png" width="32" height="32" border="0"></a></td></tr></table>
+------=_Part_82588_22380048.1399081280235--
+
+------=_Part_82587_27065805.1399081280231--

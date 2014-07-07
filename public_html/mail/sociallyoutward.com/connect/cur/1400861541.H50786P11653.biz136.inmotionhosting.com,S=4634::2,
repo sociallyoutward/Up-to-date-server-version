@@ -1,0 +1,102 @@
+Return-path: <ads-noreply@indeed.com>
+Envelope-to: connect@sociallyoutward.com
+Delivery-date: Fri, 23 May 2014 09:12:21 -0700
+Received: from mail64.indeed.com ([198.58.75.64]:39864)
+	by biz136.inmotionhosting.com with esmtp (Exim 4.82)
+	(envelope-from <ads-noreply@indeed.com>)
+	id 1Wns4y-0002u8-Sw
+	for connect@sociallyoutward.com; Fri, 23 May 2014 09:12:20 -0700
+Received: from indweb43.localdomain (indweb43.indeed.net [10.1.1.143])
+	by mail64.indeed.com (Postfix) with ESMTP id 501944F8A8
+	for <connect@sociallyoutward.com>; Fri, 23 May 2014 11:12:13 -0500 (CDT)
+Received: from localhost.localdomain (localhost [127.0.0.1])
+	by indweb43.localdomain (Postfix) with ESMTP id 4500F890002
+	for <connect@sociallyoutward.com>; Fri, 23 May 2014 11:12:13 -0500 (CDT)
+X-PHPMAILER-DKIM: phpmailer.worxware.com
+DKIM-Signature: v=1; a=rsa-sha1; q=dns/txt; l=3027; s=default;
+	t=1400861533; c=relaxed/simple;
+	h=From:To:Subject;
+	d=indeed.com; i=@indeed.com;
+	z=From:=20Indeed=20<ads-noreply@indeed.com>
+	|To:=20connect@sociallyoutward.com
+	|Subject:=20Activate=20your=20job:=20info=20required;
+	bh=8KFlA1HRDnlrc4cZ+gKtQ2CBnRw=;
+	b=ds0nGYGxgCxLqd6TYlt/cnufzKDIlJZxVfGVIChkMgdiAOAaneDvTNY9+cKYtSCGikB7FBmDaiQk3zMNrxre/MxMRJNQMZkkYd6QBLtqi9sTF9ko9sDcZlSDh3NjF0Y8ofZCMEKsopiOYDQQR6eoBDeZsxtxPsTT0HAgw7N5psc=
+Date: Fri, 23 May 2014 11:12:13 -0500
+To: connect@sociallyoutward.com
+From: Indeed <ads-noreply@indeed.com>
+Subject: Activate your job: info required
+Message-ID: <6c62b804f6eee2b7f20ac01d231dea12@localhost.localdomain>
+X-Priority: 3
+X-Mailer: PHPMailer 5.1 (phpmailer.worxware.com)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Content-Type: text/html; charset="utf-8"
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    </head>
+    <body>
+        <div style="line-height: 16px; font-family: Arial, sans-serif;">
+            <table style="width: 500px; margin-left: 10px; font-size:12px">
+                <tr>
+                    <td style="padding-bottom: 10px;">
+                        <img src="https://ads.indeed.com/images/email/indeed-logo-small.png?refUid=18oktl21t04bl0l4" alt="indeed.com"/>
+                    </td>
+                </tr>
+
+                
+    <tr>
+        <td style="padding-bottom: 10px;">
+            
+                
+                    
+
+                    <p>You're almost finished posting your job!  To activate your job,</p>
+                    <ol>
+                    
+                    <li><a href="https://ads.indeed.com/editbilling?refUid=18oktl21t04bl0l4&amp;utm_source=indeed&amp;utm_medium=email&amp;utm_campaign=newaccount_nobilling" style="font-family:Arial, Helvetica, sans-serif;font-size:12px;font-weight:normal;color:#0000cc;text-decoration:underline;">Enter your billing information</a>.</li>
+                    </ol>
+
+                    
+                        
+                        
+                            <p><strong>Questions?</strong> Call us at 1-800-462-5842 or <a href="https://ads.indeed.com/contact_indeed?hl=en&amp;co=US&amp;refUid=18oktl21t04bl0l4&amp;utm_source=indeed&amp;utm_medium=email&amp;utm_campaign=newaccount_nobilling&amp;lid=contactus" style="font-family:Arial, Helvetica, sans-serif;font-size:12px;font-weight:normal;color:#0000cc;text-decoration:underline;">contact us</a>.</p>
+                        
+                    
+                
+            
+        </td>
+    </tr>
+
+
+                
+                    <tr>
+                        <td style="padding-bottom: 10px;">
+                            Indeed<br />
+                                <a href="http://www.indeed.com/?utm_source=indeed&utm_medium=advemail&utm_campaign=ads" style="font-family:Arial, Helvetica, sans-serif;font-size:12px;font-weight:normal;color:#0000cc;text-decoration:underline;">www.indeed.com</a><br />
+                            
+                                    1-800-462-5842
+                                
+                            
+                        </td>
+                    </tr>
+                
+
+            
+            </table>
+
+            
+
+            
+            <hr noshade="" size="2" style="color:#ccc;background-color:#ccc;border-color:#ccc;margin-left: 5px">
+
+            <div style="margin-left: 10px;color:#6f6f6f;font-size:smaller;"><a href="http://www.indeed.com?utm_source=indeed&utm_medium=advemail&utm_campaign=ads"><font color="#2164f3"><b>Indeed</b></font></a> - one search. all jobs. | 7501 N. Capital of Texas Hwy, Building B, Austin, TX 78731</div>
+            
+        </div>
+    </body>
+</html>
+
+

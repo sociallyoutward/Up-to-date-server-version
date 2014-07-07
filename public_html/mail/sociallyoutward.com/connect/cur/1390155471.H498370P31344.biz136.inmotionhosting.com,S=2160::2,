@@ -1,0 +1,46 @@
+Return-path: <awprogramming@gmail.com>
+Envelope-to: connect@sociallyoutward.com
+Delivery-date: Sun, 19 Jan 2014 10:17:51 -0800
+Received: from mail-wg0-f48.google.com ([74.125.82.48]:33994)
+	by biz136.inmotionhosting.com with esmtps (TLSv1:RC4-SHA:128)
+	(Exim 4.80.1)
+	(envelope-from <awprogramming@gmail.com>)
+	id 1W4wwR-00085Z-5P
+	for connect@sociallyoutward.com; Sun, 19 Jan 2014 10:17:51 -0800
+Received: by mail-wg0-f48.google.com with SMTP id x13so6219278wgg.27
+        for <connect@sociallyoutward.com>; Sun, 19 Jan 2014 10:17:46 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:sender:date:message-id:subject:from:to:content-type;
+        bh=4odsqRrsr2yDiifE5LQukPUbV2FLSY70Rc9FbWnkFF0=;
+        b=faNOtyqHkzSpHzEiCUyiVIn/+apRibfk/8mDuS0crxjO0F2cnS/2Hog7E/0le0RLLp
+         d2nykpypRTff3xq1jaG2A8fFrRnVLitnRvG9IcdTaJgg2etZK2I83ZLM41C+FA0XhVji
+         3/cl2x4MTqhCqAXRTXK5MDqrviYVos/ImMFaCX+nxhGmG3GvJQfKFkoPoDX3bjfy2g7n
+         uYZ28uYGy0XmnacREpe1iI9rGDj9LW4gVS9R2wTZ3pAhQKSHXCAmmmHoSd4SxBy9gAu6
+         K4PL/TyAw7LatT5agQWGLMueczf+TJRF5iwrXjPuPMytZLmBxzDLnBvpjmeet2aSZSRx
+         QvJg==
+MIME-Version: 1.0
+X-Received: by 10.180.207.10 with SMTP id ls10mr6829777wic.52.1390155466607;
+ Sun, 19 Jan 2014 10:17:46 -0800 (PST)
+Sender: bechill613@gmail.com
+X-Google-Sender-Delegation: bechill613@gmail.com
+Received: by 10.194.78.99 with HTTP; Sun, 19 Jan 2014 10:17:46 -0800 (PST)
+Date: Sun, 19 Jan 2014 13:17:46 -0500
+X-Google-Sender-Auth: YCyjvkreBKfcnO-dmD0ZiArmSHc
+Message-ID: <CA+to17ATeUeR5VQJ4jVUHPJEGvEbcjQV9-qe+Q5CheKVUWv27w@mail.gmail.com>
+Subject: Facebook Developer Policy
+From: Arie Wolf <awprogramming@gmail.com>
+To: connect@sociallyoutward.com
+Content-Type: multipart/alternative; boundary=001a11c3f51ac5104c04f056ca3d
+
+--001a11c3f51ac5104c04f056ca3d
+Content-Type: text/plain; charset=ISO-8859-1
+
+https://developers.facebook.com/policy/
+
+--001a11c3f51ac5104c04f056ca3d
+Content-Type: text/html; charset=ISO-8859-1
+
+<div dir="ltr"><a href="https://developers.facebook.com/policy/">https://developers.facebook.com/policy/</a><br></div>
+
+--001a11c3f51ac5104c04f056ca3d--

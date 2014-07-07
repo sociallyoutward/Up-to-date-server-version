@@ -1,0 +1,215 @@
+Return-path: <ads-noreply@indeed.com>
+Envelope-to: connect@sociallyoutward.com
+Delivery-date: Thu, 03 Jul 2014 18:47:47 -0700
+Received: from mail64.indeed.com ([198.58.75.64]:43979)
+	by biz136.inmotionhosting.com with esmtp (Exim 4.82)
+	(envelope-from <ads-noreply@indeed.com>)
+	id 1X2sbK-0000Q8-UA
+	for connect@sociallyoutward.com; Thu, 03 Jul 2014 18:47:47 -0700
+Received: from indweb43.localdomain (indweb43.indeed.net [10.1.1.143])
+	by mail64.indeed.com (Postfix) with ESMTP id 0246C5160A
+	for <connect@sociallyoutward.com>; Thu,  3 Jul 2014 20:47:39 -0500 (CDT)
+Received: from localhost.localdomain (localhost [127.0.0.1])
+	by indweb43.localdomain (Postfix) with ESMTP id D26D0830001
+	for <connect@sociallyoutward.com>; Thu,  3 Jul 2014 20:47:39 -0500 (CDT)
+X-PHPMAILER-DKIM: phpmailer.worxware.com
+DKIM-Signature: v=1; a=rsa-sha1; q=dns/txt; l=8969; s=default;
+	t=1404438459; c=relaxed/simple;
+	h=From:To:Subject;
+	d=indeed.com; i=@indeed.com;
+	z=From:=20Indeed=20<ads-noreply@indeed.com>
+	|To:=20connect@sociallyoutward.com
+	|Subject:=20June=20Advertising=20Report;
+	bh=dSQfnH/f0LaYjdmzyJ/pA8h7u58=;
+	b=fjWEPqtrkEfOxD/lM1u0WfElqbwmtMDNaXotPw8Yi4C+gRePn5s5BWUm0snbOUEkoPwt1Vh6t9BtVw4LTzRVnajVS76fpe3ms2CjarbOvq/lEQhQwK5rBa3xUqX/zKazOfJ2UIMsRCgtDyTU40MG8JbQ40Hoe5PJuheBqSZb9dc=
+Date: Thu, 3 Jul 2014 20:47:39 -0500
+To: connect@sociallyoutward.com
+From: Indeed <ads-noreply@indeed.com>
+Subject: June Advertising Report
+Message-ID: <cf0e9f29a0b0a59c48f885d3bc9b6348@localhost.localdomain>
+X-Priority: 3
+X-Mailer: PHPMailer 5.1 (phpmailer.worxware.com)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Content-Type: text/html; charset="utf-8"
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    </head>
+    <body>
+        <div style="line-height: 16px; font-family: Arial, sans-serif;">
+            <table style="width: 500px; margin-left: 10px; font-size:12px">
+                <tr>
+                    <td style="padding-bottom: 10px;">
+                        <img src="https://ads.indeed.com/images/email/indeed-logo-small.png?refUid=18rvgq1p004c51pr" alt="indeed.com"/>
+                    </td>
+                </tr>
+
+                
+<tr>
+    <td width="527" align="left" valign="bottom" style="font-family:Arial, Helvetica, sans-serif;font-size:18px;font-weight:bold;color:#e86c0a;border-bottom:2px solid #2164f3; line-height:35px; padding-top: 8px;">
+        June Advertising Report
+    </td>
+</tr>
+
+<tr>
+    <td><br></td>
+</tr>
+
+
+
+
+<tr>
+    <td align="center"><table width="700" border="0" cellspacing="0" cellpadding="0" style="border:2px solid #cccccc;">
+        <tr>
+            <td height="49" colspan="3" align="left" style="font-family:Arial, Helvetica, sans-serif;font-size:18px;font-weight:bold;color:#000000;padding-left:10px;">Job Postings - <a
+                href="https://employers.indeed.com/m#jobs/performance-report?start=2014-06-01&end=2014-06-30&amp;refUid=18rvgq1p004c51pr&amp;utm_source=indeed&amp;utm_medium=email&amp;utm_campaign=advreport" style="font-family:Arial, Helvetica, sans-serif;font-size:12px;font-weight:normal;color:#0000cc;text-decoration:underline;"
+                
+                >Report</a></td>
+            <td height="49" colspan="2" align="right"><span style="font-family:Arial, Helvetica, sans-serif;font-size:12px;font-weight:bolder;color:#ff7f34;line-height:16px;white-space:nowrap;">&raquo;&nbsp;&nbsp;</span><a
+                href="https://employers.indeed.com/m#post-job?refUid=18rvgq1p004c51pr&amp;utm_source=indeed&amp;utm_medium=email&amp;utm_campaign=advreport" style="font-family:Arial, Helvetica, sans-serif;font-size:12px;font-weight:normal;color:#0000cc;text-decoration:underline;"
+                
+                >Post a Job</a>&nbsp;&nbsp;</td>
+        </tr>
+        
+        <tr>
+            <td height="28" align="left" bgcolor="#eaeffa" style="border-top:1px solid #b7d9f2;font-family:Arial, Helvetica, sans-serif;font-size:12px;font-weight:bold;color:#000000;padding-left:10px;">Job Title / Location</td>
+            
+
+<td align="right" bgcolor="#eaeffa" style="white-space:nowrap;border-top:1px solid #b7d9f2;font-family:Arial, Helvetica, sans-serif;font-size:12px;font-weight:bold;color:#000000;padding-right:10px;">Applications</td>
+
+            
+
+<td align="right" bgcolor="#eaeffa" style="white-space:nowrap;border-top:1px solid #b7d9f2;font-family:Arial, Helvetica, sans-serif;font-size:12px;font-weight:bold;color:#000000;padding-right:10px;">Job Budget</td>
+
+            
+
+<td align="right" bgcolor="#eaeffa" style="white-space:nowrap;border-top:1px solid #b7d9f2;font-family:Arial, Helvetica, sans-serif;font-size:12px;font-weight:bold;color:#000000;padding-right:10px;">Current Status</td>
+
+            <td width="93" bgcolor="#eaeffa" style="border-top:1px solid #b7d9f2;">&nbsp;</td>
+        </tr>
+
+        
+        
+            
+                <tr>
+                    <td height="34" align="left"  style="font-family:Arial, Helvetica, sans-serif;font-size:12px;font-weight:normal;color:#000000;padding-left:10px;border-bottom:1px solid #efefef;">
+                        Web &amp; Mobile Developer
+                        <br>
+                    <span style="font-family:Arial, Helvetica, sans-serif;font-size:12px;font-weight:normal;color:#7e7e84;">
+                        Chapel Hill, NC
+                    </span></td>
+                    
+
+<td align="right" valign="middle" style="white-space:nowrap;font-family:Arial, Helvetica, sans-serif;font-size:12px;font-weight:normal;color:#000000;border-bottom:1px solid #efefef;padding-right:10px;">
+                        3
+                    </td>
+
+                    
+
+<td align="right" valign="middle" style="white-space:nowrap;font-family:Arial, Helvetica, sans-serif;font-size:12px;font-weight:normal;color:#000000;border-bottom:1px solid #efefef;padding-right:10px;">
+                        $50.00 monthly
+                        
+                        
+                    </td>
+
+                    
+
+<td align="right" valign="middle" style="white-space:nowrap;font-family:Arial, Helvetica, sans-serif;font-size:12px;font-weight:normal;color:#000000;border-bottom:1px solid #efefef;padding-right:10px;">
+                        
+                            
+                            
+                            Paused
+                            
+                        
+                    </td>
+
+                    
+                    
+
+<td align="right" valign="middle" style="white-space:nowrap;font-family:Arial, Helvetica, sans-serif;font-size:12px;font-weight:normal;color:#000000;border-bottom:1px solid #efefef;padding-right:10px;">
+                            <a
+                            href="https://employers.indeed.com/m#edit-job?id=12c8bd52dbfa&amp;refUid=18rvgq1p004c51pr&amp;utm_source=indeed&amp;utm_medium=email&amp;utm_campaign=advreport" style="font-family:Arial, Helvetica, sans-serif;font-size:12px;font-weight:normal;color:#0000cc;text-decoration:underline;"
+                            >Edit</a>
+                            | <a
+                            href="https://employers.indeed.com/m#jobs/performance-report?id=12c8bd52dbfa&amp;refUid=18rvgq1p004c51pr&amp;utm_source=indeed&amp;utm_medium=email&amp;utm_campaign=advreport" style="font-family:Arial, Helvetica, sans-serif;font-size:12px;font-weight:normal;color:#0000cc;text-decoration:underline;"
+                            >Report</a>
+                            </td>
+
+                </tr>
+            
+        
+        
+    </table></td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+    <td align="left" style="border-bottom:2px solid #2164f3;font-family:Arial, Helvetica, sans-serif;font-size:12px;font-weight:normal;color:#000000;"><br></td>
+</tr>
+<tr>
+    <td><br></td>
+</tr>
+
+
+
+
+<tr>
+        <td align="left" style="font-family:Arial, Helvetica, sans-serif;font-size:12px;font-weight:normal;color:#000000;">
+        To log in to your account <a href="https://ads.indeed.com/?refUid=18rvgq1p004c51pr&amp;utm_source=indeed&amp;utm_medium=email&amp;utm_campaign=advreport&amp;lid=login" style="font-family:Arial, Helvetica, sans-serif;font-size:12px;font-weight:normal;color:#0000cc;text-decoration:underline;"> click here.</a><br/>
+        <br/>
+
+        If you have questions, please <a href="https://ads.indeed.com/contact_indeed?refUid=18rvgq1p004c51pr&amp;utm_source=indeed&amp;utm_medium=email&amp;utm_campaign=advreport&amp;lid=contact" style="font-family:Arial, Helvetica, sans-serif;font-size:12px;font-weight:normal;color:#0000cc;text-decoration:underline;">contact us.</a><br/>
+        <br/>
+
+        Thank you for using Indeed!
+        <br/>
+        <br/>
+    </td>
+</tr>
+
+
+
+                
+                    <tr>
+                        <td style="padding-bottom: 10px;">
+                            Indeed<br />
+                                <a href="http://www.indeed.com/?utm_source=indeed&utm_medium=advemail&utm_campaign=ads" style="font-family:Arial, Helvetica, sans-serif;font-size:12px;font-weight:normal;color:#0000cc;text-decoration:underline;">www.indeed.com</a><br />
+                            
+                                    1-800-462-5842
+                                
+                            
+                        </td>
+                    </tr>
+                
+
+            
+                <tr>
+                    <td style="font-size: 11px; color: #999999;">
+                            To unsubscribe from this email and manage your email preferences, <a href="https://ads.indeed.com/unsubadvreport?refUid=18rvgq1p004c51pr&amp;utm_source=indeed&amp;utm_medium=email&amp;utm_campaign=advreport&amp;lid=advreport_unsubscribe" style="font-family:Arial, Helvetica, sans-serif;font-size:11px;font-weight:normal;color:#999999;text-decoration:underline;">click here</a>.
+                    </td>
+                </tr>
+            
+            </table>
+
+            
+
+            
+            <hr noshade="" size="2" style="color:#ccc;background-color:#ccc;border-color:#ccc;margin-left: 5px">
+
+            <div style="margin-left: 10px;color:#6f6f6f;font-size:smaller;"><a href="http://www.indeed.com?utm_source=indeed&utm_medium=advemail&utm_campaign=ads"><font color="#2164f3"><b>Indeed</b></font></a> - one search. all jobs. | 7501 N. Capital of Texas Hwy, Building B, Austin, TX 78731</div>
+            
+        </div>
+    </body>
+</html>
+
+

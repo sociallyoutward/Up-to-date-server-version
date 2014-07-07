@@ -1,0 +1,491 @@
+AWSTATS DATA FILE 7.0 (build 1.971)
+# If you remove this file, all statistics for date 201404 will be lost/reset.
+# Last config file used to build this data file was /home/socia150/tmp/awstats/awstats.sociallyoutward.com.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 27
+POS_GENERAL 2013                
+POS_TIME 2690                
+POS_VISITOR 8660                
+POS_DAY 12521               
+POS_DOMAIN 3467                
+POS_LOGIN 3850                
+POS_ROBOT 4005                
+POS_WORMS 4393                
+POS_EMAILSENDER 4524                
+POS_EMAILRECEIVER 4667                
+POS_SESSION 13306               
+POS_SIDER 13503               
+POS_FILETYPES 4802                
+POS_DOWNLOADS 5056                
+POS_OS 5126                
+POS_BROWSER 5277                
+POS_SCREENSIZE 5885                
+POS_UNKNOWNREFERER 5959                
+POS_UNKNOWNREFERERBROWSER 6096                
+POS_ORIGIN 6228                
+POS_SEREFERRALS 6369                
+POS_PAGEREFS 6525                
+POS_SEARCHWORDS 6776                
+POS_KEYWORDS 6947                
+POS_MISC 2354                
+POS_ERRORS 7027                
+POS_CLUSTER 3706                
+POS_SIDER_404 7175                
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20140501074908 15 2209 4095092610885
+FirstTime 20140401073413
+LastTime 20140430160507
+LastUpdate 20140501210218 15 0 14 0 0
+TotalVisits 148                 
+TotalUnique 95                  
+MonthHostsKnown 0                   
+MonthHostsUnknown 95                  
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+QuickTimeSupport 0 0 0
+JavaEnabled 0 0 0
+JavascriptDisabled 0 0 0
+PDFSupport 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+AddToFavourites 0 0 0
+RealPlayerSupport 0 0 0
+TotalMisc 0 0 0
+DirectorSupport 0 0 0
+FlashSupport 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 2 7 2524 4 7 173156
+1 0 0 0 1 3 1582
+2 2 6 14799 3 10 19560
+3 11 27 63852 2 10 2792
+4 37 51 173472 5 9 4808
+5 7 17 57993 1 6 4141
+6 150 191 708393 16 25 17599
+7 16 32 259638 4 12 9934
+8 14 28 46083 8 20 18927
+9 70 99 496028 11 17 16822
+10 135 178 517006 10 15 5131
+11 280 369 1211533 15 21 26060
+12 216 322 838891 19 31 19887
+13 151 325 581376 26 32 18261
+14 93 135 360403 11 25 6186
+15 147 238 770556 11 22 34367
+16 339 505 1331138 21 40 28012
+17 420 876 1405906 29 37 209677
+18 550 1404 966941 15 25 15576
+19 418 765 1370160 16 29 48511
+20 455 624 2910189 30 46 11570
+21 257 373 2237418 23 45 23508
+22 8 8 227203 3 11 14094
+23 3 3 4656 1 4 11839
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 25 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 13
+us 3753 6528 16407535
+se 7 19 45949
+gb 7 20 69688
+fr 3 5 15914
+jp 2 2 3104
+cn 2 2 3104
+ua 1 1 1552
+il 1 1 1552
+br 1 1 1552
+ru 1 1 1552
+ro 1 1 1552
+sa 1 1 1552
+lu 1 1 1552
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 25 first Hits must be first (order not required for others)
+BEGIN_ROBOT 7
+spider 53 69533 20140430074802 1
+googlebot 44 84378 20140430215147 15
+bot[\s_+:,\.\;\/\\-] 37 414964 20140428172509 12
+unknown 9 270 20140427071531 9
+[\s_+:,\.\;\/\\-]bot 7 60 20140408051047 2
+crawl 3 3134 20140430125009 1
+netcraft 1 1552 20140411082420 0
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 10
+css 563 473918 0 0
+png 445 2286814 0 0
+ttf 52 7587712 0 0
+woff 1 44432 0 0
+php 3309 4435467 0 0
+html 413 464576 0 0
+js 1786 963487 0 0
+jpg 7 125806 0 0
+Unknown 6 53622 0 0
+gif 1 120324 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 1
+/robots.txt 40 0 1200
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS 10
+linuxandroid 71
+winlong 5
+winxp 11
+winvista 166
+linux 11
+win7 2386
+macosx 3904
+winme 1
+winunknown 6
+Unknown 22
+END_OS
+
+# Browser ID - Hits
+BEGIN_BROWSER 34
+msie6.0 3
+safari7.0 7
+chrome6.0.427.0 1
+firefox28.0 3730
+chrome21.0.1180.90 2
+android 63
+safari5.0.2 1
+msie8.0 8
+chrome36.0.1954.0 10
+msie7.0 4
+chrome34.0.1847.116 643
+firefox16.0 2
+chrome33.0.1750.154 1419
+chrome8.0.552.231 1
+chrome36.0.1931.0 138
+wget 5
+msie9.0 20
+Unknown 22
+safari7.0.2 7
+chrome33.0.1750.152 47
+chrome34.0.1847.114 8
+firefox21.0 199
+chrome36.0.1932.2 71
+firefox7.0.1 1
+firefox1.0 1
+firefox14.0.1 3
+chrome32.0.1700.76 1
+chrome25.0.1364.172 1
+firefox6.0 19
+firefox3.6.3 1
+safari6.1.1 8
+safari5.1.9 131
+chrome31.0.1650.16 1
+firefox16.0.1 5
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 2
+Disqus/1.0 20140422201911
+NerdyBot 20140430105732
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 2
+Disqus/1.0 20140422201911
+NerdyBot 20140430105732
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 687 761
+From1 0 0
+From2 9 14
+From3 2 2
+From4 3083 5806
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 1
+google 9 14
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 25 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 2
+http://www.domaintuno.com/d/sociallyoutward.com 1 1
+http://www.linkedin.com/lite/external-redirect 1 1
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 1
+socially+outward 1
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 25 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 2
+outward 1
+socially 1
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 6
+302 128 109286
+206 2 36952
+400 37 1322
+406 1 323
+404 99 18239
+301 8 1987
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referer
+BEGIN_SIDER_404 24
+/memberProfile.html 1 http://sociallyoutward.com/chooseInterests.php
+/maps_test/mapsed/full_example.html 1 -
+/maps_test/mapsed/full-example.html 1 -
+/admin.php 1 -
+/js/nmBorder.js 33 -
+/community.php 4 http://sociallyoutward.com/memberProfile.php
+/forum/ 1 http://sociallyoutward.com/forum/
+/administrator/index.php 12 http://sociallyoutward.com/administrator/index.php
+/maps_test/dbTest.php 1 -
+/wordpress/wp-admin/ 1 -
+/engine/classes/js/dle_js.js 1 http://sociallyoutward.com/engine/classes/js/dle_js.js
+/wp-admin/ 1 -
+/php/m_is.php 25 http://sociallyoutward.com/memberProfile.php
+/right_arrow.png 1 http://sociallyoutward.com/memberProfile.php
+/maps_test/interestTree.php 1 -
+/administrator/ 1 -
+/editor/editor/filemanager/browser/default/connectors/test.html 1 -
+/blog/wp-admin/ 1 -
+/function.mysql-query 4 http://sociallyoutward.com/setCookie.php
+/nearbySearchTest.html 1 -
+/admin/fckeditor/editor/filemanager/browser/default/connectors/test.html 1 -
+/wp-login.php 3 sociallyoutward.com
+/FCKeditor/editor/filemanager/connectors/uploadtest.html 1 -
+/maps_test/mapsed-master/ws/img/bg.jpg 1 http://sociallyoutward.com/maps_test/mapsed-master/ws/css/stylish-portfolio.css
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 25 first Hits must be first (order not required for others)
+BEGIN_VISITOR 95
+107.15.48.150 1022 2165 1483302 20140427135758
+71.70.186.35 814 1053 2236801 20140427153229
+152.23.40.111 399 953 654383 20140407192346
+174.97.241.34 276 451 1955965 20140425101836
+152.16.208.87 173 237 329857 20140423125403
+152.23.54.174 154 209 844870 20140423204118
+107.15.63.147 133 186 1217330 20140415173828
+152.16.144.213 119 138 266731 20140408063009
+12.70.251.226 109 144 754434 20140424123518
+152.16.52.186 76 108 678203 20140408065543
+204.84.10.116 65 171 91721 20140407192327
+24.189.93.241 64 90 271152 20140411195429
+108.41.19.41 62 86 468039 20140411120031
+152.23.40.69 43 66 1035236 20140427221348
+70.61.80.114 34 44 157121 20140428043150
+71.23.109.194 24 35 38735 20140406101043
+152.23.53.103 24 66 21491 20140402122814
+99.165.36.52 19 39 529759 20140424201819
+66.249.83.28 17 17 26384 20140430160507
+24.172.252.171 9 34 775458 20140421211029
+152.23.45.86 8 20 212373 20140409122332
+98.26.24.156 7 17 288326 20140408182849
+192.34.58.199 6 14 32702 20140430040518
+198.211.113.92 5 13 31150 20140416031233
+152.23.205.165 5 5 16888 20140428141435
+23.251.148.68 1 1 1552 20140429205637
+162.222.182.206 1 1 1552 20140411095458
+23.251.154.250 1 1 1552 20140415054703
+23.251.153.12 1 1 1552 20140403204730
+109.173.24.194 1 1 1552 20140425030345
+23.251.144.218 1 1 1552 20140424064904
+107.178.209.214 1 1 1552 20140402130721
+107.178.214.144 1 1 1552 20140414115303
+62.219.8.233 1 1 1552 20140405230951
+108.59.85.91 1 1 1552 20140425074212
+95.138.186.122 3 5 15914 20140403072559
+69.58.178.58 3 3 13591 20140414140941
+74.52.245.146 1 1 1552 20140407152644
+91.217.90.241 1 1 1552 20140423054654
+23.251.155.208 1 1 1552 20140410074517
+96.227.124.37 1 1 1552 20140411134324
+23.236.54.117 1 1 1552 20140430105732
+75.126.125.201 1 1 23030 20140422201911
+23.251.156.41 1 1 1552 20140407073605
+198.199.66.244 2 6 14799 20140418145932
+162.243.170.59 3 7 16351 20140403203229
+94.242.222.13 1 1 1552 20140425211239
+71.177.184.59 2 2 3104 20140428231452
+96.10.12.75 2 7 209316 20140406100743
+198.211.106.56 3 7 16351 20140424052824
+23.251.157.30 1 1 1552 20140404142214
+62.7.191.142 1 6 36986 20140427054909
+107.178.216.21 1 1 1552 20140426173707
+23.251.149.180 1 1 1552 20140403201535
+198.199.66.52 3 7 16351 20140428033447
+198.211.104.210 2 6 14799 20140412144812
+23.251.149.174 1 1 1552 20140409073530
+68.143.235.34 2 7 209434 20140416092528
+23.251.159.55 1 1 1552 20140404084151
+107.178.215.250 1 1 1552 20140401132438
+152.23.254.22 3 8 210986 20140409193337
+204.84.244.11 2 7 209434 20140416141404
+5.199.142.250 1 1 1552 20140422233207
+198.199.71.16 3 7 16351 20140405151013
+198.211.104.25 3 7 16351 20140414085927
+54.215.238.254 3 3 4656 20140426170135
+54.227.226.139 1 1 1552 20140419091726
+198.211.99.110 3 7 16351 20140426032641
+23.251.157.128 1 1 1552 20140412131531
+107.178.208.120 1 1 1552 20140423224025
+198.211.96.53 2 6 14799 20140409035540
+119.63.193.132 1 1 1552 20140423155616
+107.178.214.250 1 1 1552 20140416082911
+54.193.169.127 1 1 1552 20140407070239
+23.251.156.117 1 1 1552 20140406193729
+66.249.88.66 2 2 3104 20140402210923
+107.178.208.229 1 1 1552 20140408065350
+23.251.157.58 1 1 1552 20140402154357
+207.244.73.5 1 1 0 20140418085223
+208.68.38.202 2 6 14799 20140402025226
+23.251.159.137 1 1 1552 20140413111741
+202.46.63.120 1 1 1552 20140423155534
+198.199.66.41 3 7 16351 20140419191114
+192.81.212.190 2 6 14799 20140410205729
+199.231.217.107 5 15 285340 20140409211244
+200.159.200.63 1 1 1552 20140404214548
+202.46.53.30 1 1 1552 20140402100112
+152.23.220.24 2 7 209316 20140401073414
+119.63.193.130 1 1 1552 20140402100201
+92.86.31.186 1 1 1552 20140411211333
+137.113.218.89 2 7 209316 20140404093226
+70.194.99.229 3 8 210986 20140429201014
+107.178.214.186 1 1 1552 20140417072349
+107.178.218.165 1 1 1552 20140418090442
+192.81.215.7 5 13 31150 20140420211228
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 30
+20140401 53 71 455169 3
+20140402 606 1510 698696 12
+20140403 63 87 73593 8
+20140404 73 91 227737 6
+20140405 21 44 28207 4
+20140406 128 169 504704 4
+20140407 610 1309 1081370 8
+20140408 449 581 2420402 8
+20140409 109 277 1007504 8
+20140410 88 138 90817 6
+20140411 235 315 780538 6
+20140412 3 7 16351 2
+20140413 93 115 19560 3
+20140414 8 12 33046 4
+20140415 98 142 798214 4
+20140416 10 31 646205 5
+20140417 4 8 17903 2
+20140418 6 10 19455 4
+20140419 4 8 17903 2
+20140420 51 57 18945 2
+20140421 13 33 579019 3
+20140422 138 186 1087036 5
+20140423 189 260 1121751 8
+20140424 432 579 2321427 8
+20140425 8 10 13854 4
+20140426 14 23 33575 5
+20140427 230 448 2021173 5
+20140428 35 43 188459 4
+20140429 4 9 212538 2
+20140430 6 10 21007 3
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 6
+1h+ 12
+5mn-15mn 14
+30s-2mn 23
+2mn-5mn 8
+0s-30s 87
+30mn-1h 4
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 25 first Pages must be first (order not required for others)
+BEGIN_SIDER 28
+/php/iNodes.php 1939 91152 2 29
+/php/m_is.php 499 25201 0 0
+/memberProfile.php 285 606854 22 1
+/ 253 385655 111 63
+/maps_test/dbCheck.php 150 11071 0 5
+/maps_test/jPT.php 147 2217014 1 0
+/maps_test/json.html 105 5116 3 1
+/index.php 57 87763 2 12
+/css/segoeprint.ttf 52 7587712 0 6
+/maps_test/interestTree.php 42 781220 1 2
+/chooseInterests.php 41 91872 1 0
+/maps_test/ 39 7829 0 1
+/setCookie.php 37 35542 0 1
+/updates/bubble2.php 35 24517 1 0
+/newmember.php 30 314610 0 22
+/maps_test/placesphptest.php 27 145569 2 2
+/maps_test/GooglePlaces.php 11 720 0 0
+/cpanel 6 53622 1 0
+/updates/ 5 3476 0 0
+/php/setCookie.php 4 40 0 0
+/maps_test/placesAutocomplete.html 4 10953 0 1
+/php/members.php 4 436 0 0
+/maps_test/nearbySearchTest.html 3 4640 0 0
+/maps_test/mapsed-master/ 2 46060 1 1
+/maps_test/mapsed-master/full-example.html 1 601 0 0
+/updates/bubbletest.php 1 1886 0 1
+/maps_test/mapsed-master/ws/font-awesome/fonts/fontawesome-webfont.woff 1 44432 0 0
+/maps_test/mapsed/ 1 246 0 0
+END_SIDER

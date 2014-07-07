@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "perl5"
+AuthUserFile "/home/socia150/.htpasswds/perl5/passwd"
+require valid-user

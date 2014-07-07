@@ -1,0 +1,207 @@
+Return-path: <36smbUQkJB38wzvplwkBCjpdlo.frpfrqqhfwvrfldoo1rxwzdug.frp@calendar-server.bounces.google.com>
+Envelope-to: connect@sociallyoutward.com
+Delivery-date: Tue, 21 May 2013 12:24:33 -0700
+Received: from mail-gh0-f201.google.com ([209.85.160.201]:60249)
+	by biz136.inmotionhosting.com with esmtps (TLSv1:RC4-SHA:128)
+	(Exim 4.80)
+	(envelope-from <36smbUQkJB38wzvplwkBCjpdlo.frpfrqqhfwvrfldoo1rxwzdug.frp@calendar-server.bounces.google.com>)
+	id 1UesAh-00038P-Us
+	for connect@sociallyoutward.com; Tue, 21 May 2013 12:24:32 -0700
+Received: by mail-gh0-f201.google.com with SMTP id r14so106589ghr.4
+        for <connect@sociallyoutward.com>; Tue, 21 May 2013 12:24:27 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=google.com; s=20120113;
+        h=mime-version:reply-to:sender:auto-submitted:message-id:date:subject
+         :from:to:content-type;
+        bh=uQ6w++pLNHD39F6aZCz1+v88+V/keMqfTtCII1P6ZnA=;
+        b=Wf35nCPeWBBbZpHCzH/u06IAY98IOb/bPXwqj+35w0K3yxilxJdhMFJPeFaEGpdvkW
+         p3eMI40YG1suM1UnML97ZQPj+ZCISRpB9uG6k2Qfo6bdxR1HuvR+1t0axz3XMDdljwSA
+         dm3KBt4nIxL+B0mEo/dV9cC/g8h7OvbO0r96/DHUoWbEqC1bsh0RRbGwA+Y9Xw8SxsVj
+         7arU6D7ETv1za0NNky1HKYhzPzdtlt8XJknyuBQhaLECZWZzAPc9yk209Vlg33bZ8d5y
+         79jI1qLpM2eJPfpeAE7OgR7q9Y7lyQkXgPA7p1UW3cg+kdnST9WpbsVrUHNDZHeVw1gm
+         ERGA==
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:reply-to:sender:auto-submitted:message-id:date:subject
+         :from:to:content-type;
+        bh=uQ6w++pLNHD39F6aZCz1+v88+V/keMqfTtCII1P6ZnA=;
+        b=GP5uhJ+csgmtF4Dxkmgt7l/ehvMOHIoOKq14xqAd9w8zYc95faXYt9LEZ4oarnSnL6
+         lJjR0jJWSuuKM/nNfuuE0C0TembJ/viGA0s4gHIay2M1VtsVxCgGaybgYef0dBH+AEis
+         9s8eLaBD2tgWLxV10GRzhiVz/t/iODaYQ87H/1GK40i0U3HDEhxZn9Caq8JRHfgcLo6I
+         TfDSCnyqDTlw+dYzHA7CKYcZvfKzqQyWImsQ0lHEaEjEUX6rMrtiS2UGu7jhG7d0vnzY
+         f/+PrZWXMT9tPUHM97ooC8lNzlQZm9aeZacxDBpvWkHhdAEK1gPINns2s5VFjdAP5dDS
+         HYtA==
+MIME-Version: 1.0
+X-Received: by 10.58.29.136 with SMTP id k8mr950683veh.8.1369164266881; Tue,
+ 21 May 2013 12:24:26 -0700 (PDT)
+Reply-To: Taylor Smith <twsmith89@gmail.com>
+Sender: Google Calendar <calendar-notification@google.com>
+Auto-Submitted: auto-generated
+Message-ID: <047d7bacc32ac4836204dd3f65ee@google.com>
+Date: Tue, 21 May 2013 19:24:26 +0000
+Subject: Invitation: 1789: Important Action Items @ Tue May 21, 2013 3:30pm -
+ 4:30pm (Taylor Smith)
+From: Taylor Smith <twsmith89@gmail.com>
+To: "connect@sociallyoutward.com" <connect@sociallyoutward.com>
+Content-Type: multipart/mixed; boundary=047d7bacc32ac4835704dd3f65ed
+
+--047d7bacc32ac4835704dd3f65ed
+Content-Type: multipart/alternative; boundary=047d7bacc32ac4835304dd3f65eb
+
+--047d7bacc32ac4835304dd3f65eb
+Content-Type: text/plain; charset=windows-1252; format=flowed; delsp=yes
+Content-Transfer-Encoding: base64
+
+WW91IGhhdmUgYmVlbiBpbnZpdGVkIHRvIHRoZSBmb2xsb3dpbmcgZXZlbnQuDQoNClRpdGxlOiAx
+Nzg5OiBJbXBvcnRhbnQgQWN0aW9uIEl0ZW1zDQpXaGVuOiBUdWUgTWF5IDIxLCAyMDEzIDM6MzBw
+bSCWIDQ6MzBwbSBFYXN0ZXJuIFRpbWUNCkNhbGVuZGFyOiBUYXlsb3IgU21pdGgNCldobzoNCiAg
+ICAgKEd1ZXN0IGxpc3QgaGFzIGJlZW4gaGlkZGVuIGF0IG9yZ2FuaXplcidzIHJlcXVlc3QpDQoN
+CkV2ZW50IGRldGFpbHM6ICANCmh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vY2FsZW5kYXIvZXZlbnQ/
+YWN0aW9uPVZJRVcmZWlkPU1IWnFiakowT1hBMFpqUTVaMnh2WW1kbFkzRnZhelJwYWpBZ1kyOXVi
+bVZqZEVCemIyTnBZV3hzZVc5MWRIZGhjbVF1WTI5dCZ0b2s9TVRramRIZHpiV2wwYURnNVFHZHRZ
+V2xzTG1OdmJUSmpOMlpoWVRFNU5HWTJaalJoTnpjNFl6SmhNVEZsT1dFM1lXVTJPVGs1TW1Wa05q
+aGlNREUmY3R6PUFtZXJpY2EvTmV3X1lvcmsmaGw9ZW4NCg0KSW52aXRhdGlvbiBmcm9tIEdvb2ds
+ZSBDYWxlbmRhcjogaHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS9jYWxlbmRhci8NCg0KWW91IGFyZSBy
+ZWNlaXZpbmcgdGhpcyBjb3VydGVzeSBlbWFpbCBhdCB0aGUgYWNjb3VudCAgDQpjb25uZWN0QHNv
+Y2lhbGx5b3V0d2FyZC5jb20gYmVjYXVzZSB5b3UgYXJlIGFuIGF0dGVuZGVlIG9mIHRoaXMgZXZl
+bnQuDQoNClRvIHN0b3AgcmVjZWl2aW5nIGZ1dHVyZSBub3RpZmljYXRpb25zIGZvciB0aGlzIGV2
+ZW50LCBkZWNsaW5lIHRoaXMgZXZlbnQuICANCkFsdGVybmF0aXZlbHkgeW91IGNhbiBzaWduIHVw
+IGZvciBhIEdvb2dsZSBhY2NvdW50IGF0ICANCmh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vY2FsZW5k
+YXIvIGFuZCBjb250cm9sIHlvdXIgbm90aWZpY2F0aW9uIHNldHRpbmdzIGZvciAgDQp5b3VyIGVu
+dGlyZSBjYWxlbmRhci4NCg==
+--047d7bacc32ac4835304dd3f65eb
+Content-Type: text/html; charset=windows-1252
+Content-Transfer-Encoding: quoted-printable
+
+<div style=3D""><table cellspacing=3D"0" cellpadding=3D"8" border=3D"0" sum=
+mary=3D"" style=3D"width:100%;font-family:Arial,Sans-serif;border:1px Solid=
+ #ccc;border-width:1px 2px 2px 1px;background-color:#fff;" itemscope itemty=
+pe=3D"http://schema.org/Event"><tr><td><div style=3D"padding:2px"><span ite=
+mprop=3D"publisher" itemscope itemtype=3D"http://schema.org/Organization"><=
+meta itemprop=3D"name" content=3D"Google Calendar"/></span><div style=3D"fl=
+oat:right;font-weight:bold;font-size:13px"> <a href=3D"https://www.google.c=
+om/calendar/event?action=3DVIEW&amp;eid=3DMHZqbjJ0OXA0ZjQ5Z2xvYmdlY3FvazRpa=
+jAgY29ubmVjdEBzb2NpYWxseW91dHdhcmQuY29t&amp;tok=3DMTkjdHdzbWl0aDg5QGdtYWlsL=
+mNvbTJjN2ZhYTE5NGY2ZjRhNzc4YzJhMTFlOWE3YWU2OTk5MmVkNjhiMDE&amp;ctz=3DAmeric=
+a/New_York&amp;hl=3Den" style=3D"color:#20c;white-space:nowrap">more detail=
+s &raquo;</a><br></div><h3 style=3D"padding:0 0 6px 0;margin:0;font-family:=
+Arial,Sans-serif;font-size:16px;font-weight:bold;color:#222"><span itemprop=
+=3D"name">1789: Important Action Items</span></h3><table cellpadding=3D"0" =
+cellspacing=3D"0" border=3D"0" summary=3D"Event details"><tr><td style=3D"p=
+adding:0 1em 10px 0;font-family:Arial,Sans-serif;font-size:13px;color:#888;=
+white-space:nowrap" valign=3D"top"><div><i style=3D"font-style:normal">When=
+</i></div></td><td style=3D"padding-bottom:10px;font-family:Arial,Sans-seri=
+f;font-size:13px;color:#222" valign=3D"top"><time itemprop=3D"startDate" da=
+tetime=3D"20130521T193000Z"></time><time itemprop=3D"endDate" datetime=3D"2=
+0130521T203000Z"></time>Tue May 21, 2013 3:30pm =96 4:30pm <span style=3D"c=
+olor:#888">Eastern Time</span></td></tr><tr><td style=3D"padding:0 1em 10px=
+ 0;font-family:Arial,Sans-serif;font-size:13px;color:#888;white-space:nowra=
+p" valign=3D"top"><div><i style=3D"font-style:normal">Calendar</i></div></t=
+d><td style=3D"padding-bottom:10px;font-family:Arial,Sans-serif;font-size:1=
+3px;color:#222" valign=3D"top">Taylor Smith</td></tr><tr><td style=3D"paddi=
+ng:0 1em 10px 0;font-family:Arial,Sans-serif;font-size:13px;color:#888;whit=
+e-space:nowrap" valign=3D"top"><div><i style=3D"font-style:normal">Who</i><=
+/div></td><td style=3D"padding-bottom:10px;font-family:Arial,Sans-serif;fon=
+t-size:13px;color:#222" valign=3D"top">(Guest list has been hidden at organ=
+izer's request)</td></tr></table></div><p style=3D"color:#222;font-size:13p=
+x;margin:0"><span style=3D"color:#888">Going?&nbsp;&nbsp;&nbsp;</span><wbr>=
+<strong><span itemprop=3D"action" itemscope itemtype=3D"http://schema.org/R=
+svpAction"><meta itemprop=3D"attendance" content=3D"http://schema.org/RsvpA=
+ttendance/Yes"/><span itemprop=3D"handler" itemscope itemtype=3D"http://sch=
+ema.org/HttpActionHandler"><link itemprop=3D"method" href=3D"http://schema.=
+org/HttpRequestMethod/GET"/><a href=3D"https://www.google.com/calendar/even=
+t?action=3DRESPOND&amp;eid=3DMHZqbjJ0OXA0ZjQ5Z2xvYmdlY3FvazRpajAgY29ubmVjdE=
+Bzb2NpYWxseW91dHdhcmQuY29t&amp;rst=3D1&amp;tok=3DMTkjdHdzbWl0aDg5QGdtYWlsLm=
+NvbTJjN2ZhYTE5NGY2ZjRhNzc4YzJhMTFlOWE3YWU2OTk5MmVkNjhiMDE&amp;ctz=3DAmerica=
+/New_York&amp;hl=3Den" style=3D"color:#20c;white-space:nowrap" itemprop=3D"=
+url">Yes</a></span></span><span style=3D"margin:0 0.4em;font-weight:normal"=
+> - </span><span itemprop=3D"action" itemscope itemtype=3D"http://schema.or=
+g/RsvpAction"><meta itemprop=3D"attendance" content=3D"http://schema.org/Rs=
+vpAttendance/Maybe"/><span itemprop=3D"handler" itemscope itemtype=3D"http:=
+//schema.org/HttpActionHandler"><link itemprop=3D"method" href=3D"http://sc=
+hema.org/HttpRequestMethod/GET"/><a href=3D"https://www.google.com/calendar=
+/event?action=3DRESPOND&amp;eid=3DMHZqbjJ0OXA0ZjQ5Z2xvYmdlY3FvazRpajAgY29ub=
+mVjdEBzb2NpYWxseW91dHdhcmQuY29t&amp;rst=3D3&amp;tok=3DMTkjdHdzbWl0aDg5QGdtY=
+WlsLmNvbTJjN2ZhYTE5NGY2ZjRhNzc4YzJhMTFlOWE3YWU2OTk5MmVkNjhiMDE&amp;ctz=3DAm=
+erica/New_York&amp;hl=3Den" style=3D"color:#20c;white-space:nowrap" itempro=
+p=3D"url">Maybe</a></span></span><span style=3D"margin:0 0.4em;font-weight:=
+normal"> - </span><span itemprop=3D"action" itemscope itemtype=3D"http://sc=
+hema.org/RsvpAction"><meta itemprop=3D"attendance" content=3D"http://schema=
+.org/RsvpAttendance/No"/><span itemprop=3D"handler" itemscope itemtype=3D"h=
+ttp://schema.org/HttpActionHandler"><link itemprop=3D"method" href=3D"http:=
+//schema.org/HttpRequestMethod/GET"/><a href=3D"https://www.google.com/cale=
+ndar/event?action=3DRESPOND&amp;eid=3DMHZqbjJ0OXA0ZjQ5Z2xvYmdlY3FvazRpajAgY=
+29ubmVjdEBzb2NpYWxseW91dHdhcmQuY29t&amp;rst=3D2&amp;tok=3DMTkjdHdzbWl0aDg5Q=
+GdtYWlsLmNvbTJjN2ZhYTE5NGY2ZjRhNzc4YzJhMTFlOWE3YWU2OTk5MmVkNjhiMDE&amp;ctz=
+=3DAmerica/New_York&amp;hl=3Den" style=3D"color:#20c;white-space:nowrap" it=
+emprop=3D"url">No</a></span></span></strong>&nbsp;&nbsp;&nbsp;&nbsp;<wbr><a=
+ href=3D"https://www.google.com/calendar/event?action=3DVIEW&amp;eid=3DMHZq=
+bjJ0OXA0ZjQ5Z2xvYmdlY3FvazRpajAgY29ubmVjdEBzb2NpYWxseW91dHdhcmQuY29t&amp;to=
+k=3DMTkjdHdzbWl0aDg5QGdtYWlsLmNvbTJjN2ZhYTE5NGY2ZjRhNzc4YzJhMTFlOWE3YWU2OTk=
+5MmVkNjhiMDE&amp;ctz=3DAmerica/New_York&amp;hl=3Den" style=3D"color:#20c;wh=
+ite-space:nowrap">more options &raquo;</a></p></td></tr><tr><td style=3D"ba=
+ckground-color:#f6f6f6;color:#888;border-top:1px Solid #ccc;font-family:Ari=
+al,Sans-serif;font-size:11px"><p>Invitation from <a href=3D"https://www.goo=
+gle.com/calendar/" target=3D"_blank" style=3D"">Google Calendar</a></p><p>Y=
+ou are receiving this courtesy email at the account connect@sociallyoutward=
+.com because you are an attendee of this event.</p><p>To stop receiving fut=
+ure notifications for this event, decline this event. Alternatively you can=
+ sign up for a Google account at https://www.google.com/calendar/ and contr=
+ol your notification settings for your entire calendar.</p></td></tr></tabl=
+e></div>
+--047d7bacc32ac4835304dd3f65eb
+Content-Type: text/calendar; charset=UTF-8; method=REQUEST
+Content-Transfer-Encoding: 7bit
+
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:REQUEST
+BEGIN:VEVENT
+DTSTART:20130521T193000Z
+DTEND:20130521T203000Z
+DTSTAMP:20130521T192426Z
+ORGANIZER;CN=twsmith89@gmail.com:mailto:twsmith89@gmail.com
+UID:0vjn2t9p4f49globgecqok4ij0@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=connect@sociallyoutward.com;X-NUM-GUESTS=0:mailto:connect@sociallyo
+ utward.com
+CREATED:20130521T192426Z
+DESCRIPTION:View your event at http://www.google.com/calendar/event?action=
+ VIEW&eid=MHZqbjJ0OXA0ZjQ5Z2xvYmdlY3FvazRpajAgY29ubmVjdEBzb2NpYWxseW91dHdhcm
+ QuY29t&tok=MTkjdHdzbWl0aDg5QGdtYWlsLmNvbTJjN2ZhYTE5NGY2ZjRhNzc4YzJhMTFlOWE3
+ YWU2OTk5MmVkNjhiMDE&ctz=America/New_York&hl=en.
+LAST-MODIFIED:20130521T192426Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:1789: Important Action Items
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR
+
+--047d7bacc32ac4835304dd3f65eb--
+--047d7bacc32ac4835704dd3f65ed
+Content-Type: application/ics; name="invite.ics"
+Content-Disposition: attachment; filename="invite.ics"
+Content-Transfer-Encoding: base64
+
+QkVHSU46VkNBTEVOREFSDQpQUk9ESUQ6LS8vR29vZ2xlIEluYy8vR29vZ2xlIENhbGVuZGFyIDcw
+LjkwNTQvL0VODQpWRVJTSU9OOjIuMA0KQ0FMU0NBTEU6R1JFR09SSUFODQpNRVRIT0Q6UkVRVUVT
+VA0KQkVHSU46VkVWRU5UDQpEVFNUQVJUOjIwMTMwNTIxVDE5MzAwMFoNCkRURU5EOjIwMTMwNTIx
+VDIwMzAwMFoNCkRUU1RBTVA6MjAxMzA1MjFUMTkyNDI2Wg0KT1JHQU5JWkVSO0NOPXR3c21pdGg4
+OUBnbWFpbC5jb206bWFpbHRvOnR3c21pdGg4OUBnbWFpbC5jb20NClVJRDowdmpuMnQ5cDRmNDln
+bG9iZ2VjcW9rNGlqMEBnb29nbGUuY29tDQpBVFRFTkRFRTtDVVRZUEU9SU5ESVZJRFVBTDtST0xF
+PVJFUS1QQVJUSUNJUEFOVDtQQVJUU1RBVD1ORUVEUy1BQ1RJT047UlNWUD0NCiBUUlVFO0NOPWNv
+bm5lY3RAc29jaWFsbHlvdXR3YXJkLmNvbTtYLU5VTS1HVUVTVFM9MDptYWlsdG86Y29ubmVjdEBz
+b2NpYWxseW8NCiB1dHdhcmQuY29tDQpDUkVBVEVEOjIwMTMwNTIxVDE5MjQyNloNCkRFU0NSSVBU
+SU9OOlZpZXcgeW91ciBldmVudCBhdCBodHRwOi8vd3d3Lmdvb2dsZS5jb20vY2FsZW5kYXIvZXZl
+bnQ/YWN0aW9uPQ0KIFZJRVcmZWlkPU1IWnFiakowT1hBMFpqUTVaMnh2WW1kbFkzRnZhelJwYWpB
+Z1kyOXVibVZqZEVCemIyTnBZV3hzZVc5MWRIZGhjbQ0KIFF1WTI5dCZ0b2s9TVRramRIZHpiV2ww
+YURnNVFHZHRZV2xzTG1OdmJUSmpOMlpoWVRFNU5HWTJaalJoTnpjNFl6SmhNVEZsT1dFMw0KIFlX
+VTJPVGs1TW1Wa05qaGlNREUmY3R6PUFtZXJpY2EvTmV3X1lvcmsmaGw9ZW4uDQpMQVNULU1PRElG
+SUVEOjIwMTMwNTIxVDE5MjQyNloNCkxPQ0FUSU9OOg0KU0VRVUVOQ0U6MA0KU1RBVFVTOkNPTkZJ
+Uk1FRA0KU1VNTUFSWToxNzg5OiBJbXBvcnRhbnQgQWN0aW9uIEl0ZW1zDQpUUkFOU1A6T1BBUVVF
+DQpFTkQ6VkVWRU5UDQpFTkQ6VkNBTEVOREFSDQo=
+--047d7bacc32ac4835704dd3f65ed--

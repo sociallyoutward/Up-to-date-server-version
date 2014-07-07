@@ -1,0 +1,51 @@
+Return-path: <equityl1@server1.equitylancer.com>
+Envelope-to: connect@sociallyoutward.com
+Delivery-date: Sat, 05 Apr 2014 17:32:39 -0700
+Received: from server1.equitylancer.com ([74.117.157.163]:33513)
+	by biz136.inmotionhosting.com with esmtps (UNKNOWN:DHE-RSA-AES256-GCM-SHA384:256)
+	(Exim 4.82)
+	(envelope-from <equityl1@server1.equitylancer.com>)
+	id 1WWb0p-0003nV-4E
+	for connect@sociallyoutward.com; Sat, 05 Apr 2014 17:32:39 -0700
+Received: from equityl1 by server1.equitylancer.com with local (Exim 4.82)
+	(envelope-from <equityl1@server1.equitylancer.com>)
+	id 1WWb0l-0004YC-IP
+	for connect@sociallyoutward.com; Sun, 06 Apr 2014 04:32:36 +0400
+To: connect@sociallyoutward.com
+Subject: Registration Successful!
+X-PHP-Script: equitylancer.com/index.php for 98.26.24.156
+Date: Sun, 6 Apr 2014 00:32:35 +0000
+From: EquityLancer - The Equity Marketplace <gabriel@equitylancer.com>
+Message-ID: <6e0298c9b611d1a720821a327d2a2e4a@equitylancer.com>
+X-Priority: 3
+X-Mailer: PHPMailer 5.2.4 (http://code.google.com/a/apache-extras.org/p/phpmailer/)
+Reply-To: connect@sociallyoutward.com <connect@sociallyoutward.com>
+X-Mailer: PHP/5.3.23
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Content-Type: text/plain; charset=UTF-8
+X-AntiAbuse: This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - server1.equitylancer.com
+X-AntiAbuse: Original Domain - sociallyoutward.com
+X-AntiAbuse: Originator/Caller UID/GID - [500 501] / [47 12]
+X-AntiAbuse: Sender Address Domain - server1.equitylancer.com
+X-Get-Message-Sender-Via: server1.equitylancer.com: authenticated_id: equityl1/from_h
+
+Hi,
+
+You created a new account on EquityLancer - The Equity Marketplace using the following information.
+
+	Username: connect@sociallyoutward.com
+	Password: socially2013
+
+Now you can login our website at http://www.equitylancer.com/main-login/
+
+We know you have many choices to help in your career pursuits. We wondered if you might have a few minutes to help us deliver a better customer experience by answering a few quick questions. 
+ 
+What interested you about EquityLancer as a destination to find a new career opportunity?
+ 
+Please tell us what your registration experience was like and recommend any changes you would like to see. 
+
+Regards,
+EquityLancer - The Equity Marketplace
+

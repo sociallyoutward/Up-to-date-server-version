@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "tmp"
+AuthUserFile "/home/socia150/.htpasswds/tmp/passwd"
+require valid-user

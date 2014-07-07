@@ -1,0 +1,3 @@
+Disk quotas for user socia150 (uid 2470): 
+     Filesystem  blocks   quota   limit   grace   files   quota   limit   grace
+      /dev/sda3    1284       0       0             199       0       0        
