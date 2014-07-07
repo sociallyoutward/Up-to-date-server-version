@@ -1,0 +1,61 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+::selection {
+  background: #000;
+  color: #fff;
+  text-shadow: none;
+}
+::-moz-selection {
+  background: #333;
+  color: #fff;
+  text-shadow: none;
+}
+
+/* Start flip left/right */
+#horz-demo {
+  text-align: center;
+  margin-top: -30px;
+}
+#horz-controls {
+  position: relative;
+  top: 195px;
+  left: 5px;
+  width: 190px;
+  z-index: 500;
+}
+#horz-controls > div {
+  opacity: .6;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+#horz-controls > div:hover {
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  filter: alpha(opacity=80);
+}
+#horz-controls > div > span {
+  position: relative;
+  left: 0;
+  top: 0.4rem;
+}
+#horz-controls > div:first-child {
+  float: left;
+}
+#horz-controls > div:last-child {
+  float: right;
+}
+#horz-controls > div:last-child > span {
+  left: -0.1rem;
+}
+/* End flip left/right */

@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "arie"
+AuthUserFile "/home/socia150/.htpasswds/public_html/arie/passwd"
+require valid-user

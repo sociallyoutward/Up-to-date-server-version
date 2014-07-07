@@ -1,0 +1,33 @@
+div.col-xs-10{
+
+}
+
+div.col-xs-2{
+	float:right;
+	left:5%;
+
+}
+
+div#can p{
+	margin: auto;
+	width:18%;
+	height:12%;
+}
+
+#myCanvas{
+	position:relative;
+	left:-25%;
+
+}
+
+#navCanvas{
+	
+}
+
+#content{
+	width:110%;
+}
+
+div#absolute, div#sideNav{
+	box-shadow:5px 10px 12px 0px #969696;
+}
