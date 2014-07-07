@@ -23,7 +23,7 @@ var populate = function(iTree)
    		});
    		$('#div1').append(button);
 	}
-}
+};
 
 var clearNfill = function(interest,comingFrom)
 {
@@ -73,7 +73,7 @@ var clearNfill = function(interest,comingFrom)
 	   		appendToMe.append(button);
    		}
 	}
-}
+};
 
 var onoff = function(interestID)
 {
@@ -111,5 +111,4 @@ var onoff = function(interestID)
 		onMap[interestID][0] = true;
 		filter(interestID);
 	}
-}
-
+};

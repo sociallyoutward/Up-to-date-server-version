@@ -30,7 +30,7 @@ var loginCookie = function(data, stayLoggedIn){
 	    alert("cookie set failure");
 	 }
 	 });
-}
+};
 
 var firstTime = true;
 var clearField = function(ftc)
@@ -40,4 +40,4 @@ var clearField = function(ftc)
 	$(ftc).val("");
 	firstTime = false;
 	}
-}
+};

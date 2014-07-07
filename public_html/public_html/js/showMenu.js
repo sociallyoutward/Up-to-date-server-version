@@ -13,4 +13,4 @@ var showMenu = function(){
 	else{
 		$('#addInterestMenu').css("visibility","hidden");
 	}
-}
+};

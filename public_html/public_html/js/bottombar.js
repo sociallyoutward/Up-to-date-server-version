@@ -25,7 +25,7 @@ var moveBar = function()
 	var posVal = $(window).height();
 
 	$('#bottomBar').css("top",posVal);
-}
+};
 
 var checkForm = function()
 {
@@ -53,4 +53,4 @@ var checkForm = function()
 		$('#inner').css("height", "100%");
 		//console.log("+ window height: "+$(window).height()+", comboHeight: "+comboHeight);
 	}
-}
+};

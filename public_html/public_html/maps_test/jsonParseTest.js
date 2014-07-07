@@ -24,7 +24,7 @@ var filter = function(interestID)
     			success: function (data) {parseJSON(data,this.interestID);},
     			error: function () {alert('Error receiving JSON');}
          	});
-    } 
+   };
 
 
 var parseJSON = function(myJSONResult,interestID)
@@ -40,10 +40,10 @@ $.ajax('maps_test/dbCheck.php',
             interestID:interestID,
     		data:{idList:JSON.stringify(idList),interestID:interestID},
 			cache: false,
-			success: function (data) {plotPlaces(data,this.jsonResult,this.interestID)},
+			success: function (data) {plotPlaces(data,this.jsonResult,this.interestID);},
 			error: function () {alert('DB error');}
      	}); 
-}
+};
 
 var plotPlaces = function(interestList,placeList,interestID)
 {
@@ -57,9 +57,9 @@ var plotPlaces = function(interestList,placeList,interestID)
     }
     if(placeList.next_page_token)
     {
-       setTimeout(function(){nextPage(placeList.next_page_token,interestID)}, 700);
+       setTimeout(function(){nextPage(placeList.next_page_token,interestID);}, 700);
     }   
-}
+};
 
 var createMarker = function(ref,interestID,placeID)
 {
@@ -91,7 +91,7 @@ var createMarker = function(ref,interestID,placeID)
                 }
             });
         }
-}
+};
 
 var nextPage = function(npt,interestID)
 {
@@ -104,4 +104,4 @@ var nextPage = function(npt,interestID)
                 success: function (data) {parseJSON(data,this.interestID);},
                 error: function () {alert('Error receiving JSON');}
             });
-}
+};

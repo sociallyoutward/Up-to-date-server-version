@@ -20,4 +20,4 @@ var changeCircle = function(numMiles){
 	circle.setRadius(numMiles*1609.344);
 
 
-}
+};

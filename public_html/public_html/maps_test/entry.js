@@ -31,7 +31,7 @@ var createDropDown = function(interestTree)
             select.append(option);
         }
     }
-}
+};
 
 
 //Calculate Pan Distance
@@ -48,7 +48,7 @@ var calculatePan = function()
     console.log(difLng);
 
     return radius;
-}
+};
 
 
 
@@ -58,7 +58,7 @@ var nextSquare = function()
     $('#toAdd').html("");
     //move();
     getPlaces();
-} 
+};
 
 var addSquare = function()
 {
@@ -70,7 +70,7 @@ var addSquare = function()
     map: map,
     bounds: map.getBounds()
     });
-}
+};
 
 var move = function()
 {
@@ -133,7 +133,7 @@ var move = function()
         }
     }
 
-}
+};
 
 var getPlaces = function()
 {
@@ -149,7 +149,7 @@ var getPlaces = function()
              });
 
 
-}
+};
 
 
 var parseJSON = function(myJSONResult)
@@ -193,9 +193,9 @@ var parseJSON = function(myJSONResult)
     plotPlaces(myJSONResult);
     if(myJSONResult.next_page_token)
     {
-        setTimeout(function(){nextPage(myJSONResult.next_page_token)}, 1000);
+        setTimeout(function(){nextPage(myJSONResult.next_page_token);}, 1000);
     }   
-}
+};
 
 var nextPage = function(npt,interestID)
 {
@@ -207,7 +207,7 @@ var nextPage = function(npt,interestID)
                 success: function (data) {parseJSON(data);},
                 error: function () {alert('Error receiving JSON');}
             });
-}
+};
 
 var addInterest = function(placeID)
 {
@@ -218,13 +218,13 @@ var addInterest = function(placeID)
         $("select."+placeID+":last").after(s);
     else
         alert("Max of 3 interests per place.");
-}
+};
 
 var deletePlace = function(placeID)
 {
 
     $("div#"+placeID).remove();
-}
+};
 
 var addToDB = function(placeID)
 {
@@ -238,22 +238,22 @@ var addToDB = function(placeID)
              type: 'POST',
              data: {placeID:placeID,interest:JSON.stringify(interests)},
              cache: false,
-             success: function (data) {success(data)},
+             success: function (data) {success(data);},
              error: function (data) {duplicateDelete(data);}
              });
-}
+};
 
 var success = function(placeID)
 {
     $('#'+placeID).html('Place added.');
     $('#'+placeID).css("color","green");
-}
+};
 
 var duplicateDelete = function(placeID)
 {
     $('#'+placeID.responseText).html('Place already added, duplicate removed.');
     $('#'+placeID.responseText).css("color","red");
-}
+};
 
 var plotPlaces = function(placeList)
 {
@@ -280,4 +280,4 @@ var plotPlaces = function(placeList)
             }
         });
     }
-}  
+};
