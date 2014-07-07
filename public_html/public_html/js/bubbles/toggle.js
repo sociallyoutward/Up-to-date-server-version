@@ -1,7 +1,7 @@
 var changeSpeed = function(newSpeed)
 {
 	speed = newSpeed;	
-}
+};
 
 var toggleGuide = function(i,c,o)
 {
@@ -20,10 +20,10 @@ var toggleGuide = function(i,c,o)
 
 	guideContainer.addChild(guideCircles);
 
-}
+};
 
 var changeRadius = function(newRadius)
 {
 	radius = canvas.height*newRadius;
 	bubbleCalc(currBubbles,radius);
-}
+};

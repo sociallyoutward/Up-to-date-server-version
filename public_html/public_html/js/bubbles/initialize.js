@@ -35,7 +35,7 @@ var ticktate = function()
 	}
 	bubbleContainer.rotation+= speed;
 	scene.update();
-}
+};
 
 window.onload=init;
 

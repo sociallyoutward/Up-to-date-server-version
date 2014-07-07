@@ -23,4 +23,4 @@ var resizeCanvas = function()
 	bubbleCalc(currBubbles,radius,currText);
 	toggleGuide(iGuide,cGuide,oGuide);
 
-}
+};
