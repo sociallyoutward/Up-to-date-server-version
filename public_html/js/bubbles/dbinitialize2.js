@@ -35,8 +35,7 @@ function init(){
 	member = $('#user').html();
 	member = parseInt(member);
 	initNav();
-	//fetchUserDataFromDB();
-	//fetchAllBubbleData();
+
 	radius = canvas.height*.13;
 	bubbleContainer = new createjs.Container();
 	scene.addChild(bubbleContainer);

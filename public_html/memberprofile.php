@@ -38,6 +38,8 @@ require 'fbconfig.php';
     <script type='text/javascript' src='js/showMenu.js'></script>
     <script src='js/sideMenu.js'></script>
     <script src="js/modernizr.custom.js"></script>
+    <script type="text/javascript" src="js/bubbles/initializeBubblesFromDatabase.js"></script>
+    
     
     <!--Size document to browser viewport-->
     <script src="js/windowDimensions.js" type="text/javascript"></script>

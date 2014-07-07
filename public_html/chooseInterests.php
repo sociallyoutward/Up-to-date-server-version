@@ -35,6 +35,7 @@ require 'fbconfig.php';
     <script src="js/bubbles/dbbubble.js"></script>
     <script src="js/clearInterests.js"></script>
     <script src="js/sideMenu.js"></script>
+    <script type="text/javascript" src="js/bubbles/initializeBubblesFromDatabase.js"></script>
     
     <!--Size document to browser viewport-->
     <script src="js/windowDimensions.js" type="text/javascript"></script>
@@ -87,8 +88,8 @@ require 'fbconfig.php';
 			<img id='profpic' class='spaceUnder pushover' src="https://graph.facebook.com/<?php echo $user; ?>/picture?height=350&width=350">
 			<ul class='po'>
 			    <li class='spaceUnder'><a href='memberprofile.php'>Home</a></li>
-			    <li class='spaceUnder'><a href='#'>Messages</a></li>
-			    <li class='spaceUnder'><a href='#'>Settings</a></li>
+			    <li class='spaceUnder'><a href='messages.php'>Messages</a></li>
+			    <li class='spaceUnder'><a href='settings.php'>Settings</a></li>
 			    <li class='spaceUnder'><a href='chooseInterests.php'>Choose Interests</a></li>
 			    <li class='spaceUnder'><a href="<?php echo $logoutUrl; ?>">Logout</a></li>
 			</ul>

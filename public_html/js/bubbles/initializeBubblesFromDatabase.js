@@ -8,7 +8,7 @@ var getAllData = function() {
 	$.ajax('/php/iNodes.php',
 	    {
 		    type: 'GET',
-		    data: {parent:centralNode},
+		    data: {parent:1},
 		    cache: false,
 		    success: function (data) {allData = data; alert(allData);},
 		    error: function () {alert('Error: Could not find data.');}
@@ -17,5 +17,6 @@ var getAllData = function() {
 }; 	
 
 $(document).ready(function(){
+	alert("begin");
 	getAllData();
 });
