@@ -21,7 +21,7 @@ var createDivs = function(intersect){
 	{
 		generateNeighbor(user,intersect[user]);
 	}
-}
+};
 
 var generateNeighbor = function(userID,intersect){
 
@@ -38,4 +38,4 @@ var generateNeighbor = function(userID,intersect){
 		    newNeigh.append('<p class="percent">'+intersect['percent']+'% Match</p>');
 		}
 	    container.append(newNeigh);
-}
+};
