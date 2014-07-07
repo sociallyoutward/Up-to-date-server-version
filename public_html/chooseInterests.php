@@ -41,7 +41,7 @@ require 'fbconfig.php';
     <script src="js/windowDimensions.js" type="text/javascript"></script>
 </head>
 
-<body>
+<body onload="getAllData();">
     <div class="container">
 	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 	    <div class="container-fluid">

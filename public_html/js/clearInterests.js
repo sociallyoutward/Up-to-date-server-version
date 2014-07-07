@@ -7,7 +7,7 @@ var clearInterests = function()
     		type: 'POST',
 			data: {clear:1,mid:member},
 			cache: false,
-			success: function (data) {alert("cleared interests")},
+			success: function (data) {alert("cleared interests");},
 			error: function () {alert('clear failed');}
      	}); 
-}
+};
