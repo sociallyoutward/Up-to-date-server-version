@@ -35,7 +35,6 @@ require 'fbconfig.php';
     <script src="js/bubbles/dbbubble.js"></script>
     <script src="js/clearInterests.js"></script>
     <script src="js/sideMenu.js"></script>
-    <script type="text/javascript" src="js/bubbles/initializeBubblesFromDatabase.js"></script>
     
     <!--Size document to browser viewport-->
     <script src="js/windowDimensions.js" type="text/javascript"></script>

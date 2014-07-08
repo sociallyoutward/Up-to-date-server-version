@@ -3,9 +3,12 @@ var centerX;
 var centerY;
 var index;
 var bubbleColors = new Array("#808080","#e9afaf","#aade87","#afdde9","#e5d5ff","#c8b7be","#ffccaa","#afe9c6","#afc6e9","#eeaaff","#917c6f","#ffeeaa","#d7f4d7","#afafe9","#e9afc6","#ffb571","#eeffaa","#d5fff6","#d5d5ff","#ffd5f6","#ffff7b");
+//Rainbow color array -> ("#FF4D4D", "#FFA54D", "#FFFF80", "#80FF80", "#8080FF", "#A580C0", "#C780C7");
 var textColors = new Array("#333333","#d35f8d","#00aa00","#216778","#bc5fd3","#6c535d","#d38d5f","#536c5d","#2c5aa0","#ab37c8","#2b1100","#d3bc5f","#7c916f","#5d536c","#d35fbc","#c87137","#89a02c","#6f918a","#6f6f91","#d35fbc","#c8ab37");
 var initial;
 var add;
+//Used to iterate through array of interests, starting with [0]
+var currInterest = 0;
 
 var bubbleCalc = function(centralNode,init,nav)
 {
@@ -19,7 +22,7 @@ var bubbleCalc = function(centralNode,init,nav)
 		type: 'GET',
 		data: {parent:centralNode},
 		cache: false,
-		success: function (data) {currCNode = centralNode; bubbleGeom(data,false,false); bubbleContainer.mouseEnabled = true;},
+		success: function (data) {currCNode = centralNode; bubbleGeom(data,false,false); allData[currCNode - 1] = data; bubbleContainer.mouseEnabled = true;},
 		error: function () {alert('Central node provided does not exist (BC)');}
  	});
  	
@@ -48,7 +51,7 @@ var bubbleCalcMe = function(member,centralNode,init,nav)
 var bubbleGeom = function(nodeArr,me,init)
 {
 	allData = nodeArr;
-    console.log(nodeArr);
+    console.log("All Data: " + nodeArr);
 	initial = init;	
 	//console.log(nodeArr);
 	if(!init){
@@ -240,10 +243,33 @@ var bubbleGeom = function(nodeArr,me,init)
 	}
 };
 
+//Author: Karsten Rabe
+
+//Iterate through array of colors so each bubble is different.
+var getNextColor = function(){
+	var numOfInterests = allData.length;
+	var currColor;
+	
+	if (currInterest != numOfInterests){
+		currColor = currInterest;
+		currInterest += 1;
+		return bubbleColors[currColor];
+	}
+	else{
+		currInterest = 0;
+		return bubbleColors[currInterest + 1];
+	}
+};
+
+var getColor = function(circleID){
+	color = bubbleColors[allData[circleID][2]];
+	//alert(color);
+};
+
 var createBubble = function(x,y,t,init,me)
 {
 	
-	console.log(t); 
+	console.log("Data: " + t); 
 	
 	//console.log(index);
 	//console.log(t);
@@ -253,20 +279,21 @@ var createBubble = function(x,y,t,init,me)
 	ibc.regX = x;
 	ibc.regY = y;
 
-	var choice = Math.floor((Math.random()*bubbleColors.length));
+	//var choice = Math.floor((Math.random()*bubbleColors.length));
+	var choice = getNextColor();
 	
 	var circle = new createjs.Shape();
-	var color = bubbleColors[choice];
+	var color = choice;
 	
 	//updateNavColorAndText(color, allData[1][2], 1);
 	
 	if (!alreadySet){
 		alreadySet = true; 
 		if (whichPage == "memberprofile.php"){
-		    updateNavColorAndText(color, "Me", allData[1][2]);
+		    updateNavColorAndText(color, "Me", allData[0][0]);
 		}
 		else {
-			updateNavColorAndText(color, "Central", allData[1][2]);
+			updateNavColorAndText(color, allData[0][1], allData[0][0]);
 		};    
 	}; 
 	
@@ -281,9 +308,9 @@ var createBubble = function(x,y,t,init,me)
 	if(x==0&&y==0)
 	{}
 	else if(!me)
-	circle.addEventListener("click",function(event){bubbleContainer.mouseEnabled = false; bubbleCalc(t[0],false,false); wipeNav(); for (var i =1; i<4; i++){updateNavColorAndText(color, allData[2][1], i+1);}});
+	circle.addEventListener("click",function(event){bubbleContainer.mouseEnabled = false; bubbleCalc(t[0],false,false); console.log("allData[0][1][1]: " + allData[0][1][1]); updateNavColorAndText(color, allData[0][1][1], currLevel+1);});
 	else if(!init)
-	circle.addEventListener("click",function(event){bubbleContainer.mouseEnabled = false;bubbleCalcMe(t[0],t[1],false,false);});
+	circle.addEventListener("click",function(event){bubbleContainer.mouseEnabled = false;bubbleCalcMe(t[0],t[1],false,false); console.log("allData[0][1][1]: " + allData[0][1][1]); updateNavColorAndText(color, allData[0][1][1], currLevel+1);});
 	if(add)
 	{
 		addToMe(t[0]);

@@ -40,6 +40,11 @@ require 'fbconfig.php';
     <script src="js/modernizr.custom.js"></script>
     
     <script type="text/javascript" src="js/bubbles/initializeBubblesFromDatabase.js"></script>
+    <script>
+    	$(document).ready(function(){
+    		getAllData();
+    	});
+    </script>
     
     <!--Size document to browser viewport-->
     <script src="js/windowDimensions.js" type="text/javascript"></script>

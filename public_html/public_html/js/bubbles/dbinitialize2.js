@@ -21,7 +21,7 @@ var tester = 0;
 var whichPage = location.pathname.substring(location.pathname.lastIndexOf("/") + 1);
 //Set to true once page loads bubble web
 var alreadySet = false;
-var allData;
+var allData = new Array;
 var userData;
 function init(){
 	//bubble web
@@ -60,28 +60,28 @@ function init(){
 
 var initNav = function()
 {
-	var nav1 = new createjs.Shape();
+	var navLayer1 = new createjs.Shape();
 	nav1.navIndex = 0;
 	nav1.yCoord = 67;
 	nav1.graphics.setStrokeStyle(3);
 	nav1.graphics.beginStroke("black").drawCircle(160, nav1.yCoord, 25);
 	
 	
-	var nav2 = new createjs.Shape();
+	var navLayer2 = new createjs.Shape();
 	nav2.navIndex = 1;
 	nav2.yCoord = 205;
 	nav2.graphics.setStrokeStyle(3);
 	nav2.graphics.beginStroke("black").drawCircle(160, nav2.yCoord, 25);
 	nav2.graphics.beginFill("white").drawCircle(160, nav2.yCoord, 25);
 	
-	var nav3 = new createjs.Shape();
+	var navLayer3 = new createjs.Shape();
 	nav3.navIndex = 2;
 	nav3.yCoord = 343;
 	nav3.graphics.setStrokeStyle(3);
 	nav3.graphics.beginStroke("black").drawCircle(160, nav3.yCoord, 25);
 	nav3.graphics.beginFill("white").drawCircle(160, nav3.yCoord, 25);
 	
-	var nav4 = new createjs.Shape();
+	var navLayer4 = new createjs.Shape();
 	nav4.navIndex = 3;
 	nav4.yCoord = 481;
 	nav4.graphics.setStrokeStyle(3);
@@ -199,13 +199,13 @@ var setNavFinish = function(parentID)
 	if(whichPage=="chooseInterests.php")
 	{
 		navCircles[currLevel-1].removeAllEventListeners("click");
-		navCircles[currLevel-1].addEventListener("click",function(event){navClickHandler(event); bubbleCalc(parentID,c,true);});
+		navCircles[currLevel-1].addEventListener("click",function(event){navClickHandler(event); bubbleCalc(parentID,c,true); console.log("allData[0][1][1]: " + allData[0][1][1][1]); updateNavColorAndText(color, allData[0][1], currLevel+1);});
 	}
 	else if(whichPage=="memberprofile.php")
 	{
 		//console.log("INITIAL:"+initial);
 		navCircles[currLevel-1].removeAllEventListeners("click");
-		navCircles[currLevel-1].addEventListener("click",function(event){navClickHandler(event); bubbleCalcMe(member,parentID,c,true);});
+		navCircles[currLevel-1].addEventListener("click",function(event){navClickHandler(event); bubbleCalcMe(member,parentID,c,true); console.log("allData[0][1][1]: " + allData[0][1][1]); updateNavColorAndText(color, allData[0][1], currLevel+1);});
 	}
 	else
 	{
