@@ -47,22 +47,21 @@ div.col-xs-10, div.col-sm-10, div.col-md-10, div.col-lg-10{
 }
 
 div.col-xs-2, div.col-sm-2, div.col-md-2, div.col-lg-2{
-	height:100%;
+	height:90%;
 	width:20%;
 	border:2px dashed red;
 }
 
 div#can{
-	height:100%;
-	width:100%;
+	height:70%;
+	width:70%;
 }
 
 canvas#myCanvas{
-	top:10%;
-	left:10%;
-	height:80%;
-	width:80%;
-	margin:auto;
+    top:5%;
+    
+	/*height + width determined by windowDimensions.js */
+	min-width:250px;
 	border:2px dashed red;
 }
 
