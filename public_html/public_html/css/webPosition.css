@@ -15,7 +15,7 @@ nav.navbar-fixed-top{
 
 div.row{
 	width:100%;
-	height:100%;
+	height:90%;
 }
 
 
@@ -25,53 +25,45 @@ div#can p{
 	height:12%;
 }
 
-#myCanvas{
-	position:relative;
-	height:80%;
-	width:80%;
-}
-
-#navCanvas{
-	width:80%;
-	height:80%;
-}
-
 #content{
 	width:100%;
-	height:90%;
+	height:100%;
 }
 
 div.col-xs-10, div.col-sm-10, div.col-md-10, div.col-lg-10{
-	height:100%;
-	width:80%;
+	top:2%;
+	height:95%;
+	margin:0 2% 0 2%;
+	width:73%;
+	border:2px dashed red;
 }
 
 div.col-xs-2, div.col-sm-2, div.col-md-2, div.col-lg-2{
-	height:90%;
-	width:20%;
+	top:2%;
+	height:95%;
+	margin:0 2% 0 2%;
+	width:19%;
 	border:2px dashed red;
 }
 
 div#can{
-	height:70%;
-	width:70%;
+	height:90%;
+	width:90%;
 }
 
 canvas#myCanvas{
-    top:5%;
-    
-	/*height + width determined by windowDimensions.js */
-	min-width:250px;
-	border:2px dashed red;
+    position:relative;
+    top:7%;
+    left:18%;
+	border:2px dashed green;
 }
 
 canvas#navCanvas{
 	position:relative;
-	left:20%;
-	margin:20%;
+	left:5%;
 	border:2px dashed green;
-	min-width:250px;
-	min-height:550px;
+	min-width:150px;
+	min-height:450px;
 }
 
 div#absolute, div#sideNav{

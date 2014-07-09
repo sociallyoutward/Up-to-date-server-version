@@ -53,7 +53,7 @@ require 'fbconfig.php';
 		  <span class="sr-only">Toggle navigation</span>
 		  <span><img src="assets/toggle_down.png" height="15px"</span>
 		</button>
-		<a class="navbar-brand" href="memberprofile.php"><img src="assets/brand.png" height="45px" /></a>
+		<a class="navbar-brand" href="memberprofile2.php"><img src="assets/brand.png" height="45px" /></a>
 	      </div>
 		
 	      <!-- Collect the nav links, forms, and other content for toggling -->
@@ -103,11 +103,11 @@ require 'fbconfig.php';
 	    <div id='content'>
 		<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
 		    <div id='can'>
-			<canvas id='myCanvas'></canvas>
+			<canvas height="460" width="500" id='myCanvas'></canvas>
 		    </div>
 		</div>
 		<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-			<canvas id='navCanvas'></canvas>
+			<canvas width='230px' height='580px' id='navCanvas'></canvas>
 		</div><!-- end #content and end .row-->
 	    
 	    <div id='user' hidden='true'><?php  print_r($_COOKIE['user']); ?></div>

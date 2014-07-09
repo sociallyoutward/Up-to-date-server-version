@@ -23,13 +23,14 @@ var whichPage = location.pathname.substring(location.pathname.lastIndexOf("/") +
 var alreadySet = false;
 var allData = new Array;
 var userData;
+
 function init(){
 	//bubble web
 	canvas = document.getElementById("myCanvas");
-	//bubble node tree
-	nav = document.getElementById("navCanvas");
 	scene = new createjs.Stage(canvas);
-	navScene = new createjs.Stage(nav);
+	//nav Web
+	nav = document.getElementById("navCanvas");
+    navScene = new createjs.Stage(nav);
 	navLayer = new createjs.Container();
 	navScene.addChild(navLayer);
 	member = $('#user').html();
@@ -60,28 +61,28 @@ function init(){
 
 var initNav = function()
 {
-	var navLayer1 = new createjs.Shape();
+	var nav1 = new createjs.Shape();
 	nav1.navIndex = 0;
 	nav1.yCoord = 67;
 	nav1.graphics.setStrokeStyle(3);
 	nav1.graphics.beginStroke("black").drawCircle(160, nav1.yCoord, 25);
 	
 	
-	var navLayer2 = new createjs.Shape();
+	var nav2 = new createjs.Shape();
 	nav2.navIndex = 1;
 	nav2.yCoord = 205;
 	nav2.graphics.setStrokeStyle(3);
 	nav2.graphics.beginStroke("black").drawCircle(160, nav2.yCoord, 25);
 	nav2.graphics.beginFill("white").drawCircle(160, nav2.yCoord, 25);
 	
-	var navLayer3 = new createjs.Shape();
+	var nav3 = new createjs.Shape();
 	nav3.navIndex = 2;
 	nav3.yCoord = 343;
 	nav3.graphics.setStrokeStyle(3);
 	nav3.graphics.beginStroke("black").drawCircle(160, nav3.yCoord, 25);
 	nav3.graphics.beginFill("white").drawCircle(160, nav3.yCoord, 25);
 	
-	var navLayer4 = new createjs.Shape();
+	var nav4 = new createjs.Shape();
 	nav4.navIndex = 3;
 	nav4.yCoord = 481;
 	nav4.graphics.setStrokeStyle(3);

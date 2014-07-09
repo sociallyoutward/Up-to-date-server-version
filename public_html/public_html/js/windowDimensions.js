@@ -4,7 +4,7 @@
 
 $(document).ready(function(){
 	fitViewportToScreenSize();
-	fixNavCanvasSize();
+	//fixNavCanvasSize();
 	
 });
 
@@ -18,7 +18,8 @@ var winHeight;
 var winWidth;
 var navCanvasHeight;
 var navCanvasWidth;
-var navPos;
+var navPos = 300;
+var bubbleWidth;
 
 
 var fitViewportToScreenSize = function (){
@@ -31,7 +32,7 @@ var fitViewportToScreenSize = function (){
 };
 
 var fixNavCanvasSize = function(){
-	navCanvasHeight = $(window).height() * .95 + "px";
+	navCanvasHeight = $(window).height() * .88 + "px";
 	navCanvasWidth = $(window).width() * .18 + "px";
 	$("#navCanvas").attr({
 		height: navCanvasHeight,
@@ -42,9 +43,11 @@ var fixNavCanvasSize = function(){
 };
 
 var getWindowWidth = function(){
-    navPos = $(window).width();	
+    navPos = $("#navCanvas").width();	
     return navPos;
 };
 
-
+var bubbleCanvasPos = function(){
+	bubbleWidth = $("#myCanvas").attr("width");
+};
 
