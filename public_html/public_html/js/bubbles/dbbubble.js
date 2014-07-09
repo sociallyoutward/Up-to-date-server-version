@@ -28,6 +28,19 @@ var bubbleCalc = function(centralNode,init,nav)
  	
 };
 
+//Author: Karsten Rabe
+//Simple iNode getter function
+var getData = function(centralNode){
+	$.ajax('/php/iNodes.php',
+	{
+		type: 'GET',
+		data: {parent:centralNode},
+		cache: false,
+		success: function (data) {allData = data; console.log(allData); bubbleContainer.mouseEnabled = true;},
+		error: function() {alert("getData didn't work");}
+	});
+};
+
 var bubbleCalcMe = function(member,centralNode,init,nav)
 {
 	console.log("Member:" +member+" CentralNode: " + centralNode + " Init: "+ init+" Nav: "+nav);
@@ -308,9 +321,9 @@ var createBubble = function(x,y,t,init,me)
 	if(x==0&&y==0)
 	{}
 	else if(!me)
-	circle.addEventListener("click",function(event){bubbleContainer.mouseEnabled = false; bubbleCalc(t[0],false,false); console.log("allData[0][1][1]: " + allData[0][1][1]); updateNavColorAndText(color, allData[0][1][1], currLevel+1);});
+	circle.addEventListener("click", function(event){bubbleContainer.mouseEnabled = false; bubbleCalc(t[0],false,false);  console.log("allData[0][1]: " + allData[0][1]); updateNavColorAndText(color, allData[0][1], currLevel+1);});
 	else if(!init)
-	circle.addEventListener("click",function(event){bubbleContainer.mouseEnabled = false;bubbleCalcMe(t[0],t[1],false,false); console.log("allData[0][1][1]: " + allData[0][1][1]); updateNavColorAndText(color, allData[0][1][1], currLevel+1);});
+	circle.addEventListener("click",function(event){bubbleContainer.mouseEnabled = false; bubbleCalcMe(t[0],t[1],false,false);  console.log("allData[0]: " + allData[0]); updateNavColorAndText(color, allData[0], currLevel+1);});
 	if(add)
 	{
 		addToMe(t[0]);

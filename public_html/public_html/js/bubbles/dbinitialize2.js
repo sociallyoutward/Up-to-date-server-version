@@ -48,6 +48,8 @@ function init(){
 	createjs.Ticker.addListener(window);
 	createjs.Ticker.addEventListener("tick", ticktate);
 	
+	getData(1);
+	
 	if(whichPage=="chooseInterests.php")
 	{
 		bubbleCalc(1,true,true);
@@ -63,37 +65,38 @@ var initNav = function()
 {
 	var nav1 = new createjs.Shape();
 	nav1.navIndex = 0;
-	nav1.yCoord = 67;
+	nav1.yCoord = 77;
+	nav1.xCoord = 300;
 	nav1.graphics.setStrokeStyle(3);
-	nav1.graphics.beginStroke("black").drawCircle(160, nav1.yCoord, 25);
+	nav1.graphics.beginStroke("black").drawCircle(nav1.xCoord, nav1.yCoord, 25);
 	
 	
 	var nav2 = new createjs.Shape();
 	nav2.navIndex = 1;
-	nav2.yCoord = 205;
+	nav2.yCoord = 225;
 	nav2.graphics.setStrokeStyle(3);
-	nav2.graphics.beginStroke("black").drawCircle(160, nav2.yCoord, 25);
-	nav2.graphics.beginFill("white").drawCircle(160, nav2.yCoord, 25);
+	nav2.graphics.beginStroke("black").drawCircle(nav1.xCoord, nav2.yCoord, 25);
+	nav2.graphics.beginFill("white").drawCircle(nav1.xCoord, nav2.yCoord, 25);
 	
 	var nav3 = new createjs.Shape();
 	nav3.navIndex = 2;
-	nav3.yCoord = 343;
+	nav3.yCoord = 373;
 	nav3.graphics.setStrokeStyle(3);
-	nav3.graphics.beginStroke("black").drawCircle(160, nav3.yCoord, 25);
-	nav3.graphics.beginFill("white").drawCircle(160, nav3.yCoord, 25);
+	nav3.graphics.beginStroke("black").drawCircle(nav1.xCoord, nav3.yCoord, 25);
+	nav3.graphics.beginFill("white").drawCircle(nav1.xCoord, nav3.yCoord, 25);
 	
 	var nav4 = new createjs.Shape();
 	nav4.navIndex = 3;
-	nav4.yCoord = 481;
+	nav4.yCoord = 521;
 	nav4.graphics.setStrokeStyle(3);
-	nav4.graphics.beginStroke("black").drawCircle(160, nav4.yCoord, 25);
-	nav4.graphics.beginFill("white").drawCircle(160, nav4.yCoord, 25);
+	nav4.graphics.beginStroke("black").drawCircle(nav1.xCoord, nav4.yCoord, 25);
+	nav4.graphics.beginFill("white").drawCircle(nav1.xCoord, nav4.yCoord, 25);
 	
 	var lines = new createjs.Shape();
 	lines.graphics.setStrokeStyle(3);
-	lines.graphics.moveTo(160,90);
+	lines.graphics.moveTo(nav1.xCoord,100);
 	lines.graphics.beginStroke("black");
-	lines.graphics.lineTo(160,506);
+	lines.graphics.lineTo(nav1.xCoord,546);
 	
 	navLayer.addChild(lines);
 	navLayer.addChild(nav1);
@@ -146,21 +149,24 @@ var updateNavColorAndText = function(color,  nodeName, whichNode){
 	var yAxis = 0;
 	//Where in tree? Set Y axis num pixels down based on which one.
 	if (whichNode == 2){       //1st child
-		yAxis = 138;
+		yAxis = 148;
 	}
 	else if (whichNode == 3){  //grand-child
-		yAxis = 276;
+		yAxis = 296;
 	}
 	else if (whichNode == 4){      //great grand-child
-		yAxis = 414;
+		yAxis = 444;
 	};
 	
-	circle.graphics.beginFill(color).drawCircle(160, 67 + yAxis, 25);
+	circle.graphics.beginFill(color).drawCircle(300, 77 + yAxis, 25);
 	var text = new createjs.Text(nodeName, "20px segoe", "black");
-	text.x = 170 - text.getMeasuredWidth();
+	text.x = 300 - text.getMeasuredWidth();
 	//"Me" overlaps bubble otherwise...
 	if (text.x > 100){
-		text.x -= 17;
+		text.x -= 75;
+	}
+	else if (text.x < 100){
+		text.x += 75;
 	}
 	text.y = yAxis + 47;
 	text.regX = text.getMeasuredWidth() / 2;
@@ -200,13 +206,13 @@ var setNavFinish = function(parentID)
 	if(whichPage=="chooseInterests.php")
 	{
 		navCircles[currLevel-1].removeAllEventListeners("click");
-		navCircles[currLevel-1].addEventListener("click",function(event){navClickHandler(event); bubbleCalc(parentID,c,true); console.log("allData[0][1][1]: " + allData[0][1][1][1]); updateNavColorAndText(color, allData[0][1], currLevel+1);});
+		navCircles[currLevel-1].addEventListener("click",function(event){navClickHandler(event); bubbleCalc(parentID,c,true); console.log("allData[0][1]: " + allData[0][1]); updateNavColorAndText(color, allData[0][1], currLevel+1);});
 	}
 	else if(whichPage=="memberprofile.php")
 	{
 		//console.log("INITIAL:"+initial);
 		navCircles[currLevel-1].removeAllEventListeners("click");
-		navCircles[currLevel-1].addEventListener("click",function(event){navClickHandler(event); bubbleCalcMe(member,parentID,c,true); console.log("allData[0][1][1]: " + allData[0][1][1]); updateNavColorAndText(color, allData[0][1], currLevel+1);});
+		navCircles[currLevel-1].addEventListener("click",function(event){navClickHandler(event); bubbleCalcMe(member,parentID,c,true); console.log("allData[0][1]: " + allData[0][1]); updateNavColorAndText(color, allData[0][1], currLevel+1);});
 	}
 	else
 	{

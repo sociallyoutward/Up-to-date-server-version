@@ -1,5 +1,5 @@
 <?php
-require_once('orm/iNode.php');
+require_once('orm/iNode2.php');
 
 if ($_SERVER['REQUEST_METHOD'] == 'GET') {
     

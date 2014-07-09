@@ -1,7 +1,7 @@
 //Author: Karsten Rabe
 
 //variables to get table data and initialize parent bubbles and nav
-var parentBubbleData = new Array;
+var allData = new Array;
 var childBubbleData = new Array;
 var grandChildBubbleData = new Array;
 var navCircles = new Array;
@@ -56,44 +56,44 @@ var initNav = function()
 {
 	var nav1 = new createjs.Shape();
 	nav1.navIndex = 0;
-	nav1.yCoord = 80;
-	nav1.xCoord = navPos - 55;
+	nav1.yCoord = 77;
+	nav1.xCoord = 300;
 	nav1.graphics.setStrokeStyle(3);
 	nav1.graphics.beginStroke("black").drawCircle(nav1.xCoord, nav1.yCoord, 25);
 	
 	
 	var nav2 = new createjs.Shape();
 	nav2.navIndex = 1;
-	nav2.yCoord = 305;
+	nav2.yCoord = 225;
 	nav2.graphics.setStrokeStyle(3);
 	nav2.graphics.beginStroke("black").drawCircle(nav1.xCoord, nav2.yCoord, 25);
 	nav2.graphics.beginFill("white").drawCircle(nav1.xCoord, nav2.yCoord, 25);
 	
 	var nav3 = new createjs.Shape();
 	nav3.navIndex = 2;
-	nav3.yCoord = 545;
+	nav3.yCoord = 373;
 	nav3.graphics.setStrokeStyle(3);
 	nav3.graphics.beginStroke("black").drawCircle(nav1.xCoord, nav3.yCoord, 25);
 	nav3.graphics.beginFill("white").drawCircle(nav1.xCoord, nav3.yCoord, 25);
 	
 	var nav4 = new createjs.Shape();
 	nav4.navIndex = 3;
-	nav4.yCoord = 800;
+	nav4.yCoord = 521;
 	nav4.graphics.setStrokeStyle(3);
 	nav4.graphics.beginStroke("black").drawCircle(nav1.xCoord, nav4.yCoord, 25);
 	nav4.graphics.beginFill("white").drawCircle(nav1.xCoord, nav4.yCoord, 25);
 	
 	var lines = new createjs.Shape();
 	lines.graphics.setStrokeStyle(3);
-	lines.graphics.moveTo(nav1.xCoord,125);
+	lines.graphics.moveTo(nav1.xCoord,100);
 	lines.graphics.beginStroke("black");
-	lines.graphics.lineTo(nav1.xCoord,700);
+	lines.graphics.lineTo(nav1.xCoord,546);
 	
-	navContainer.addChild(lines);
-	navContainer.addChild(nav1);
-	navContainer.addChild(nav2);
-	navContainer.addChild(nav3);
-	navContainer.addChild(nav4);
+	navLayer.addChild(lines);
+	navLayer.addChild(nav1);
+	navLayer.addChild(nav2);
+	navLayer.addChild(nav3);
+	navLayer.addChild(nav4);
 	
 	navScene.update();
 	navCircles= [nav1,nav2,nav3,nav4];
@@ -111,15 +111,17 @@ var tickTock = function()
 	bubbleScene.update();
 };
 
-var getInodeData = function(centralNode){
+//Author: Karsten Rabe
+//Simple iNode getter function
+var getData = function(centralNode){
 	$.ajax('../public_html/php/iNodes.php',
 	{
 		type: 'GET',
 		data: {parent:centralNode},
 		cache: false,
-		success: function (data) {parentBubbleData = data; console.log(parentBubbleData);},
-		error: function () {alert('Central node provided does not exist (BC)');}
- 	});
+		success: function (data) {alert(data); allData[0] = data; console.log(allData[0] = " " + allData[0][0][1]); bubbleContainer.mouseEnabled = true;},
+		error: function() {alert("getData didn't work");}
+	});
 };
 
 
@@ -127,4 +129,4 @@ var getInodeData = function(centralNode){
 
 
 
-window.onload = init, getInodeData(1);
+window.onload = init, getData(1);
