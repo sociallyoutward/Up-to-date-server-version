@@ -297,16 +297,17 @@ var createBubble = function(x,y,t,init,me)
 	
 	var circle = new createjs.Shape();
 	var color = choice;
-	
+	alert("Color Chosen: " + color);
+	 
 	//updateNavColorAndText(color, allData[1][2], 1);
 	
 	if (!alreadySet){
 		alreadySet = true; 
 		if (whichPage == "memberprofile.php"){
-		    updateNavColorAndText(color, "Me", allData[0][0]);
+		    updateNavColorAndText(color, "Me", 1);
 		}
 		else {
-			updateNavColorAndText(color, allData[0][1], allData[0][0]);
+			updateNavColorAndText(color, "Central", 1);
 		};    
 	}; 
 	
@@ -369,6 +370,7 @@ var adjustFontSize = function(ibContainer,x,y,tex,colorChoice)
  	var linewidth = 2*radius;
 
  	ibContainer.addChild(t);
+ 	alert("Text: " + t + " added to " + ibContainer);
 
 };
 

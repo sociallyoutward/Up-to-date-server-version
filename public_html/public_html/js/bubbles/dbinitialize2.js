@@ -25,6 +25,7 @@ var allData = new Array;
 var userData;
 
 function init(){
+	allData = [];
 	//bubble web
 	canvas = document.getElementById("myCanvas");
 	scene = new createjs.Stage(canvas);
@@ -161,7 +162,6 @@ var updateNavColorAndText = function(color,  nodeName, whichNode){
 	circle.graphics.beginFill(color).drawCircle(300, 77 + yAxis, 25);
 	var text = new createjs.Text(nodeName, "20px segoe", "black");
 	text.x = 300 - text.getMeasuredWidth();
-	alert(text.x);
 	//"Me" overlaps bubble otherwise...
 	if (text.x > 200){
 		text.x -= 55;
@@ -170,7 +170,7 @@ var updateNavColorAndText = function(color,  nodeName, whichNode){
 		text.x += 60;
 	}
 	else if (text.x < 60){
-		text.x += 20;
+		text.x += 30;
 	}
 	text.y = yAxis + 47;
 	text.regX = text.getMeasuredWidth() / 2;
@@ -210,7 +210,7 @@ var setNavFinish = function(parentID)
 	if(whichPage=="chooseInterests.php")
 	{
 		navCircles[currLevel-1].removeAllEventListeners("click");
-		navCircles[currLevel-1].addEventListener("click",function(event){navClickHandler(event); bubbleCalc(parentID,c,true); console.log("allData[0][1]: " + allData[0][1]); updateNavColorAndText(color, allData[0][1], currLevel+1);});
+		navCircles[currLevel-1].addEventListener("click",function(event){navClickHandler(event); bubbleCalc(parentID,c,true); console.log("allData[0][1]: " + allData[0][1]); if (allData[0][1][1] == "entertainment"){updateNavColorAndText(color, allData[2][1], currLevel+1);}; updateNavColorAndText(color, allData[1][1], currLevel+1);});
 	}
 	else if(whichPage=="memberprofile.php")
 	{
@@ -225,6 +225,7 @@ var setNavFinish = function(parentID)
 	
 };
 
+
 var navClickHandler = function(event)
 {
 	if(event.target.navIndex < currLevel)
@@ -238,10 +239,9 @@ var navClickHandler = function(event)
 			};
 			if(i!=currLevel)
 			{
-			  //navCircles[i].graphics.beginFill("white").drawCircle(160,navCircles[i].yCoord,25);
-			  //Use Karsten's instead for testing
-			  //alert(i);
-			  updateNavColorAndText("white", "", i);
+			  navCircles[i].graphics.beginFill("white").drawCircle(160,navCircles[i].yCoord,25);
+			  
+			  //updateNavColorAndText("white", "", i);
 			  
 			  navScene.update();
 			};

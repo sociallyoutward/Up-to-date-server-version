@@ -35,7 +35,6 @@ div.col-xs-10, div.col-sm-10, div.col-md-10, div.col-lg-10{
 	height:95%;
 	margin:0 2% 0 2%;
 	width:73%;
-	border:2px dashed red;
 }
 
 div.col-xs-2, div.col-sm-2, div.col-md-2, div.col-lg-2{
@@ -43,7 +42,6 @@ div.col-xs-2, div.col-sm-2, div.col-md-2, div.col-lg-2{
 	height:95%;
 	margin:0 2% 0 2%;
 	width:19%;
-	border:2px dashed red;
 }
 
 div#can{
@@ -55,13 +53,11 @@ canvas#myCanvas{
     position:relative;
     top:7%;
     left:20%;
-	border:2px dashed green;
 }
 
 canvas#navCanvas{
 	position:relative;
 	left:5%;
-	border:2px dashed green;
 	min-width:150px;
 	min-height:450px;
 }
