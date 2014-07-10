@@ -28,18 +28,6 @@ var bubbleCalc = function(centralNode,init,nav)
  	
 };
 
-//Author: Karsten Rabe
-//Simple iNode getter function
-var getData = function(centralNode){
-	$.ajax('/php/iNodes.php',
-	{
-		type: 'GET',
-		data: {parent:centralNode},
-		cache: false,
-		success: function (data) {allData = data; console.log(allData); bubbleContainer.mouseEnabled = true;},
-		error: function() {alert("getData didn't work");}
-	});
-};
 
 var bubbleCalcMe = function(member,centralNode,init,nav)
 {
@@ -92,7 +80,7 @@ var bubbleGeom = function(nodeArr,me,init)
 	index = 0;
 	if(num==0)
 		add=true;
-	createBubble(0,0,nodeArr[index],initial,me);
+	createBubble(0,0,nodeArr[index],initial,me, true);
 
 	
 	}
@@ -104,7 +92,7 @@ var bubbleGeom = function(nodeArr,me,init)
 	else
 	{
 	index = -1;
-	createBubble(0,0,"Me",initial,me);
+	createBubble(0,0,"Me",initial,me, false);
 	}
 
 	var r2 = Math.pow(r,2);
@@ -124,27 +112,27 @@ var bubbleGeom = function(nodeArr,me,init)
 
 	if(num==1)
 	{
-		createBubble(xpos,ypos,nodeArr[index],initial,me);
+		createBubble(xpos,ypos,nodeArr[index],initial,me, false);
 	}
 
 	else if(num==2)
 	{	
 		//console.log(index);
-		createBubble(xpos,ypos,nodeArr[index],initial,me);
+		createBubble(xpos,ypos,nodeArr[index],initial,me, false);
 		ypos+= Math.abs(2*r);
 
-		createBubble(xpos,ypos,nodeArr[index],initial,me);
+		createBubble(xpos,ypos,nodeArr[index],initial,me, false);
 	}
 
 	else if(num==3||num==5||num==7)
 	{
-		createBubble(xpos,ypos,nodeArr[index],initial,me);
+		createBubble(xpos,ypos,nodeArr[index],initial,me, false);
 
 		xpos+=hor;
 		ypos+=ver;
 
-		createBubble(xpos,ypos,nodeArr[index],initial,me);
-		createBubble(-xpos,ypos,nodeArr[index],initial,me);
+		createBubble(xpos,ypos,nodeArr[index],initial,me, false);
+		createBubble(-xpos,ypos,nodeArr[index],initial,me, false);
 
 		if(num==7)
 		{
@@ -162,8 +150,8 @@ var bubbleGeom = function(nodeArr,me,init)
 			xpos = k;
 			ypos = j+r;
 
-			createBubble(xpos,ypos,nodeArr[index],initial,me);
-			createBubble(-xpos,ypos,nodeArr[index],initial,me);
+			createBubble(xpos,ypos,nodeArr[index],initial,me, false);
+			createBubble(-xpos,ypos,nodeArr[index],initial,me, false);
 		}
 
 		if(num==5||num==7)
@@ -171,8 +159,8 @@ var bubbleGeom = function(nodeArr,me,init)
 			xpos=(a/2);
 			ypos=a/(2*Math.tan(Math.PI/num));
 
-			createBubble(xpos,ypos,nodeArr[index],initial,me);
-			createBubble(-xpos,ypos,nodeArr[index],initial,me);
+			createBubble(xpos,ypos,nodeArr[index],initial,me, false);
+			createBubble(-xpos,ypos,nodeArr[index],initial,me, false);
 		}
 	}
 
@@ -185,7 +173,7 @@ var bubbleGeom = function(nodeArr,me,init)
 			var i = 2;
 		}
 
-		createBubble(xpos,ypos,nodeArr[index],initial,me);
+		createBubble(xpos,ypos,nodeArr[index],initial,me, false);
 
 		for(var x=0;x<i;x++)
 		{
@@ -200,7 +188,7 @@ var bubbleGeom = function(nodeArr,me,init)
 			ypos+=hor;	
 		}	
 
-		createBubble(xpos,ypos,nodeArr[index],initial,me);
+		createBubble(xpos,ypos,nodeArr[index],initial,me, false);
 		}
 
 		for(var x=0;x<i;x++)
@@ -215,7 +203,7 @@ var bubbleGeom = function(nodeArr,me,init)
 			xpos-=hor;
 			ypos+=ver;
 		}
-		createBubble(xpos,ypos,nodeArr[index],initial,me);
+		createBubble(xpos,ypos,nodeArr[index],initial,me, false);
 		}
 
 		for(var x=0;x<i;x++)
@@ -230,29 +218,29 @@ var bubbleGeom = function(nodeArr,me,init)
 			xpos-=ver;
 			ypos-=hor;
 		}
-		createBubble(xpos,ypos,nodeArr[index],initial,me);
+		createBubble(xpos,ypos,nodeArr[index],initial,me, false);
 		}
 
 		if(num==8)
 		{
 			xpos+=ver;
 			ypos-=hor;
-			createBubble(xpos,ypos,nodeArr[index],initial,me);
+			createBubble(xpos,ypos,nodeArr[index],initial,me, false);
 		}
 
 	}
 	else if(num==6)
 	{
-		createBubble(xpos,ypos,nodeArr[index],initial,me);
-		createBubble(xpos,-ypos,nodeArr[index],initial,me);
+		createBubble(xpos,ypos,nodeArr[index],initial,me, false);
+		createBubble(xpos,-ypos,nodeArr[index],initial,me, false);
 
 		xpos+=hor;
 		ypos+=ver;
 
-		createBubble(xpos,ypos,nodeArr[index],initial,me);
-		createBubble(-xpos,ypos,nodeArr[index],initial,me);
-		createBubble(xpos,-ypos,nodeArr[index],initial,me);
-		createBubble(-xpos,-ypos,nodeArr[index],initial,me);
+		createBubble(xpos,ypos,nodeArr[index],initial,me, false);
+		createBubble(-xpos,ypos,nodeArr[index],initial,me, false);
+		createBubble(xpos,-ypos,nodeArr[index],initial,me, false);
+		createBubble(-xpos,-ypos,nodeArr[index],initial,me, false);
 	}
 };
 
@@ -279,7 +267,7 @@ var getColor = function(circleID){
 	//alert(color);
 };
 
-var createBubble = function(x,y,t,init,me)
+var createBubble = function(x,y,t,init,me, isFirst)
 {
 	
 	console.log("Data: " + t); 
@@ -297,11 +285,11 @@ var createBubble = function(x,y,t,init,me)
 	
 	var circle = new createjs.Shape();
 	var color = choice;
-	alert("Color Chosen: " + color);
+	//alert("Color Chosen: " + color);
 	 
 	//updateNavColorAndText(color, allData[1][2], 1);
 	
-	if (!alreadySet){
+	/*if (!alreadySet){
 		alreadySet = true; 
 		if (whichPage == "memberprofile.php"){
 		    updateNavColorAndText(color, "Me", 1);
@@ -309,7 +297,7 @@ var createBubble = function(x,y,t,init,me)
 		else {
 			updateNavColorAndText(color, "Central", 1);
 		};    
-	}; 
+	}; */
 	
 	
 	
@@ -322,9 +310,9 @@ var createBubble = function(x,y,t,init,me)
 	if(x==0&&y==0)
 	{}
 	else if(!me)
-	circle.addEventListener("click", function(event){bubbleContainer.mouseEnabled = false; bubbleCalc(t[0],false,false);  console.log("allData[0][1]: " + allData[0][1]); updateNavColorAndText(color, allData[0][1], currLevel+1);});
+	circle.addEventListener("click", function(event){bubbleContainer.mouseEnabled = false; bubbleCalc(t[0],false,false);  console.log("allData[0][1]: " + allData[0][1]); /*updateNavColorAndText(color, allData[0][1], currLevel+1);*/});
 	else if(!init)
-	circle.addEventListener("click",function(event){bubbleContainer.mouseEnabled = false; bubbleCalcMe(t[0],t[1],false,false);  console.log("allData[0]: " + allData[0]); updateNavColorAndText(color, allData[0], currLevel+1);});
+	circle.addEventListener("click",function(event){bubbleContainer.mouseEnabled = false; bubbleCalcMe(t[0],t[1],false,false);  console.log("allData[0]: " + allData[0]); /*updateNavColorAndText(color, allData[0], currLevel+1);*/});
 	if(add)
 	{
 		addToMe(t[0]);
@@ -333,7 +321,7 @@ var createBubble = function(x,y,t,init,me)
 	ibc.addChild(circle);
 	
 	if(!me)
-	adjustFontSize(ibc,x,y,t[1],choice);
+	adjustFontSize(ibc,x,y,t[1],choice, color, isFirst);
 	else if(!init)
 	{
 		$.ajax('/php/iNodes.php',
@@ -341,20 +329,20 @@ var createBubble = function(x,y,t,init,me)
 			type: 'GET',
 			data: {id:t[1]},
 			cache: false,
-			success: function (data) {adjustFontSize(ibc,x,y,data.name,choice);},
+			success: function (data) {adjustFontSize(ibc,x,y,data.name,choice, color, isFirst);},
 			error: function () {alert('Central node provided does not exist.');}
  		});
 	}
 	else
 	{
-	adjustFontSize(ibc,x,y,t,choice);
+	adjustFontSize(ibc,x,y,t,choice, color, isFirst);
 	initial = false;
 	}
 	bubbleContainer.addChild(ibc);
 	index++;
 };
 
-var adjustFontSize = function(ibContainer,x,y,tex,colorChoice)
+var adjustFontSize = function(ibContainer,x,y,tex,colorChoice, bubbleColor, isFirst)
 {
 	
 
@@ -370,7 +358,12 @@ var adjustFontSize = function(ibContainer,x,y,tex,colorChoice)
  	var linewidth = 2*radius;
 
  	ibContainer.addChild(t);
- 	alert("Text: " + t + " added to " + ibContainer);
+ 	if (isFirst){
+ 		t = t.toString();
+ 		t = t.substring(12, t.length-2);
+ 	    updateNavColorAndText(bubbleColor, t, currLevel+1);
+ 	}
+ 	//alert("Text: " + t + " added to " + ibContainer);
 
 };
 

@@ -1,7 +1,7 @@
 var canvas;
 var scene;
-var nav;
-var navScene;
+var nav = document.getElementById("navCanvas");
+var navScene = new createjs.Stage(nav);
 var navLayer;
 var color;
 var bubbleContainer;
@@ -16,6 +16,7 @@ var currText = "Socially Outward";
 var currCNode = 1;
 var currLevel = 0;
 var navCircles;
+var navColors = new Array;
 var member;
 var tester = 0;
 var whichPage = location.pathname.substring(location.pathname.lastIndexOf("/") + 1);
@@ -48,8 +49,6 @@ function init(){
 	createjs.Ticker.setFPS(40);
 	createjs.Ticker.addListener(window);
 	createjs.Ticker.addEventListener("tick", ticktate);
-	
-	getData(1);
 	
 	if(whichPage=="chooseInterests.php")
 	{
@@ -133,7 +132,7 @@ var setNav = function(interestID)
 			type: 'GET',
 			data: {child:interestID},
 			cache: false,
-			success: function (data) {console.log(allData);},
+			success: function (data) {setNavFinish(data);},
 			error: function () {alert('setNav() Problem');}
  		});
 	};
@@ -148,6 +147,7 @@ var updateNavColorAndText = function(color,  nodeName, whichNode){
 	navContainer = new createjs.Container();
 	var circle = new createjs.Shape();
 	var yAxis = 0;
+	
 	//Where in tree? Set Y axis num pixels down based on which one.
 	if (whichNode == 2){       //1st child
 		yAxis = 148;
@@ -179,19 +179,10 @@ var updateNavColorAndText = function(color,  nodeName, whichNode){
 	navLayer.addChild(navContainer);
 	navContainer.addChild(circle);
 	navContainer.addChild(text);
+	navColors[whichNode] = circle + "," + text;
+	alert(navColors[whichNode]);
 	navScene.update();
 	
-};
-
-//Author: karsten Rabe
-//Reset nav area
-var wipeNav = function(){
-	navContainer.removeAllChildren();
-	//updateNavColorAndText("black", "", 1);
-	//updateNavColorAndText("", "", 2);
-	//updateNavColorAndText("", "", 3);
-	//updateNavColorAndText("", "", 4);
-
 };
 
 
@@ -210,13 +201,13 @@ var setNavFinish = function(parentID)
 	if(whichPage=="chooseInterests.php")
 	{
 		navCircles[currLevel-1].removeAllEventListeners("click");
-		navCircles[currLevel-1].addEventListener("click",function(event){navClickHandler(event); bubbleCalc(parentID,c,true); console.log("allData[0][1]: " + allData[0][1]); if (allData[0][1][1] == "entertainment"){updateNavColorAndText(color, allData[2][1], currLevel+1);}; updateNavColorAndText(color, allData[1][1], currLevel+1);});
+		navCircles[currLevel-1].addEventListener("click",function(event){navClickHandler(event); bubbleCalc(parentID,c,true); console.log("allData[0][1]: " + allData[0][1]); /*if (allData[0][1][1] == "entertainment"){updateNavColorAndText(color, allData[2][1], currLevel+1);}; updateNavColorAndText(color, allData[1][1], currLevel+1); */});
 	}
 	else if(whichPage=="memberprofile.php")
 	{
 		//console.log("INITIAL:"+initial);
 		navCircles[currLevel-1].removeAllEventListeners("click");
-		navCircles[currLevel-1].addEventListener("click",function(event){navClickHandler(event); bubbleCalcMe(member,parentID,c,true); console.log("allData[0][1]: " + allData[0][1]); updateNavColorAndText(color, allData[0][1], currLevel+1);});
+		navCircles[currLevel-1].addEventListener("click",function(event){navClickHandler(event); bubbleCalcMe(member,parentID,c,true); console.log("allData[0][1]: " + allData[0][1]); /*updateNavColorAndText(color, allData[0][1], currLevel+1);*/});
 	}
 	else
 	{
@@ -228,9 +219,14 @@ var setNavFinish = function(parentID)
 
 var navClickHandler = function(event)
 {
+	alert("navClickHandler triggered.");
 	if(event.target.navIndex < currLevel)
 	{
 		currLevel = event.target.navIndex;
+		for (var i = currLevel+1; i < 4; i++){
+			navLayer.removeChild(navColors[currLevel]);
+			alert("Child node removed");
+		}
 		for(var i = currLevel;i<navCircles.length;i++)
 		{
 			if(navCircles[i].hasEventListener("click"))
@@ -239,7 +235,7 @@ var navClickHandler = function(event)
 			};
 			if(i!=currLevel)
 			{
-			  navCircles[i].graphics.beginFill("white").drawCircle(160,navCircles[i].yCoord,25);
+			  navCircles[i].graphics.beginFill("white").drawCircle(300,navCircles[i].yCoord,25);
 			  
 			  //updateNavColorAndText("white", "", i);
 			  
