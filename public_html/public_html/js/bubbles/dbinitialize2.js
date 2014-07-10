@@ -161,12 +161,16 @@ var updateNavColorAndText = function(color,  nodeName, whichNode){
 	circle.graphics.beginFill(color).drawCircle(300, 77 + yAxis, 25);
 	var text = new createjs.Text(nodeName, "20px segoe", "black");
 	text.x = 300 - text.getMeasuredWidth();
+	alert(text.x);
 	//"Me" overlaps bubble otherwise...
-	if (text.x > 100){
-		text.x -= 75;
+	if (text.x > 200){
+		text.x -= 55;
 	}
-	else if (text.x < 100){
-		text.x += 75;
+	else if (text.x < 120){
+		text.x += 60;
+	}
+	else if (text.x < 60){
+		text.x += 20;
 	}
 	text.y = yAxis + 47;
 	text.regX = text.getMeasuredWidth() / 2;
