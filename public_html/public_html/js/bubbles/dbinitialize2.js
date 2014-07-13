@@ -180,7 +180,6 @@ var updateNavColorAndText = function(color,  nodeName, whichNode){
 	navContainer.addChild(circle);
 	navContainer.addChild(text);
 	navColors[whichNode] = circle + "," + text;
-	alert(navColors[whichNode]);
 	navScene.update();
 	
 };
