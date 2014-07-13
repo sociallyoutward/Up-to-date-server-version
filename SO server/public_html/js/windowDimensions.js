@@ -38,7 +38,6 @@ var fixNavCanvasSize = function(){
 		height: navCanvasHeight,
 		width: navCanvasWidth
 	});
-	navScene.update();
 	
 };
 

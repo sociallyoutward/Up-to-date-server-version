@@ -302,6 +302,8 @@ var createBubble = function(x,y,t,init,me, isFirst)
 	
 	
 	//console.log(color);
+	circle.color = color;
+	alert(circl.color);
 	circle.graphics.beginFill(color).drawCircle(x, y, radius);
 
 

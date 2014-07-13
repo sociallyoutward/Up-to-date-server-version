@@ -2,36 +2,40 @@
 
 //variables to get table data and initialize parent bubbles and nav
 var allData = new Array;
-var childBubbleData = new Array;
-var grandChildBubbleData = new Array;
 var navCircles = new Array;
 var whichPage = location.pathname.substring(location.pathname.lastIndexOf("/") + 1);
-var bubbleCanvas, navCanvas, bubbleScene, bubbleContainer, navContainer, guideContainer, currLevel, numOfInterests, speed, radius, member, centralNode;
+var bubbleStage, bubbleLayer, navStage, skeletonLayer, navBubbleLayer, guideContainer, currLevel, numOfInterests, speed, radius, member, centralNode;
+var testText = "testing", testColor = "red", textColor = "black";
 
-navCanvas = document.getElementById("navCanvas");
-navScene = new createjs.Stage(navCanvas);
 
-var init = function(){
-	
-	//Set up createjs stages
-	bubbleCanvas = document.getElementById("myCanvas");
-	bubbleScene = new createjs.Stage(bubbleCanvas);
-	bubbleContainer = new createjs.Container();
-	bubbleScene.addChild(bubbleContainer);
-	navContainer = new createjs.Container();
-	navScene.addChild(navContainer);
-	guideContainer = new createjs.Container();
-	bubbleScene.addChild(guideContainer);
-	alert("Containers created");
+var testStages = function () {
+	var firstBubble = new bubble(testText, testColor, 350, 225, 1, 1);
+	alert(firstBubble);
+};
+
+var init = function () {
+
+//Set up easelJS stages
+bubbleStage = new createjs.Stage(document.getElementById("myCanvas"));
+navStage = new createjs.Stage(document.getElementById("navCanvas"));
+
+//Make 2 different layers for navStage, one rotating bubbleLayer
+skeletonLayer = new createjs.Container();
+navBubbleLayer = new createjs.Container();
+navStage.addChild(skeletonLayer, navBubbleLayer);
+
+bubbleLayer = new createjs.Container();
+bubbleStage.addChild(bubbleLayer);
 	
 	//Draw nav skeleton
-	initNav();
+	constructNavSkeleton();
+	testStages();
 	
 	//Set up facebook profile specific data
 	member = parseInt($('#user').html());
 	
 	//Initialize bubble canvas geometric variables
-	radius = bubbleCanvas.height*.13;
+	radius = bubbleStage.height*.13;
 	
 	//Set up easel ticker
 	createjs.Ticker.useRAF=true;
@@ -52,7 +56,7 @@ var init = function(){
 	
 };
 
-var initNav = function()
+var constructNavSkeleton = function()
 {
 	var nav1 = new createjs.Shape();
 	nav1.navIndex = 0;
@@ -89,26 +93,21 @@ var initNav = function()
 	lines.graphics.beginStroke("black");
 	lines.graphics.lineTo(nav1.xCoord,546);
 	
-	navLayer.addChild(lines);
-	navLayer.addChild(nav1);
-	navLayer.addChild(nav2);
-	navLayer.addChild(nav3);
-	navLayer.addChild(nav4);
-	
-	navScene.update();
+	skeletonLayer.addChild(lines, nav1, nav2, nav3, nav4);
 	navCircles= [nav1,nav2,nav3,nav4];
+	navStage.update();
 
 };
 
 var tickTock = function()
 {
 	
-	for(var x=0; x<bubbleContainer.getNumChildren(); x++)
+	for(var x=0; x<bubbleLayer.getNumChildren(); x++)
 	{	
-	bubbleContainer.getChildAt(x).rotation-= speed;
+	bubbleLayer.getChildAt(x).rotation-= speed;
 	}
-	bubbleContainer.rotation+= speed;
-	bubbleScene.update();
+	bubbleLayer.rotation+= speed;
+	bubbleStage.update();
 };
 
 //Author: Karsten Rabe
@@ -119,7 +118,7 @@ var getData = function(centralNode){
 		type: 'GET',
 		data: {parent:centralNode},
 		cache: false,
-		success: function (data) {alert(data); allData[0] = data; console.log(allData[0] = " " + allData[0][0][1]); bubbleContainer.mouseEnabled = true;},
+		success: function (data) {allData[centralNode] = data; console.log("alldata[centralNode] = " + allData[centralNode] + ". alldata[0][0][1] = " + allData[0][0][1]); bubbleContainer.mouseEnabled = true;},
 		error: function() {alert("getData didn't work");}
 	});
 };
