@@ -7,6 +7,8 @@ var bubbleColors = new Array("#808080","#e9afaf","#aade87","#afdde9","#e5d5ff","
 var textColors = new Array("#333333","#d35f8d","#00aa00","#216778","#bc5fd3","#6c535d","#d38d5f","#536c5d","#2c5aa0","#ab37c8","#2b1100","#d3bc5f","#7c916f","#5d536c","#d35fbc","#c87137","#89a02c","#6f918a","#6f6f91","#d35fbc","#c8ab37");
 var initial;
 var add;
+var currColor = bubbleColors[0];
+var currCenter = "Central";
 //Used to iterate through array of interests, starting with [0]
 var currInterest = 0;
 
@@ -52,6 +54,9 @@ var bubbleCalcMe = function(member,centralNode,init,nav)
 var bubbleGeom = function(nodeArr,me,init)
 {
 	allData = nodeArr;
+	if (nodeArr.length > 7){
+		radius -= 10;
+	};
     console.log("All Data: " + nodeArr);
 	initial = init;	
 	//console.log(nodeArr);
@@ -242,6 +247,10 @@ var bubbleGeom = function(nodeArr,me,init)
 		createBubble(xpos,-ypos,nodeArr[index],initial,me, false);
 		createBubble(-xpos,-ypos,nodeArr[index],initial,me, false);
 	}
+	if (nodeArr.length > 7){
+		radius += 10;
+	};
+	
 };
 
 //Author: Karsten Rabe
@@ -249,12 +258,24 @@ var bubbleGeom = function(nodeArr,me,init)
 //Iterate through array of colors so each bubble is different.
 var getNextColor = function(){
 	var numOfInterests = allData.length;
-	var currColor;
+	var colorID = 0;
 	
-	if (currInterest != numOfInterests){
-		currColor = currInterest;
+	if (currCenter == allData[0][1]){
+		currCenter = "";
 		currInterest += 1;
-		return bubbleColors[currColor];
+	    return currColor;	
+	}
+	else if (currInterest != numOfInterests){
+		colorID = currInterest;
+		currInterest += 1;
+		if(currInterest == 22 || colorID == 22){
+			colorID = 0;
+			currInterest = 0;
+			return bubbleColors[colorID];
+		}
+		else {
+			return bubbleColors[colorID];
+		}
 	}
 	else{
 		currInterest = 0;
@@ -262,10 +283,6 @@ var getNextColor = function(){
 	}
 };
 
-var getColor = function(circleID){
-	color = bubbleColors[allData[circleID][2]];
-	//alert(color);
-};
 
 var createBubble = function(x,y,t,init,me, isFirst)
 {
@@ -285,7 +302,6 @@ var createBubble = function(x,y,t,init,me, isFirst)
 	
 	var circle = new createjs.Shape();
 	var color = choice;
-	//alert("Color Chosen: " + color);
 	 
 	//updateNavColorAndText(color, allData[1][2], 1);
 	
@@ -303,7 +319,8 @@ var createBubble = function(x,y,t,init,me, isFirst)
 	
 	//console.log(color);
 	circle.color = color;
-	console.log(circle.color);
+	circle.name = t[1];
+	console.log("color: " + circle.color + " name: " + circle.name);
 	circle.graphics.beginFill(color).drawCircle(x, y, radius);
 
 
@@ -312,7 +329,7 @@ var createBubble = function(x,y,t,init,me, isFirst)
 	if(x==0&&y==0)
 	{}
 	else if(!me)
-	circle.addEventListener("click", function(event){bubbleContainer.mouseEnabled = false; bubbleCalc(t[0],false,false);  console.log("allData[0][1]: " + allData[0][1]); /*updateNavColorAndText(color, allData[0][1], currLevel+1);*/});
+	circle.addEventListener("click", function(event){bubbleContainer.mouseEnabled = false; currColor = event.target.color; currCenter = event.target.name; console.log("currInterest = " + currInterest); bubbleCalc(t[0],false,false);  console.log("allData[0][1]: " + allData[0][1] + 'currColor = ' + currColor); /*updateNavColorAndText(color, allData[0][1], currLevel+1);*/});
 	else if(!init)
 	circle.addEventListener("click",function(event){bubbleContainer.mouseEnabled = false; bubbleCalcMe(t[0],t[1],false,false);  console.log("allData[0]: " + allData[0]); /*updateNavColorAndText(color, allData[0], currLevel+1);*/});
 	if(add)
