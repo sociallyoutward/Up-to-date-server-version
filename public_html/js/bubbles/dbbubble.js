@@ -45,7 +45,7 @@ var bubbleCalcMe = function(member,centralNode,init,nav)
 		data: {parent:centralNode, member:member,initial:init},   //parent = window memberprofile.php    // member = id of user   
 		cache: false,
 		init:init,
-		success: function (data) {currCNode = centralNode; var initial=this.init; bubbleGeom(data,true,initial);bubbleContainer.mouseEnabled = true;},
+		success: function (data) {console.log("Data: " + data); currCNode = centralNode; var initial=this.init; bubbleGeom(data,true,initial);bubbleContainer.mouseEnabled = true;},
 		error: function () {bubbleGeom(null,true,true);}
  	});
  	
@@ -55,11 +55,10 @@ var bubbleGeom = function(nodeArr,me,init)
 {
 	allData = nodeArr;
 	if (nodeArr.length > 7){
-		radius -= 10;
+		radius -= 8;
 	};
-    console.log("All Data: " + nodeArr);
 	initial = init;	
-	//console.log(nodeArr);
+
 	if(!init){
 	    var num = nodeArr.length-1;
 	}    
@@ -122,7 +121,6 @@ var bubbleGeom = function(nodeArr,me,init)
 
 	else if(num==2)
 	{	
-		//console.log(index);
 		createBubble(xpos,ypos,nodeArr[index],initial,me, false);
 		ypos+= Math.abs(2*r);
 
@@ -248,7 +246,7 @@ var bubbleGeom = function(nodeArr,me,init)
 		createBubble(-xpos,-ypos,nodeArr[index],initial,me, false);
 	}
 	if (nodeArr.length > 7){
-		radius += 10;
+		radius += 8;
 	};
 	
 };
@@ -287,40 +285,20 @@ var getNextColor = function(){
 var createBubble = function(x,y,t,init,me, isFirst)
 {
 	
-	console.log("Data: " + t); 
-	
-	//console.log(index);
-	//console.log(t);
+
 	var ibc = new createjs.Container();
 	ibc.x = x;
 	ibc.y = y;
 	ibc.regX = x;
 	ibc.regY = y;
 
-	//var choice = Math.floor((Math.random()*bubbleColors.length));
 	var choice = getNextColor();
 	
 	var circle = new createjs.Shape();
 	var color = choice;
-	 
-	//updateNavColorAndText(color, allData[1][2], 1);
-	
-	/*if (!alreadySet){
-		alreadySet = true; 
-		if (whichPage == "memberprofile.php"){
-		    updateNavColorAndText(color, "Me", 1);
-		}
-		else {
-			updateNavColorAndText(color, "Central", 1);
-		};    
-	}; */
-	
-	
-	
-	//console.log(color);
+
 	circle.color = color;
 	circle.name = t[1];
-	console.log("color: " + circle.color + " name: " + circle.name);
 	circle.graphics.beginFill(color).drawCircle(x, y, radius);
 
 
@@ -329,9 +307,9 @@ var createBubble = function(x,y,t,init,me, isFirst)
 	if(x==0&&y==0)
 	{}
 	else if(!me)
-	circle.addEventListener("click", function(event){bubbleContainer.mouseEnabled = false; currColor = event.target.color; currCenter = event.target.name; console.log("currInterest = " + currInterest); bubbleCalc(t[0],false,false);  console.log("allData[0][1]: " + allData[0][1] + 'currColor = ' + currColor); /*updateNavColorAndText(color, allData[0][1], currLevel+1);*/});
+	circle.addEventListener("click", function(event){bubbleContainer.mouseEnabled = false; currColor = event.target.color; currCenter = event.target.name; bubbleCalc(t[0],false,false);});
 	else if(!init)
-	circle.addEventListener("click",function(event){bubbleContainer.mouseEnabled = false; bubbleCalcMe(t[0],t[1],false,false);  console.log("allData[0]: " + allData[0]); /*updateNavColorAndText(color, allData[0], currLevel+1);*/});
+	circle.addEventListener("click",function(event){bubbleContainer.mouseEnabled = false; bubbleCalcMe(t[0],t[1],false,false);});
 	if(add)
 	{
 		addToMe(t[0]);
@@ -399,7 +377,6 @@ var addToMe = function(iid)
 
 var finishAdding = function(iid)
 {
-	//console.log(iid);
 	var iid=iid;
 	var member = $('#user').html();
 	member = parseInt(member);

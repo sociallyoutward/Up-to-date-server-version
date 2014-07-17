@@ -21,8 +21,6 @@ var navColors = new Array;
 var member;
 var tester = 0;
 var whichPage = location.pathname.substring(location.pathname.lastIndexOf("/") + 1);
-//Set to true once page loads bubble web
-var alreadySet = false;
 var allData = new Array;
 var userData;
 
@@ -112,7 +110,16 @@ var initNav = function()
 	lines.graphics.beginStroke("black");
 	lines.graphics.lineTo(nav1.xCoord,604);
 	
-	navSkeleton.addChild(lines, nav1, nav2, nav3, nav4, nav5);
+	var instr = new createjs.Shape();
+	instr.graphics.setStrokeStyle(2);
+	instr.graphics.beginStroke("black").drawRect(226, 5, 108, 25);
+	
+	var text = new createjs.Text("Navigation", "18px segoe", "#7094DB");
+	text.x = 230;
+	text.y = 10;
+	
+	
+	navSkeleton.addChild(lines, nav1, nav2, nav3, nav4, nav5, instr, text);
 	
 	navScene.update();
 	navCircles= [nav1, nav2, nav3, nav4, nav5];
@@ -231,17 +238,16 @@ var setNavFinish = function(parentID)
 	if(whichPage=="chooseInterests.php")
 	{
 	    navCircles[currLevel-1].removeAllEventListeners("click");
-	    navCircles[currLevel-1].addEventListener("click",function(event){console.log("navIndex = " + event.target.navIndex); navClickHandler(event); bubbleCalc(parentID,c,true); console.log("allData[0][1]: " + allData[0][1]); /*if (allData[0][1][1] == "entertainment"){updateNavColorAndText(color, allData[2][1], currLevel+1);}; updateNavColorAndText(color, allData[1][1], currLevel+1); */});
+	    navCircles[currLevel-1].addEventListener("click",function(event){navClickHandler(event); bubbleCalc(parentID,c,true);});
 	}
 	else if(whichPage=="memberprofile.php")
 	{
-		//console.log("INITIAL:"+initial);
 		navCircles[currLevel-1].removeAllEventListeners("click");
-		navCircles[currLevel-1].addEventListener("click",function(event){navClickHandler(event); bubbleCalcMe(member,parentID,c,true); console.log("allData[0][1]: " + allData[0][1]); /*updateNavColorAndText(color, allData[0][1], currLevel+1);*/});
+		navCircles[currLevel-1].addEventListener("click",function(event){navClickHandler(event); bubbleCalcMe(member,parentID,c,true);});
 	}
 	else
 	{
-		//console.log(whichPage);
+		console.log("Error: wrong page: " + whichPage);
 	}
 	
 };
@@ -281,9 +287,7 @@ var navClickHandler = function(event)
 			if(i!=currLevel)
 			{
 			  navCircles[i].graphics.beginFill("white").drawCircle(300,navCircles[i].yCoord,25);
-			  
-			  //updateNavColorAndText("white", "", i);
-			  
+			  			  
 			  navScene.update();
 			};
 		};
