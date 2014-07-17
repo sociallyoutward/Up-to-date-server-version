@@ -33,12 +33,11 @@ var bubbleCalc = function(centralNode,init,nav)
 
 var bubbleCalcMe = function(member,centralNode,init,nav)
 {
-	console.log("Member:" +member+" CentralNode: " + centralNode + " Init: "+ init+" Nav: "+nav);
 	
 	if(!nav)
-	currLevel++;
+	    currLevel++;
 	if(!init)
-	setNav(centralNode,false);
+	    setNav(centralNode,false);
 	$.ajax('/php/m_is.php',
 	{
 		type: 'GET',
@@ -54,8 +53,7 @@ var bubbleCalcMe = function(member,centralNode,init,nav)
 var bubbleGeom = function(nodeArr,me,init)
 {
 	allData = nodeArr;
-	console.log("allData: " + allData);
-	
+
 	//Make bubbles smaller when there are a lot of nodes, so canvas is not cramped
 	if (nodeArr.length > 7){
 		radius -= 8;
@@ -98,15 +96,15 @@ var bubbleGeom = function(nodeArr,me,init)
 	}
 	else if(!initial)
 	{
-		console.log("nodeArr[index]: " + nodeArr[index]);
+        //First element in array is parent, central bubble
 	    index = 0;
-	    createBubble(0,0,nodeArr[index],initial,me);
+	    createBubble(0,0,nodeArr[index],initial,me, true);
 	}
 	else
 	{
 		//"ME"
 	    index = -1;
-	    createBubble(0,0,nodeArr[index],initial,me, true);
+	    createBubble(0,0,"Me",initial,me, true);
 	};
 
 	var r2 = Math.pow(r,2);
@@ -315,10 +313,16 @@ var createBubble = function(x,y,t,init,me, isFirst)
 
 	if(x==0&&y==0)
 	{}
-	else if(!me)
-	circle.addEventListener("click", function(event){bubbleContainer.mouseEnabled = false; currColor = event.target.color; currCenter = event.target.name; bubbleCalc(t[0],false,false);});
-	else if(!init)
-	circle.addEventListener("click",function(event){bubbleContainer.mouseEnabled = false; currColor = event.target.color; currCenter = event.target.name; bubbleCalcMe(t[0],t[1],false,false);});
+	else if(!me){
+	    circle.addEventListener("click", function(event){bubbleContainer.mouseEnabled = false; currColor = event.target.color; currCenter = event.target.name; bubbleCalc(t[0],false,false);});
+    }
+	else if(!init){
+		circle.addEventListener("click",function(event){bubbleContainer.mouseEnabled = false; currColor = event.target.color; currCenter = event.target.name; bubbleCalcMe(t[0],t[1],false,false);});
+	}
+	else{
+		alert("Problem...");
+	};
+	
 	if(add)
 	{
 		addToMe(t[0]);
@@ -327,7 +331,9 @@ var createBubble = function(x,y,t,init,me, isFirst)
 	ibc.addChild(circle);
 	
 	if(!me)
-	adjustFontSize(ibc,x,y,t[1],choice, color, isFirst);
+	{
+	    adjustFontSize(ibc,x,y,t[1],choice, color, isFirst);
+	}    
 	else if(!init)
 	{
 		$.ajax('/php/iNodes.php',
@@ -341,9 +347,10 @@ var createBubble = function(x,y,t,init,me, isFirst)
 	}
 	else
 	{
-	adjustFontSize(ibc,x,y,t,choice, color, isFirst);
-	initial = false;
-	}
+	    adjustFontSize(ibc,x,y,t,choice, color, isFirst);
+	    initial = false;
+	};
+	
 	bubbleContainer.addChild(ibc);
 	index++;
 };
