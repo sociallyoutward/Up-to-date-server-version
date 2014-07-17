@@ -45,7 +45,7 @@ var bubbleCalcMe = function(member,centralNode,init,nav)
 		data: {parent:centralNode, member:member,initial:init},   //parent = window memberprofile.php    // member = id of user   
 		cache: false,
 		init:init,
-		success: function (data) {console.log("Data: " + data); currCNode = centralNode; var initial=this.init; bubbleGeom(data,true,initial);bubbleContainer.mouseEnabled = true;},
+		success: function (data) {currCNode = centralNode; var initial=this.init; bubbleGeom(data,true,initial);bubbleContainer.mouseEnabled = true;},
 		error: function () {bubbleGeom(null,true,true);}
  	});
  	
@@ -54,21 +54,28 @@ var bubbleCalcMe = function(member,centralNode,init,nav)
 var bubbleGeom = function(nodeArr,me,init)
 {
 	allData = nodeArr;
+	console.log("allData: " + allData);
+	
+	//Make bubbles smaller when there are a lot of nodes, so canvas is not cramped
 	if (nodeArr.length > 7){
 		radius -= 8;
 	};
+	
 	initial = init;	
 
+    //If not initialized, number of bubbles is one less than nodeArray length
 	if(!init){
 	    var num = nodeArr.length-1;
 	}    
 	else if(nodeArr){
-	var num = nodeArr.length;
+	    var num = nodeArr.length;
 	};
 
+    //Clear canvas for new data to be populated
 	bubbleContainer.removeAllChildren();
 	bubbleContainer.rotation = 0;
 
+    //Set dimensions to start rotating canvas...
 	centerX = canvas.width*.5;
 	centerY = canvas.height*.5;
 	bubbleContainer.x=centerX;
@@ -76,28 +83,31 @@ var bubbleGeom = function(nodeArr,me,init)
 	guideContainer.x = centerX;
 	guideContainer.y = centerY;
 
+    //
 	r = radius-centerX+30;
 	var ang = (360/num)*(Math.PI/180);
 	
 	if(!me)
-	{
-	index = 0;
-	if(num==0)
-		add=true;
-	createBubble(0,0,nodeArr[index],initial,me, true);
-
-	
+	{   
+		//"Central"
+	    index = 0;
+	    if(num == 0){
+		    add = true;
+		};
+	    createBubble(0,0,nodeArr[index],initial,me, true);
 	}
 	else if(!initial)
 	{
-	index = 0;
-	createBubble(0,0,nodeArr[index],initial,me);
+		console.log("nodeArr[index]: " + nodeArr[index]);
+	    index = 0;
+	    createBubble(0,0,nodeArr[index],initial,me);
 	}
 	else
 	{
-	index = -1;
-	createBubble(0,0,"Me",initial,me, false);
-	}
+		//"ME"
+	    index = -1;
+	    createBubble(0,0,nodeArr[index],initial,me, true);
+	};
 
 	var r2 = Math.pow(r,2);
 	var a2 = 2*r2*(1-Math.cos(ang));
@@ -285,7 +295,6 @@ var getNextColor = function(){
 var createBubble = function(x,y,t,init,me, isFirst)
 {
 	
-
 	var ibc = new createjs.Container();
 	ibc.x = x;
 	ibc.y = y;
@@ -298,7 +307,7 @@ var createBubble = function(x,y,t,init,me, isFirst)
 	var color = choice;
 
 	circle.color = color;
-	circle.name = t[1];
+	circle.name = t;
 	circle.graphics.beginFill(color).drawCircle(x, y, radius);
 
 
@@ -309,7 +318,7 @@ var createBubble = function(x,y,t,init,me, isFirst)
 	else if(!me)
 	circle.addEventListener("click", function(event){bubbleContainer.mouseEnabled = false; currColor = event.target.color; currCenter = event.target.name; bubbleCalc(t[0],false,false);});
 	else if(!init)
-	circle.addEventListener("click",function(event){bubbleContainer.mouseEnabled = false; bubbleCalcMe(t[0],t[1],false,false);});
+	circle.addEventListener("click",function(event){bubbleContainer.mouseEnabled = false; currColor = event.target.color; currCenter = event.target.name; bubbleCalcMe(t[0],t[1],false,false);});
 	if(add)
 	{
 		addToMe(t[0]);
@@ -360,10 +369,10 @@ var adjustFontSize = function(ibContainer,x,y,tex,colorChoice, bubbleColor, isFi
  		t = t.substring(12, t.length-2);
  	    updateNavColorAndText(bubbleColor, t, currLevel+1);
  	}
- 	//alert("Text: " + t + " added to " + ibContainer);
 
 };
 
+//var iid = id number of chosen interest
 var addToMe = function(iid)
 {
 	picture=new Image();
@@ -375,6 +384,7 @@ var addToMe = function(iid)
     scene.addChild(bm);
 };
 
+//Var iid = id number of chosen interest
 var finishAdding = function(iid)
 {
 	var iid=iid;
@@ -385,8 +395,10 @@ var finishAdding = function(iid)
 			type: 'POST',
 			data: {mid:member,iid:iid},
 			cache: false,
-			success: function (data) {alert('ADDED');},
-			error: function () {alert('finishAdding() Problem');}
+			success: function (data) {alert('Successfully added interest ' + iid + " to member " + member);},
+			error: function () {alert("Error adding interest " + iid + " to member " + member);}
  		});
 };
+
  
+

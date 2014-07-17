@@ -123,17 +123,6 @@ var initNav = function()
 	
 	navScene.update();
 	navCircles= [nav1, nav2, nav3, nav4, nav5];
-	//setNav(1,true);
-	// if(whichPage=="bubble2.php")
-	// {
-	// 	setNav(1,true);
-
-	// }
-
-	// else if(whichPage=="memberProfile.php")
-	// {
-	// 	setNav(1,true);
-	// }
 
 
 };
