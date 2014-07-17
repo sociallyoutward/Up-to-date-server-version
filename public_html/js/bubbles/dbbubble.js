@@ -262,7 +262,7 @@ var bubbleGeom = function(nodeArr,me,init)
 //Author: Karsten Rabe
 
 //Iterate through array of colors so each bubble is different.
-var getNextColor = function(){
+var getNextColor2 = function(){
 	var numOfInterests = allData.length;
 	var colorID = 0;
 	
@@ -287,6 +287,16 @@ var getNextColor = function(){
 		currInterest = 0;
 		return bubbleColors[currInterest + 1];
 	}
+};
+
+var getNextColor = function(){
+	var color = currColor;
+	currInterest += 1;
+	if(currInterest > 20){
+		currInterest = 0;
+	};
+	currColor = bubbleColors[currInterest];
+	return color;
 };
 
 
@@ -314,10 +324,10 @@ var createBubble = function(x,y,t,init,me, isFirst)
 	if(x==0&&y==0)
 	{}
 	else if(!me){
-	    circle.addEventListener("click", function(event){bubbleContainer.mouseEnabled = false; currColor = event.target.color; currCenter = event.target.name; bubbleCalc(t[0],false,false);});
+	    circle.addEventListener("click", function(event){bubbleContainer.mouseEnabled = false; currColor = event.target.color; console.log("currColor: " + currColor); currCenter = event.target.name; bubbleCalc(t[0],false,false);});
     }
 	else if(!init){
-		circle.addEventListener("click",function(event){bubbleContainer.mouseEnabled = false; currColor = event.target.color; currCenter = event.target.name; bubbleCalcMe(t[0],t[1],false,false);});
+		circle.addEventListener("click",function(event){bubbleContainer.mouseEnabled = false; currColor = event.target.color; console.log("currColor: " + currColor); currCenter = event.target.name; bubbleCalcMe(t[0],t[1],false,false);});
 	}
 	else{
 		alert("Problem...");
@@ -330,10 +340,13 @@ var createBubble = function(x,y,t,init,me, isFirst)
 
 	ibc.addChild(circle);
 	
+	//This branch for chooseInterests page
 	if(!me)
 	{
-	    adjustFontSize(ibc,x,y,t[1],choice, color, isFirst);
+		console.log("Interest color: " + color);
+	    adjustFontSize(ibc,x,y,t[1],choice, currColor, isFirst);
 	}    
+	//This branch for non-central memberProfile bubbles
 	else if(!init)
 	{
 		$.ajax('/php/iNodes.php',
@@ -341,13 +354,15 @@ var createBubble = function(x,y,t,init,me, isFirst)
 			type: 'GET',
 			data: {id:t[1]},
 			cache: false,
-			success: function (data) {adjustFontSize(ibc,x,y,data.name,choice, color, isFirst);},
+			success: function (data) {console.log("Child interest color: (currColor)" + currColor); adjustFontSize(ibc,x,y,data.name,choice, currColor, isFirst);},
 			error: function () {alert('Central node provided does not exist.');}
  		});
 	}
 	else
+	//This branch for central node on memberProfile page
 	{
-	    adjustFontSize(ibc,x,y,t,choice, color, isFirst);
+		console.log("Central node currColor: " + currColor);
+	    adjustFontSize(ibc,x,y,t,choice, currColor, isFirst);
 	    initial = false;
 	};
 	
