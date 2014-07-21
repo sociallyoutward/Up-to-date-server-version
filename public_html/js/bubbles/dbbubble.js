@@ -8,9 +8,13 @@ var textColors = new Array("#333333","#d35f8d","#00aa00","#216778","#bc5fd3","#6
 var initial;
 var add;
 var currColor = bubbleColors[0];
+//working color is used to keep main central bubble and nav node synchronized
+var workingColor = currColor;
 var currCenter = "Central";
 //Used to iterate through array of interests, starting with [0]
 var currInterest = 0;
+
+var profileWebPopulated = false;
 
 var bubbleCalc = function(centralNode,init,nav)
 {
@@ -262,33 +266,8 @@ var bubbleGeom = function(nodeArr,me,init)
 //Author: Karsten Rabe
 
 //Iterate through array of colors so each bubble is different.
-var getNextColor2 = function(){
-	var numOfInterests = allData.length;
-	var colorID = 0;
-	
-	if (currCenter == allData[0][1]){
-		currCenter = "";
-		currInterest += 1;
-	    return currColor;	
-	}
-	else if (currInterest != numOfInterests){
-		colorID = currInterest;
-		currInterest += 1;
-		if(currInterest == 22 || colorID == 22){
-			colorID = 0;
-			currInterest = 0;
-			return bubbleColors[colorID];
-		}
-		else {
-			return bubbleColors[colorID];
-		}
-	}
-	else{
-		currInterest = 0;
-		return bubbleColors[currInterest + 1];
-	}
-};
 
+//return the currColor unless the color array is at the last index; in that case, return to beginning
 var getNextColor = function(){
 	var color = currColor;
 	currInterest += 1;
@@ -302,14 +281,13 @@ var getNextColor = function(){
 
 var createBubble = function(x,y,t,init,me, isFirst)
 {
-	
 	var ibc = new createjs.Container();
 	ibc.x = x;
 	ibc.y = y;
 	ibc.regX = x;
 	ibc.regY = y;
 
-	var choice = getNextColor();
+    var choice = getNextColor();
 	
 	var circle = new createjs.Shape();
 	var color = choice;
@@ -318,16 +296,17 @@ var createBubble = function(x,y,t,init,me, isFirst)
 	circle.name = t;
 	circle.graphics.beginFill(color).drawCircle(x, y, radius);
 
-
+	workingColor = color;
+  
 	circle.shadow = new createjs.Shadow("#80B3FF", 0, 0, 30);
 
 	if(x==0&&y==0)
 	{}
 	else if(!me){
-	    circle.addEventListener("click", function(event){bubbleContainer.mouseEnabled = false; currColor = event.target.color; console.log("currColor: " + currColor); currCenter = event.target.name; bubbleCalc(t[0],false,false);});
+	    circle.addEventListener("click", function(event){bubbleContainer.mouseEnabled = false; currColor = event.target.color; currCenter = event.target.name; bubbleCalc(t[0],false,false);});
     }
 	else if(!init){
-		circle.addEventListener("click",function(event){bubbleContainer.mouseEnabled = false; currColor = event.target.color; console.log("currColor: " + currColor); currCenter = event.target.name; bubbleCalcMe(t[0],t[1],false,false);});
+		circle.addEventListener("click",function(event){bubbleContainer.mouseEnabled = false; currColor = event.target.color; currCenter = event.target.name; bubbleCalcMe(t[0],t[1],false,false);});
 	}
 	else{
 		alert("Problem...");
@@ -343,8 +322,12 @@ var createBubble = function(x,y,t,init,me, isFirst)
 	//This branch for chooseInterests page
 	if(!me)
 	{
-		console.log("Interest color: " + color);
-	    adjustFontSize(ibc,x,y,t[1],choice, currColor, isFirst);
+		if(isFirst){
+    		adjustFontSize(ibc,x,y,t[1],choice, workingColor, isFirst);
+		}
+		else{
+			adjustFontSize(ibc,x,y,t[1],choice,currColor,false);
+		}
 	}    
 	//This branch for non-central memberProfile bubbles
 	else if(!init)
@@ -354,15 +337,14 @@ var createBubble = function(x,y,t,init,me, isFirst)
 			type: 'GET',
 			data: {id:t[1]},
 			cache: false,
-			success: function (data) {console.log("Child interest color: (currColor)" + currColor); adjustFontSize(ibc,x,y,data.name,choice, currColor, isFirst);},
+			success: function (data) {adjustFontSize(ibc,x,y,data.name,choice, color, isFirst);},
 			error: function () {alert('Central node provided does not exist.');}
  		});
 	}
 	else
 	//This branch for central node on memberProfile page
 	{
-		console.log("Central node currColor: " + currColor);
-	    adjustFontSize(ibc,x,y,t,choice, currColor, isFirst);
+	    adjustFontSize(ibc,x,y,t,choice, workingColor, isFirst);
 	    initial = false;
 	};
 	

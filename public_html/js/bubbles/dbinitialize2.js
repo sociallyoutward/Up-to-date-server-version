@@ -226,12 +226,12 @@ var setNavFinish = function(parentID)
 	if(whichPage=="chooseInterests.php")
 	{
 	    navCircles[currLevel-1].removeAllEventListeners("click");
-	    navCircles[currLevel-1].addEventListener("click",function(event){console.log("currColor: " + currColor); navClickHandler(event); bubbleCalc(parentID,c,true);});
+	    navCircles[currLevel-1].addEventListener("click",function(event){navClickHandler(event); bubbleCalc(parentID,c,true);});
 	}
 	else if(whichPage=="memberprofile.php")
 	{
 		navCircles[currLevel-1].removeAllEventListeners("click");
-		navCircles[currLevel-1].addEventListener("click",function(event){console.log("currColor: " + currColor); navClickHandler(event); bubbleCalcMe(member,parentID,c,true);});
+		navCircles[currLevel-1].addEventListener("click",function(event){navClickHandler(event); bubbleCalcMe(member,parentID,c,true);});
 	}
 	else
 	{
@@ -243,6 +243,7 @@ var setNavFinish = function(parentID)
 
 var navClickHandler = function(event)
 {
+
 	if(event.target.navIndex < currLevel)
 	{
 		currLevel = event.target.navIndex;
