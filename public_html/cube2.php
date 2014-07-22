@@ -1,13 +1,17 @@
-<?php
+ <?php
 if(!isset($_COOKIE['user']))
-    {
-	header('location: index.php');
-    }
+{
+    header('location: index.php');
+}
+
 require 'fbconfig.php';
 ?>
+
+<!DOCTYPE html>
 <html>
 <head>
-    <title>Neighbors Test</title>
+    <meta charset="utf-8">
+    <title>Cube 2</title>
     
     <!-- Bootstrap 3.1.1. Latest compiled and minified CSS -->
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
@@ -19,32 +23,25 @@ require 'fbconfig.php';
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
     
     <!-- Favicon -->
-    <link rel="icon" href="../assets/logo.png">
+    <link rel="icon" href="assets/logo.png">
     
     <script src=" http://code.createjs.com/createjs-2013.02.12.min.js"></script>
     <script type="text/javascript" src='../js/showMenu.js'></script>
     <script src="http://code.createjs.com/createjs-2013.02.12.min.js"></script>
     
-    <script src="feed/masonry.js"></script>
-    <script src="feed/masonryInit.js"></script>
-    <script src="feed/getPosts.js"></script>
-    <script src="feed/createPosts.js"></script>
-    <script src="feed/deletePosts.js"></script>
-    <script src="feed/populateFeed.js"></script>
     <script src="feed/tabs.js"></script>
-    <script src="neighbors/interestMatch2.js"></script>
+    <script src="js/interestMatch-cube2.js"></script>
+    <script src="js/hexaflip.js"></script>
+    <script src="js/cube.js"></script>
     
     <!-- Socially Outward Styles -->
     <link href="css/memberProfile.css" type="text/css" rel="stylesheet">
     <link href="css/navigationTemplate.css" type="text/css" rel="stylesheet">
     <link href="css/styles.css" type="text/css" rel="stylesheet">
     <link href="css/neighbors.css" rel="stylesheet" type="text/css">
-    
-    <!--
     <link href="css/cube.css" rel="stylesheet" type="text/css">
     <link href="css/hexaflip.css" rel="stylesheet" type="text/css">
-    -->
-
+    
 </head>
 
 <body>
@@ -57,15 +54,15 @@ require 'fbconfig.php';
 		  <span class="sr-only">Toggle navigation</span>
 		  <span><img src="../assets/toggle_down.png" height="15px"</span>
 		</button>
-		<a class="navbar-brand" href="../memberprofile.php"><img src="../assets/brand.png" height="60px" /></a>
+		<a class="navbar-brand" href="memberprofile.php"><img src="assets/brand.png" height="60px" /></a>
 	      </div>
 		
 	      <!-- Collect the nav links, forms, and other content for toggling -->
 	      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		<ul class="nav navbar-nav">
-		  <li><a href="../calendar/events.php">Events</a></li>
-		  <li><a href="../neighbors.php">Neighbors</a></li>
-		  <li><a href="../community.php">Community</a></li>
+		  <li><a href="calendar/events.php">Events</a></li>
+		  <li><a href="neighbors.php">Neighbors</a></li>
+		  <li><a href="community.php">Community</a></li>
 		  <li class="dropdown">
 		    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Bulletin Board <b class="caret"></b></a>
 		    <ul class="dropdown-menu">
@@ -77,7 +74,7 @@ require 'fbconfig.php';
 		    </ul>
 		  </li>
 		</ul>
-		<p class="navbar-text navbar-right hidden-sm hidden-xs">explore your community</p>
+		<p class="navbar-text navbar-right hidden-sm hidden-xs">changing social media</p>
 	      </div><!-- /.navbar-collapse -->
 	    </div><!-- /.container-fluid -->
 	</nav>
@@ -125,21 +122,28 @@ require 'fbconfig.php';
 	    <div id='user' hidden='true'><?php  print_r($_COOKIE['user']); ?></div>
 	    
 	    <!--Container for Neighbors Feed -->
-	    <div id='container' class='fix-margin'></div>
+	    <div id='container' class='fix-margin'>
+                <div class="cubeContainer">
+                    <div id="horz-controls">
+                        <div><img src="assets/left.png" height="30px" /></div>
+                        <div><img src="assets/right.png" height="30px" /></div>
+                    </div>
+                    <div id="horz-demo"></div>
+                </div>
+            </div>
 	    
 	</div><!-- end .row -->
     </div><!-- end .container-->
     
     <script>
-	var _gaq = _gaq || [];
-	_gaq.push(['_setAccount', 'UA-30392798-1']);
-	_gaq.push(['_trackPageview']);
-	(function() {
-	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	})();
-    </script> 
-
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-30392798-1']);
+        _gaq.push(['_trackPageview']);
+        (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
 </body>
 </html>

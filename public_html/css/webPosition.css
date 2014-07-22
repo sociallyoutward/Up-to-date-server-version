@@ -9,7 +9,6 @@ div.container{
 nav.navbar-fixed-top{
 	width:100%;
 	min-width:450px;
-	height:9%;
 	max-height:200px;	
 }
 
@@ -34,14 +33,14 @@ div.col-xs-10, div.col-sm-10, div.col-md-10, div.col-lg-10{
 	top:2%;
 	height:95%;
 	margin:0 2% 0 2%;
-	width:73%;
+	width:65%;
 }
 
 div.col-xs-2, div.col-sm-2, div.col-md-2, div.col-lg-2{
 	top:2%;
 	height:95%;
 	margin:0 2% 0 2%;
-	width:19%;
+	width:25%;
 }
 
 div#can{
@@ -52,12 +51,12 @@ div#can{
 canvas#myCanvas{
     position:relative;
     top:7%;
-    left:20%;
+    left:15%;
 }
 
 canvas#navCanvas{
 	position:relative;
-	left:5%;
+	left:-100px;
 	min-width:150px;
 	min-height:450px;
 }

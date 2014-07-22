@@ -55,7 +55,7 @@ require '../fbconfig.php';
 		  <span class="sr-only">Toggle navigation</span>
 		  <span><img src="../assets/toggle_down.png" height="15px"</span>
 		</button>
-		<a class="navbar-brand" href="../memberprofile.php"><img src="../assets/brand.png" height="45px" /></a>
+		<a class="navbar-brand" href="../memberprofile.php"><img src="../assets/brand.png" height="60px" /></a>
 	      </div>
 		
 	      <!-- Collect the nav links, forms, and other content for toggling -->
@@ -75,7 +75,7 @@ require '../fbconfig.php';
 		    </ul>
 		  </li>
 		</ul>
-		<p class="navbar-text navbar-right hidden-sm hidden-xs">changing social media</p>
+		<p class="navbar-text navbar-right hidden-sm hidden-xs">explore your community</p>
 	      </div><!-- /.navbar-collapse -->
 	    </div><!-- /.container-fluid -->
 	</nav>

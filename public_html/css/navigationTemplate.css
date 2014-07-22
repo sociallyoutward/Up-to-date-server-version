@@ -102,6 +102,7 @@ time, mark, audio, video {
   background: #BACBED;
   width: 45px;
   height: 100%;
+  top: 75px;
   position: fixed;
   padding-left: 20px;
   overflow: hidden;
@@ -136,6 +137,7 @@ filter        : blur(2px);
   position: fixed;
   padding-left: 20px;
   width: 245px;
+  top: 70px;
 }
 
 /* Bootstrap Nav */

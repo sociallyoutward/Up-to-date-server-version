@@ -1,4 +1,11 @@
-<!DOCTYPE html>
+<?php
+if(!isset($_COOKIE['user']))
+{
+    header('location: index.php');
+}
+
+require '../fbconfig.php';
+?>
 <html>
 <head>
 	<title>Event Calendar</title>
@@ -78,7 +85,7 @@
 		    </ul>
 		  </li>
 		</ul>
-		<p class="navbar-text navbar-right hidden-sm hidden-xs">changing social media</p>
+		<p class="navbar-text navbar-right hidden-sm hidden-xs">explore your community</p>
 	      </div><!-- /.navbar-collapse -->
 	    </div><!-- /.container-fluid -->
 	</nav>
@@ -91,8 +98,8 @@
 		<div class="col-xs-10">
 		    <div id="sideNav side-Navigation" class="sNav">
 			<div id='sNav-inner'>
-			<p id='name' class='pushover'><?php echo $fbfullname; ?></p>
-			<img id='profpic' class='spaceUnder pushover' src="https://graph.facebook.com/<?php echo $user; ?>/picture?height=350&width=350">
+			<a href='../memberprofile.php'><p id='name' class='pushover'><?php echo $fbfullname; ?></p></a>
+			<a href='../memberprofile.php'><img id='profpic' class='spaceUnder pushover' src="https://graph.facebook.com/<?php echo $user; ?>/picture?height=350&width=350"></a>
 			<ul class='po'>
 			    <li class='spaceUnder'><a href='../memberprofile.php'>Home</a></li>
 			    <li class='spaceUnder'><a href='#'>Messages</a></li>
@@ -110,7 +117,7 @@
 		<div class="col-md-9">
 			<!-- Name of Month -->
 			<div class="page-header"><h3></h3></div>
-			
+
 			<div id="calendar"></div>
 		</div>
 		<div class="col-md-3">
@@ -185,15 +192,16 @@
 				</div> <!-- end create event modal -->
 				
 				<hr>
-				<!-- div class="btn-group" -->
+				<div class="btn-group">
 					<button class="btn" data-calendar-nav="prev"><< Prev</button>
 					<button class="btn active" data-calendar-nav="today">Today</button>
 					<button class="btn" data-calendar-nav="next">Next >></button>
-				
+				</div>
 				<hr>
-				<!-- div class="btn-group" -->
+				<div class="btn-group">
 					<button class="btn active" data-calendar-view="month">Month</button>
 					<button class="btn" data-calendar-view="week">Week</button>
+				</div>
 			</div>
 		</div>
 		

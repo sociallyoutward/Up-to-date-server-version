@@ -2,15 +2,23 @@
 
 //Make body height and width equal to browser viewport
 
+var currentPage = location.pathname.substring(location.pathname.lastIndexOf("/") + 1);
+console.log(currentPage);
+
 $(document).ready(function(){
 	fitViewportToScreenSize();
-	fixNavCanvasSize();
+	if (currentPage == "chooseinterests.php" || "memberprofile.php"){
+		console.log("canvas size call!");
+		fixNavCanvasSize();
+	};	
 	
 });
 
 $(window).resize(function (){
 	fitViewportToScreenSize();
-	fixNavCanvasSize();
+	if (currentPage == "chooseinterests.php" || "memberprofile.php"){
+		fixNavCanvasSize();
+	};	
 	
 });
 

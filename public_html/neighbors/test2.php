@@ -120,19 +120,6 @@
 	    
 	    <!--Container for Neighbors Feed -->
 	    <div id='container' class='fix-margin'></div>
-	    </div>
-	    </div>
-	    
-	</div><!-- end .row -->
-    </div><!-- end .container-->
-    
-    <script>
-	var _gaq = _gaq || [];
-	_gaq.push(['_setAccount', 'UA-30392798-1']);
-	_gaq.push(['_trackPageview']);
-	(function() {
-	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-
 	    
 	</div><!-- end .row -->
     </div><!-- end .container-->

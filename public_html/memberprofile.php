@@ -1,9 +1,8 @@
- <?php
+<?php
 if(!isset($_COOKIE['user']))
-{
-    header('location: index.php');
-}
-
+    {
+	header('location: index.php');
+    }
 require 'fbconfig.php';
 ?>
 <html>
@@ -53,7 +52,7 @@ require 'fbconfig.php';
 		  <span class='sr-only'>Toggle navigation</span>
 		  <span><img src='assets/toggle_down.png' height='15px'</span>
 		</button>
-		<a class='navbar-brand' href='memberprofile.php'><img src='assets/brand.png' height='45px' /></a>
+		<a class='navbar-brand' href='memberprofile.php'><img src='assets/brand.png' height='60px' /></a>
 	      </div>
 		
 	      <!-- Collect the nav links, forms, and other content for toggling -->
@@ -73,7 +72,7 @@ require 'fbconfig.php';
 		    </ul>
 		  </li>
 		</ul>
-		<p class='navbar-text navbar-right hidden-sm hidden-xs'>changing social media</p>
+		<p class='navbar-text navbar-right hidden-sm hidden-xs'>explore your community</p>
 	      </div><!-- /.navbar-collapse -->
 	    </div><!-- /.container-fluid -->
 	</nav>
@@ -150,20 +149,9 @@ require 'fbconfig.php';
 			    <img src="assets/vs-icon.png">
 			</div>
 			<div class="bl-content">
-			    <div class="col-sm-5 col-xs-12">
-				<h2><?php echo $fbfullname; ?></h2>
+			    <h2><?php echo $fbfullname; ?> vs. Friend</h2>
 				<p>Beginner</p>
 				<p>Expert</p>
-			    </div>
-			    <div class="col-sm-2 col-xs-12" style="text-align: center;">
-				<p style="font-size: 3em;">VS.</h1>
-			    </div>
-			    <div class="col-sm-5 col-xs-12" style="text-align: right;">
-				<h2>Friend</h2>
-				<p>Beginner</p>
-				<p>Expert</p>
-			    </div>
-			</div>
 			<span class="bl-icon bl-icon-close">X</span>
 		    </section>
 		    <section>

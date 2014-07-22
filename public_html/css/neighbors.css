@@ -2,7 +2,7 @@
 /*  Friends and Neighbors Profile */
 
 .profileBox{
-    height: 242px;
+    height: 282px;
     width: 200px;
     margin-bottom: 15px;
     margin-right: 15px;
@@ -21,15 +21,7 @@
     border-top-right-radius: 5px;
 }
 
-.boxFooterFriend{
-    height: 40px;
-    background-color: #e2e2e2;
-    padding: 10px 5px 5px 15px;
-    border: solid 2px #ccc;
-    top: 201px;
-}
-
-/* .item = feed for user name and percent match */
+/* .item = user name*/
 .item{
     height: 40px;
     width: 200px;
@@ -40,12 +32,37 @@
 }
 
 .percent{
-    display: inline-block;
+    font-size: 20px;
+    height: 40px;
+    background-color: #e2e2e2;
+    padding: 10px 5px 5px 15px;
+    border: solid 2px #ccc;
+}
+
+.match{
+    width: 66px;
+    height: 20px;
+    display: inline;
+    background-color: red;
+}
+
+.2{
+    width: 67px;
+    height: 20px;
+    display: inline;
+    background-color: blue;
+}
+
+.3{
+    width: 66px;
+    height: 20px;
+    display: inline;
+    background-color: green;
 }
 
 .fix-margin{
-    margin-left: 45px;
-    margin-top: 15px;
+    margin-left: 50px;
+    margin-top: 20px;
 }
 
 #cube{
@@ -77,10 +94,5 @@
 
 .purple{
     background-color: #afafe9;
-}
-
-.percent{
-    font-size: 20px;
-    float: right;
 }
 

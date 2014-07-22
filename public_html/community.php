@@ -33,9 +33,6 @@ require 'fbconfig.php';
     <script src='maps_test/interestTree.js'></script>
     <script src="js/sideMenu.js"></script>
     
-    <!--Size document to browser viewport-->
-    <script src="js/windowDimensions.js" type="text/javascript"></script>
-    
     <!-- Socially Outward Styles -->
     <link href="css/memberProfile.css" type="text/css" rel="stylesheet">
     <link href="css/navigationTemplate.css" type="text/css" rel="stylesheet">
@@ -57,7 +54,7 @@ require 'fbconfig.php';
 		  <span class="sr-only">Toggle navigation</span>
 		  <span><img src="assets/toggle_down.png" height="15px"</span>
 		</button>
-		<a class="navbar-brand" href="memberprofile.php"><img src="assets/brand.png" height="45px" /></a>
+		<a class="navbar-brand" href="memberprofile.php"><img src="assets/brand.png" height="60px" /></a>
 	      </div>
 		
 	      <!-- Collect the nav links, forms, and other content for toggling -->
@@ -77,7 +74,7 @@ require 'fbconfig.php';
 		    </ul>
 		  </li>
 		</ul>
-		<p class="navbar-text navbar-right hidden-sm hidden-xs">changing social media</p>
+		<p class="navbar-text navbar-right hidden-sm hidden-xs">explore your community</p>
 	      </div><!-- /.navbar-collapse -->
 	    </div><!-- /.container-fluid -->
 	</nav>
@@ -107,13 +104,7 @@ require 'fbconfig.php';
 	    <div id='content' class="row">
                 <div class="row">
                     <div class="col-md-9">
-                        <div id="googleMap" style="width:126%;height:340%;"></div>
-                        <div id="interestList">
-                            <div id="div1"></div>
-                            <div id="div2"></div>
-                            <div id="div3"></div>
-                            <div id="div4"></div>
-                        </div>
+                        <div id="googleMap" style="width:126%;height:102%;"></div>
                     </div>
                     <div class="col-md-3">
                         

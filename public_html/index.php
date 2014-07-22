@@ -5,7 +5,6 @@ if(isset($_COOKIE['user']))
     header('location: memberprofile.php');
 }
 ?>
-<!-- Took out php here for testing MAMP -->
 
 <html xmlns:fb="http://www.facebook.com/2008/fbml">
 <head>
@@ -39,34 +38,28 @@ if(isset($_COOKIE['user']))
 </head>
 
 <body>
-	<div class="header row">
-		<img src="assets/socially.png" height="65px" /><img src="assets/outward.png" height="65px" />
+    <div class="header row">
+	<a href="memberprofile.php"><img src="assets/brand.png" height="80px" /></a>
+    </div>
+
+    <form id='login_form'>
+	
+	<div id='lText'>
+	    <input type="text" placeholder="username" id="username" class="lInput"></input>
+	    <input type="password" placeholder="password" id="password" class="lInput"></input>
+	</div>
+	<div id="lOther">
+	    <span id="kmli"><input type="checkbox" id='stayLoggedIn'> Keep me logged in</input></span>
+	    <a href="" id="fp">Forgot password?</a>
+	</div>
+	<div id="unplug">
+	    <input type="submit" value="unplug" id="up" class="subbutton"></input>
+	    <a href='newmember.php'><input type="button" value="create new account" id="up" class="subbutton"></input></a>
 	</div>
 	
-	<img src="assets/logo.png" height="100px" id="centerlogo" />
-	<form id='login_form'>
-		<div id='lText'>
-		    <input type="text" placeholder="username" id="username" class="lInput"></input>
-		    <input type="password" placeholder="password" id="password" class="lInput"></input>
-		</div>
-		<div id="lOther">
-		    <span id="kmli"><input type="checkbox" id='stayLoggedIn'>Keep me logged in</input></span>
-		    <a href="" id="fp">forgot password?</a>
-		</div>
-		<div id="unplug">
-		    <input type="submit" value="unplug" id="up" class="subbutton"></input>
-		    <a href='newmember.php'><input type="button" value="create new account" id="up" class="subbutton"></input></a>
-		</div>
-		
-		<!--Changed link for testing-->
+	<div class="centerButton"></div><a href="<?php echo $loginUrl; ?>"><div id="fb_button"><img src="assets/fb.png" style="height: 25px; margin-right: 10px; vertical-align: middle;" />Sign in with FaceBook</div></a></div>
+	
+    </form>
 
-		<a href="<?php echo $loginUrl; ?>"><img src = "assets/fb_login.png" id = 'fb_login'></a>
-	</form>
-	
-	
 </body>
 </html>
-
-
-<!-- Lucida sans
-Segoe print  -->
