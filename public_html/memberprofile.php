@@ -138,7 +138,9 @@ require 'fbconfig.php';
 				</div>
 			    </div>
 			    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-				    <canvas width='230px' height='580px' id='navCanvas'></canvas>
+				    <div id="navCanvasWrapper" style="position:absolute; top:0px;">
+				    	<canvas width='230px' height='580px' id='navCanvas'></canvas>
+				    </div>  
 			    </div>
 			</div>
 			<span class="bl-icon bl-icon-close">X</span>
