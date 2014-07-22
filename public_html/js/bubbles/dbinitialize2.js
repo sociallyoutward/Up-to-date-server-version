@@ -136,7 +136,7 @@ var setNav = function(interestID)
 		{
 			type: 'GET',
 			data: {child:interestID},
-			cache: false,
+			cache: true,
 			success: function (data) {setNavFinish(data);},
 			error: function () {alert('setNav() Problem');}
  		});

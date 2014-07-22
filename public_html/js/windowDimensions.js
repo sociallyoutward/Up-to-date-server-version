@@ -41,7 +41,7 @@ var fitViewportToScreenSize = function (){
 
 var fixNavCanvasSize = function(){
 	navCanvasHeight = $(window).height() * .88 + "px";
-	navCanvasWidth = $(window).width() * .18 + "px";
+	navCanvasWidth = $(window).width() * .27 + "px";
 	$("#navCanvas").attr({
 		height: navCanvasHeight,
 		width: navCanvasWidth

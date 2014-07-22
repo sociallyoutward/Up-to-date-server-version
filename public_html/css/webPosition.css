@@ -37,10 +37,11 @@ div.col-xs-10, div.col-sm-10, div.col-md-10, div.col-lg-10{
 }
 
 div.col-xs-2, div.col-sm-2, div.col-md-2, div.col-lg-2{
+	left:-50px;
 	top:2%;
 	height:95%;
 	margin:0 2% 0 2%;
-	width:25%;
+	width:27%;
 }
 
 div#can{
@@ -56,7 +57,7 @@ canvas#myCanvas{
 
 canvas#navCanvas{
 	position:relative;
-	left:-100px;
+	left:0%;
 	min-width:150px;
 	min-height:450px;
 }

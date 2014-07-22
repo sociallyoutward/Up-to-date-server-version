@@ -27,7 +27,7 @@ var bubbleCalc = function(centralNode,init,nav)
 	{
 		type: 'GET',
 		data: {parent:centralNode},
-		cache: false,
+		cache: true,
 		success: function (data) {currCNode = centralNode; bubbleGeom(data,false,false); allData[currCNode - 1] = data; bubbleContainer.mouseEnabled = true;},
 		error: function () {alert('Central node provided does not exist (BC)');}
  	});
@@ -46,7 +46,7 @@ var bubbleCalcMe = function(member,centralNode,init,nav)
 	{
 		type: 'GET',
 		data: {parent:centralNode, member:member,initial:init},   //parent = window memberprofile.php    // member = id of user   
-		cache: false,
+		cache: true,
 		init:init,
 		success: function (data) {currCNode = centralNode; var initial=this.init; bubbleGeom(data,true,initial);bubbleContainer.mouseEnabled = true;},
 		error: function () {bubbleGeom(null,true,true);}
@@ -336,7 +336,7 @@ var createBubble = function(x,y,t,init,me, isFirst)
 		{
 			type: 'GET',
 			data: {id:t[1]},
-			cache: false,
+			cache: true,
 			success: function (data) {adjustFontSize(ibc,x,y,data.name,choice, color, isFirst);},
 			error: function () {alert('Central node provided does not exist.');}
  		});
