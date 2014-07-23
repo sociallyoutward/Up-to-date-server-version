@@ -19,6 +19,7 @@ var currLevel = 0;
 
 //spacing for navigation so all visible on profile page compactness
 var navSpacing = 108;
+
 var navCircles;
 var navColors = new Array;
 var member;

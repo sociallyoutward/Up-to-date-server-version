@@ -33,7 +33,7 @@ div.col-xs-10, div.col-sm-10, div.col-md-10, div.col-lg-10{
 	top:2%;
 	height:95%;
 	margin:0 2% 0 2%;
-	width:65%;
+	width:70%;
 }
 
 div.col-xs-2, div.col-sm-2, div.col-md-2, div.col-lg-2{
@@ -41,7 +41,7 @@ div.col-xs-2, div.col-sm-2, div.col-md-2, div.col-lg-2{
 	top:2%;
 	height:95%;
 	margin:0 2% 0 2%;
-	width:27%;
+	width:22%;
 }
 
 div#navCanvasWrapper{
@@ -62,7 +62,7 @@ canvas#myCanvas{
 
 canvas#navCanvas{
 	position:relative;
-	left:-100px;
+	left: 0px;
 	min-width:150px;
 	min-height:450px;
 }

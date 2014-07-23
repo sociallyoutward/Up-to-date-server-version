@@ -60,8 +60,13 @@ var canvasUpForVisibility = function (){
 	console.log("canvas wrapper moved up...");
 };
 
+function getWindowHeight(){
+	var height = $(window).height();
+	console.log("height: " + height);
+	return height;
+};
 
-var getWindowWidth = function(){
+function getNavCanvasWidth() {
     navPos = $("#navCanvas").width();	
     return navPos;
 };
