@@ -16,6 +16,9 @@ var radius;
 var currText = "Socially Outward";
 var currCNode = 1;
 var currLevel = 0;
+
+//spacing for navigation so all visible on profile page compactness
+var navSpacing = 108;
 var navCircles;
 var navColors = new Array;
 var member;
@@ -67,6 +70,11 @@ function init(){
 
 var initNav = function()
 {
+	//Bunch nav together on profile page
+	if (whichPage == "memberprofile.php"){
+		navSpacing = 98;
+	};
+	
 	var nav1 = new createjs.Shape();
 	nav1.navIndex = 0;
 	nav1.yCoord = 77;
@@ -78,37 +86,37 @@ var initNav = function()
 	
 	var nav2 = new createjs.Shape();
 	nav2.navIndex = 1;
-	nav2.yCoord = 205;
+	nav2.yCoord = navSpacing + 102;
 	nav2.graphics.setStrokeStyle(3);
 	nav2.graphics.beginStroke("black").drawCircle(nav1.xCoord, nav2.yCoord, 25);
 	nav2.graphics.beginFill("white").drawCircle(nav1.xCoord, nav2.yCoord, 25);
 	
 	var nav3 = new createjs.Shape();
 	nav3.navIndex = 2;
-	nav3.yCoord = 333;
+	nav3.yCoord = 2 * navSpacing + 127;
 	nav3.graphics.setStrokeStyle(3);
 	nav3.graphics.beginStroke("black").drawCircle(nav1.xCoord, nav3.yCoord, 25);
 	nav3.graphics.beginFill("white").drawCircle(nav1.xCoord, nav3.yCoord, 25);
 	
 	var nav4 = new createjs.Shape();
 	nav4.navIndex = 3;
-	nav4.yCoord = 461;
+	nav4.yCoord = 3 * navSpacing + 152;
 	nav4.graphics.setStrokeStyle(3);
 	nav4.graphics.beginStroke("black").drawCircle(nav1.xCoord, nav4.yCoord, 25);
 	nav4.graphics.beginFill("white").drawCircle(nav1.xCoord, nav4.yCoord, 25);
 	
 	var nav5 = new createjs.Shape();
 	nav5.navIndex = 4;
-	nav5.yCoord = 589;
+	nav5.yCoord = 4 * navSpacing + 177;
 	nav5.graphics.setStrokeStyle(3);
 	nav5.graphics.beginStroke("black").drawCircle(nav1.xCoord, nav5.yCoord, 25);
 	nav5.graphics.beginFill("white").drawCircle(nav1.xCoord, nav5.yCoord, 25);
 	
 	var lines = new createjs.Shape();
 	lines.graphics.setStrokeStyle(3);
-	lines.graphics.moveTo(nav1.xCoord,100);
+	lines.graphics.moveTo(nav1.xCoord, navSpacing - 28);
 	lines.graphics.beginStroke("black");
-	lines.graphics.lineTo(nav1.xCoord,604);
+	lines.graphics.lineTo(nav1.xCoord, (navSpacing * 5 + 75));
 	
 	var instr = new createjs.Shape();
 	instr.graphics.setStrokeStyle(2);
@@ -155,16 +163,16 @@ var updateNavColorAndText = function(color,  nodeName, whichNode){
 	
 	//Where in tree? Set Y axis num pixels down based on which one.
 	if (whichNode == 2){       //1st child
-		yAxis = 128;
+		yAxis = navSpacing + 25;
 	}
 	else if (whichNode == 3){  //grand-child
-		yAxis = 256;
+		yAxis = 2 * navSpacing + 50;
 	}
 	else if (whichNode == 4){      //great grand-child
-		yAxis = 384;
+		yAxis = 3 * navSpacing + 75;
 	}
 	else if (whichNode == 5){      //great-great grand-child
-		yAxis = 512;
+		yAxis = 4 * navSpacing + 100;
 	};
 	
 	circle.graphics.beginFill(color).drawCircle(300, 77 + yAxis, 25);
