@@ -42,7 +42,7 @@ var fitViewportToScreenSize = function (){
 var fixNavCanvasSize = function(){
 	
     navCanvasHeight = $(window).height() * .80 + "px";
-	navCanvasWidth = $(window).width() * .27 + "px";
+	navCanvasWidth = $(window).width() * .22 + "px";
 	$("#navCanvas").attr({
 		height: navCanvasHeight,
 		width: navCanvasWidth,
@@ -54,7 +54,8 @@ var fixNavCanvasSize = function(){
 
 var canvasUpForVisibility = function (){
 	$("#navCanvasWrapper").css({
-		top: "-75px"
+		top: "-70px",
+		left: "-10px"
 	});
 	navScene.update();
 	console.log("canvas wrapper moved up...");

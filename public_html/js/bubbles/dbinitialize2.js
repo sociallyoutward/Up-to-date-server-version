@@ -18,7 +18,7 @@ var currCNode = 1;
 var currLevel = 0;
 
 //spacing for navigation so all visible on profile page compactness
-var navSpacing = 108;
+var navSpacing = 95;
 
 var navCircles;
 var navColors = new Array;
@@ -73,7 +73,7 @@ var initNav = function()
 {
 	//Bunch nav together on profile page
 	if (whichPage == "memberprofile.php"){
-		navSpacing = 98;
+		navSpacing = 90;
 	};
 	
 	var nav1 = new createjs.Shape();

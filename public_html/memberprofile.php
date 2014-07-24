@@ -151,6 +151,7 @@ require 'fbconfig.php';
 			    <img src="assets/vs-icon.png">
 			</div>
 			<div class="bl-content">
+				<img src='https://graph.facebook.com/<?php echo $user; ?>/picture?height=117&width=117'>
 			    <h2><?php echo $fbfullname; ?> vs. Friend</h2>
 				<p>Beginner</p>
 				<p>Expert</p>
