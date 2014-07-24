@@ -104,7 +104,7 @@ require '../fbconfig.php';
 			    <li class='spaceUnder'><a href='../memberprofile.php'>Home</a></li>
 			    <li class='spaceUnder'><a href='#'>Messages</a></li>
 			    <li class='spaceUnder'><a href='#'>Settings</a></li>
-			    <li class='spaceUnder'><a href='chooseInterests.php'>Choose Interests</a></li>
+			    <li class='spaceUnder'><a href='../chooseInterests.php'>Choose Interests</a></li>
 			    <li class='spaceUnder'><a href="<?php echo $logoutUrl; ?>">Logout</a></li>
 			</ul>
 		    </div>
