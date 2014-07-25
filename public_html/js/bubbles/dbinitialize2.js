@@ -119,16 +119,18 @@ var initNav = function()
 	lines.graphics.beginStroke("black");
 	lines.graphics.lineTo(nav1.xCoord, (navSpacing * 5 + 75));
 	
-	var instr = new createjs.Shape();
-	instr.graphics.setStrokeStyle(2);
-	instr.graphics.beginStroke("black").drawRect(226, 5, 108, 25);
+	//Commented out below adds "navigation" box above navBubbles
 	
-	var text = new createjs.Text("Navigation", "18px segoe", "#7094DB");
-	text.x = 230;
-	text.y = 10;
+	//var instr = new createjs.Shape();
+	//instr.graphics.setStrokeStyle(2);
+	//instr.graphics.beginStroke("black").drawRect(226, 5, 108, 25);
+	
+	//var text = new createjs.Text("Navigation", "18px segoe", "#7094DB");
+	//text.x = 230;
+	//text.y = 10;
 	
 	
-	navSkeleton.addChild(lines, nav1, nav2, nav3, nav4, nav5, instr, text);
+	navSkeleton.addChild(lines, nav1, nav2, nav3, nav4, nav5); //instr, text);
 	
 	navScene.update();
 	navCircles= [nav1, nav2, nav3, nav4, nav5];

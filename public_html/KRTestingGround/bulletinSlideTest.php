@@ -1,11 +1,4 @@
-<?php
-if(!isset($_COOKIE['user']))
-{
-    header('location: index.php');
-}
 
-require 'fbconfig.php';
-?>
 <html>
 <head>
     <title>Community</title>
@@ -22,16 +15,8 @@ require 'fbconfig.php';
     <!--Favicon-->
     <link rel="icon" href="assets/logo.png">
     
-    <script src="http://code.createjs.com/createjs-2013.02.12.min.js"></script>
-    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-    <script src="http://code.createjs.com/createjs-2013.02.12.min.js"></script>
-    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAvGfRfZeJAIYfrRoL9x3WvH1h0IFC7Zb8&libraries=places,geometry&sensor=false"></script>
-    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-    <script src="../maps_test/jtInitialize.js"></script>
-    <script src='../maps_test/jsonParseTest.js'></script>
-    <script src='../maps_test/interestTree.js'></script>
-    <script src="../js/sideMenu.js"></script>
+    <script src="../js/sideMenu.js" type="text/javascript"></script>
+    <script src="../js/slideBulletinMenu.js" type="text/javascript"></script>
     
     <!-- Socially Outward Styles -->
     <link href="../css/memberProfile.css" type="text/css" rel="stylesheet">
@@ -39,6 +24,7 @@ require 'fbconfig.php';
     <link href="../css/styles.css" type="text/css" rel="stylesheet">
     <link href="../css/accordion.css" type="text/css" rel="stylesheet">
     <link href="../css/mapLayout.css" type="text/css" rel="stylesheet">
+    <link href="../css/boxSlider.css" type="text/css" rel="stylesheet">
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
@@ -65,15 +51,13 @@ require 'fbconfig.php';
 		  <li><a href="community.php">Community</a></li>
 		  <li>
 		  	<div id="bulletinBox">
-			    <a href="#" class="">Bulletin Board <img src="../assets/right_arrow.png" height="12px" width="12px"></a>
-			    <div id="hiddenBoxMenu">
-				    <ul>
-				      <li><a href="feed/bulletin.php">Updates</a></li>
-				      <li class="divider"></li>
-				      <li><a href="feed/bulletin.php">Promotions</a></li>
-				      <li class="divider"></li>
-				      <li><a href="feed/bulletin.php">Events</a></li>
-				    </ul>
+		  		<div id="topBox">
+			    	<p id="appendTarget"style="color:white;">Bulletin Board <img src="../assets/right_arrow.png" height="12px" width="12px"></p>
+			    </div>	
+			    <div id="bottomBox">
+			        <p id="firstOne"><a href="../feed/bulletin.php">&nbsp;&nbsp;Updates</a></p>
+			        <p id="secondOne"><a href="../feed/bulletin.php">Promotions</a></p>
+			        <p id="thirdOne"><a href="../feed/bulletin.php">Events</a></p>
 			    </div>
 		    </div>
 		  </li>
@@ -107,9 +91,7 @@ require 'fbconfig.php';
 	    
 	    <div id='content' class="row">
                 <div class="row">
-                    <div class="col-md-9">
-                        <div id="googleMap" style="width:126%;height:102%;"></div>
-                    </div>
+
                     <div class="col-md-3">
                         
                         <!-- Accordion -->
@@ -350,36 +332,9 @@ require 'fbconfig.php';
                 </div><!-- end row -->
 	    </div><!-- end #content and end .row-->
 	    
-	    <div id='user' hidden='true'><?php  print_r($_COOKIE['user']); ?></div>
+	    <div id='user' hidden='true'></div>
 	    
 	</div><!-- end .container -->
-
-
-    <script>
-        function initMenu() {
-            $(".sub-menu").hide();
-            $(".current_page_item .sub-menu").show();
-            $('#menu li a').click(
-            
-            function () {
-                var checkElement = $(this).next();
-                if ((checkElement.is('ul')) && (checkElement.is(':visible'))) {
-                    $('#menu ul:visible').not(checkElement.parentsUntil('#menu')).slideUp('normal');
-                    checkElement.slideUp('normal');
-                    return false;
-                }
-                if ((checkElement.is('ul')) && (!checkElement.is(':visible'))) {
-                    console.log(checkElement.parentsUntil('#menu'));
-                    $('#menu ul:visible').not(checkElement.parentsUntil('#menu')).slideUp('normal');
-                    checkElement.slideDown('normal');
-                    return false;
-                }
-            });
-        }
-        $(function () {
-            initMenu();
-        });
-    </script>
 
 </body>
 </html>
