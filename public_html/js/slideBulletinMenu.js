@@ -10,10 +10,12 @@ function animate(){
 	$("#topBox").click( function(){
 	    if (!$("#bottomBox").is(":animated") && !$("#thirdOne").is(":animated")) {
             makeBoxVisible();
-            changeArrow();
+      
             setTimeout(function(){changeOpacity("#firstOne", 250);}, 300);
             setTimeout(function(){changeOpacity("#secondOne", 300);}, 425);
 			setTimeout(function(){changeOpacity("#thirdOne", 400);}, 600);
+			
+			changeArrow();
             
             //swellText('#firstOne', 100);
             //swellText('#secondOne', 100);
