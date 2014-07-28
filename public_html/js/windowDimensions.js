@@ -7,7 +7,6 @@ var currentPage = location.pathname.substring(location.pathname.lastIndexOf("/")
 $(document).ready(function(){
 	fitViewportToScreenSize();
 	fixNavCanvasSize();
-	console.log("Current page: " + currentPage);
 	if (currentPage == "memberprofile.php") {
 		canvasUpForVisibility();
 	}
@@ -34,7 +33,6 @@ var fitViewportToScreenSize = function (){
     winWidth = $(window).width() + "px";
     $("body").css("height", winHeight);
     $("body").css("width", winWidth);
-    console.log("Window size: " + winHeight + " by " + winWidth);
 
 };
 
@@ -48,7 +46,6 @@ var fixNavCanvasSize = function(){
 		width: navCanvasWidth,
     });
 	navScene.update();
-    console.log("navCanvasHeight: " + navCanvasHeight + ". navCanvasWidth: " + navCanvasWidth);
 	
 };
 
@@ -58,12 +55,10 @@ var canvasUpForVisibility = function (){
 		left: "-10px"
 	});
 	navScene.update();
-	console.log("canvas wrapper moved up...");
 };
 
 function getWindowHeight(){
 	var height = $(window).height();
-	console.log("height: " + height);
 	return height;
 };
 
