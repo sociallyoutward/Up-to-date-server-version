@@ -32,6 +32,7 @@ require 'fbconfig.php';
     <script src='maps_test/jsonParseTest.js'></script>
     <script src='maps_test/interestTree.js'></script>
     <script src="js/sideMenu.js"></script>
+    <script type="text/javascript" src="js/slideBulletinMenu.js"></script>
     
     <!-- Socially Outward Styles -->
     <link href="css/memberProfile.css" type="text/css" rel="stylesheet">
@@ -41,6 +42,7 @@ require 'fbconfig.php';
     <link href="css/mapLayout.css" type="text/css" rel="stylesheet">
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link type="text/css" href="css/bulletinBoxStyle.css" rel="stylesheet" />
 
 </head>
 
@@ -63,15 +65,17 @@ require 'fbconfig.php';
 		  <li><a href="calendar/events.php">Events</a></li>
 		  <li><a href="neighbors.php">Neighbors</a></li>
 		  <li><a href="community.php">Community</a></li>
-		  <li class="dropdown">
-		    <a href="bulletin.php" class="dropdown-toggle" data-toggle="dropdown">Bulletin Board <b class="caret"></b></a>
-		    <ul class="dropdown-menu">
-		      <li><a href="feed/bulletin.php">Updates</a></li>
-		      <li class="divider"></li>
-		      <li><a href="feed/bulletin.php">Promotions</a></li>
-		      <li class="divider"></li>
-		      <li><a href="feed/bulletin.php">Events</a></li>
-		    </ul>
+		  <li>
+		    <div id="bulletinBox">
+		  		<div id="topBox">
+			    	<p id="appendTarget"style="color:white;">Bulletin Board <img src="../assets/right_arrow.png" height="12px" width="12px"></p>
+			    </div>	
+			    <div id="bottomBox">
+			        <p id="firstOne"><a href="../feed/bulletin.php">&nbsp;Updates</a></p>
+			        <p id="secondOne"><a href="../feed/bulletin.php">Promotions</a></p>
+			        <p id="thirdOne"><a href="../feed/bulletin.php">Events</a></p>
+			    </div>
+		    </div>
 		  </li>
 		</ul>
 		<p class="navbar-text navbar-right hidden-sm hidden-xs">explore your community</p>
@@ -87,8 +91,8 @@ require 'fbconfig.php';
 		<div class="col-xs-10">
 		    <div id="sideNav side-Navigation" class="sNav">
 			<div id='sNav-inner'>
-			<p id='name' class='pushover'><?php echo $fbfullname; ?></p>
-			<img id='profpic' class='spaceUnder pushover' src="https://graph.facebook.com/<?php echo $user; ?>/picture?height=350&width=350">
+			<p id='name' class='pushover'><a href='memberprofile.php'><?php echo $fbfullname; ?></a></p>
+			<a href='memberprofile.php'><img id='profpic' class='spaceUnder pushover' src="https://graph.facebook.com/<?php echo $user; ?>/picture?height=350&width=350"></a>
 			<ul class='po'>
 			    <li class='spaceUnder'><a href='memberprofile.php'>Home</a></li>
 			    <li class='spaceUnder'><a href='messages.php'>Messages</a></li>

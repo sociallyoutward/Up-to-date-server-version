@@ -1,11 +1,5 @@
-<?php
-if(!isset($_COOKIE['user']))
-{
-    header('location: index.php');
-}
+<!DOCTYPE html>
 
-require 'fbconfig.php';
-?>
 <html>
 <head>
     <title>Choose Interests</title>
@@ -13,8 +7,9 @@ require 'fbconfig.php';
     <!-- Bootstrap 3.1.1. Latest compiled and minified CSS -->
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
     
-    <!-- JQuery -->
+    <!-- JQuery & jQuery UI-->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.1/jquery-ui.min.js" type="text/javascript"></script>
     
     <!-- Bootstrap 3.1.1 Latest compiled and minified JavaScript -->
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
@@ -25,6 +20,7 @@ require 'fbconfig.php';
     <link href="css/styles.css" type="text/css" rel="stylesheet">
     <link href='css/webPosition.css' type='text/css' rel='stylesheet'>
     <link type="text/css" href="css/bulletinBoxStyle.css" rel="stylesheet" />
+    <link type="text/css" href="css/plusStyle.css" rel="stylesheet" />    
     
     <script src=" http://code.createjs.com/createjs-2013.02.12.min.js"></script>
     <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
@@ -38,6 +34,7 @@ require 'fbconfig.php';
     <script src="js/sideMenu.js"></script>
     <script type="text/javascript" src="js/slideBulletinMenu.js"></script>
     <script type="text/javascript" src="js/ajaxCacher.js"></script>
+    <script src="js/addPos.js" type="text/javascript"></script>
     
     <!--Size document to browser viewport-->
     <script src="js/windowDimensions.js" type="text/javascript"></script>
@@ -51,7 +48,7 @@ require 'fbconfig.php';
 	      <div class="navbar-header">
 		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 		  <span class="sr-only">Toggle navigation</span>
-		  <span><img src="assets/toggle_down.png" height="15px"</span>
+		  <span><img src="assets/toggle_down.png" height="15px" /></span>
 		</button>
 		<a class="navbar-brand" href="memberprofile.php"><img src="assets/brand.png" height="45px" /></a>
 	      </div>
@@ -88,8 +85,8 @@ require 'fbconfig.php';
 		<div class="col-xs-10">
 		    <div id="sideNav side-Navigation" class="sNav">
 			<div id='sNav-inner'>
-			<p id='name' class='pushover'><?php echo $fbfullname; ?></p>
-			<img id='profpic' class='spaceUnder pushover' src="https://graph.facebook.com/<?php echo $user; ?>/picture?height=350&width=350">
+			<p id='name' class='pushover'>USER NAME HERE!!!</p>
+			<img id='profpic' class='spaceUnder pushover' src="http://images2.layoutsparks.com/1/200237/kitty-for-sienna-cat.jpg" height="150px" width="150px">
 			<ul class='po'>
 			    <li class='spaceUnder'><a href='memberprofile.php'>Home</a></li>
 			    <li class='spaceUnder'><a href='#'>Messages</a></li>
@@ -103,16 +100,30 @@ require 'fbconfig.php';
 	    </div><!-- end toggleSide -->
 	    
 	    <div id='content' class='row'>
+	    	<p id="tester1">Click here to toggle plus (for testing...)</p>
 		<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
-		    <div id='can'>
-			<canvas width='460px' height='500px' id='myCanvas'></canvas>
+		    <div id='can' style="border: 2px dotted blue;">
+		    	<div id="plusDiv">
+		    		<div id="wrap">
+			    		<img src="assets/add.png" />
+			    		<img src="assets/plusCornerLT.png" class="corner corner2" />
+			    		<img src="assets/plusCornerTR.png" class="corner corner3" />
+			    		<div class="pushy"></div>
+			    	</div>	
+		    		<div id="bottomStick">
+			    		<img src="assets/plusCornerBR.png" class="corner corner4" />
+			    		<img src="assets/plusCornerBL.png" class="corner corner1" />	
+			    	</div>		    		
+		    	</div>     <!-- 62 x 53 -->
+			<canvas width='460px' height='500px' id='myCanvas' style="border:1px solid green;"></canvas>
 		    </div>
 		</div>
 		<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-			<canvas width='230px' height='580px' id='navCanvas'></canvas>
+			<canvas width='230px' height='580px' id='navCanvas' style="border: 1px solid purple;"></canvas>
 		</div><!-- end #content and end .row-->
 	    
-	    <div id='user' hidden='true'><?php  print_r($_COOKIE['user']); ?></div>
+	    <div id='user' hidden='true'></div>
+	    <p id="para"></p>
 	    
 	</div><!-- end .row -->
     </div><!-- end .container-->

@@ -63,8 +63,8 @@ var createPosts = function(posts,tab,type){
 		var newPost = $('<div id=\'postID'+posts[p]['id']+'\' class=\'item\'></div>');
 	    newPost.data('pId',posts[p]['id']);
 	    //append title and content to posting div
-	    newPost.append('<p class="title">'+posts[p]['title']+'</p>');
-	    newPost.append('<p class="content">'+posts[p]['content']+'</p>');
+	    newPost.append('<div class="postTitle"><p class="title">'+posts[p]['title']+'</p></div>');
+	    newPost.append('<div class="postContent"><p class="content">'+posts[p]['content']+'</p></div>');
 	    //prepend the created div to the masonry setup
 	    containers[type].append(newPost).masonry('prepended',newPost);
 	}

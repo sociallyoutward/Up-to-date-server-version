@@ -33,6 +33,7 @@ require '../fbconfig.php';
 	<script src="deletePosts.js"></script>
 	<script src="populateFeed.js"></script>
 	<script src="tabs.js"></script>
+	<script type="text/javascript" src="../js/slideBulletinMenu.js"></script>
 	
 	<!--Size document to browser viewport-->
     <script src="js/windowDimensions.js" type="text/javascript"></script>
@@ -43,6 +44,7 @@ require '../fbconfig.php';
     <link href="../css/memberProfile.css" type="text/css" rel="stylesheet">
     <link href="../css/navigationTemplate.css" type="text/css" rel="stylesheet">
     <link href="../css/styles.css" type="text/css" rel="stylesheet">
+    <link type="text/css" href="../css/bulletinBoxStyle.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -64,15 +66,17 @@ require '../fbconfig.php';
 		  <li><a href="../calendar/events.php">Events</a></li>
 		  <li><a href="../neighbors.php">Neighbors</a></li>
 		  <li><a href="../community.php">Community</a></li>
-		  <li class="dropdown">
-		    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Bulletin Board <b class="caret"></b></a>
-		    <ul class="dropdown-menu">
-		      <li><a href="bulletin.php">Updates</a></li>
-		      <li class="divider"></li>
-		      <li><a href="bulletin.php">Promotions</a></li>
-		      <li class="divider"></li>
-		      <li><a href="bulletin.php">Events</a></li>
-		    </ul>
+		  <li>
+		    <div id="bulletinBox">
+		  		<div id="topBox">
+			    	<p id="appendTarget"style="color:white;">Bulletin Board <img src="../assets/right_arrow.png" height="12px" width="12px"></p>
+			    </div>	
+			    <div id="bottomBox">
+			        <p id="firstOne"><a href="../feed/bulletin.php">&nbsp;Updates</a></p>
+			        <p id="secondOne"><a href="../feed/bulletin.php">Promotions</a></p>
+			        <p id="thirdOne"><a href="../feed/bulletin.php">Events</a></p>
+			    </div>
+		    </div>
 		  </li>
 		</ul>
 		<p class="navbar-text navbar-right hidden-sm hidden-xs">explore your community</p>
@@ -88,8 +92,8 @@ require '../fbconfig.php';
 		<div class="col-xs-10">
 		    <div id="sideNav side-Navigation" class="sNav">
 			<div id='sNav-inner'>
-			<p id='name' class='pushover'><?php echo $fbfullname; ?></p>
-			<a href="../memberprofile.php"><img id='profpic' class='spaceUnder pushover' src="https://graph.facebook.com/<?php echo $user; ?>/picture?height=350&width=350"></a>
+			<p id='name' class='pushover'><a href='../memberprofile.php'><?php echo $fbfullname; ?></a></p>
+			<a href='../memberprofile.php'><img id='profpic' class='spaceUnder pushover' src="https://graph.facebook.com/<?php echo $user; ?>/picture?height=350&width=350"></a>
 			<ul class='po'>
 			    <li class='spaceUnder'><a href='../memberprofile.php'>Home</a></li>
 			    <li class='spaceUnder'><a href='messages.php'>Messages</a></li>
@@ -103,6 +107,8 @@ require '../fbconfig.php';
 	    </div><!-- end toggleSide -->
 	    
 	    <div id='content' class="row">
+		<hr>
+		*These buttons will not be visible to user* >> 
 		<!-- Button trigger modal -->
 		<button class="btn btn-primary btn-lg modal-toggle" data-toggle="modal" data-target="#myModal" id="button1">
 		  Create Update
@@ -116,6 +122,7 @@ require '../fbconfig.php';
 		<button class="btn btn-primary btn-lg" id="clear-posts">
 		  Clear Post Database
 		</button>
+		<hr>
 
 		<!-- Modal -->
 		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">

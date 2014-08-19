@@ -24,6 +24,10 @@ require 'fbconfig.php';
     <link href='css/styles.css' type='text/css' rel='stylesheet'>
     <link href='css/webPosition.css' type='text/css' rel='stylesheet'>
     <link href="css/boxTransition.css" type="text/css" rel="stylesheet"/>
+    <link href="css/SO-status.css" type="text/css" rel="stylesheet"/>
+    <link href="css/activityFeed.css" type="text/css" rel="stylesheet"/>
+    <link href="css/activitySidebar.css" type="text/css" rel="stylesheet">
+    <link type="text/css" href="css/bulletinBoxStyle.css" rel="stylesheet" />
     
     <link rel='icon' href='assets/logo.png'>
     
@@ -36,6 +40,7 @@ require 'fbconfig.php';
     <script src='js/clearInterests.js'></script>
     <script type='text/javascript' src='js/showMenu.js'></script>
     <script src='js/sideMenu.js'></script>
+    <script type="text/javascript" src="js/slideBulletinMenu.js"></script>
     <script src="js/modernizr.custom.js"></script>
     
     <!--Size document to browser viewport-->
@@ -61,15 +66,17 @@ require 'fbconfig.php';
 		  <li><a href='calendar/events.php'>Events</a></li>
 		  <li><a href='neighbors.php'>Neighbors</a></li>
 		  <li><a href='community.php'>Community</a></li>
-		  <li class='dropdown'>
-		    <a href='bulletin.php' class='dropdown-toggle' data-toggle='dropdown'>Bulletin Board <b class='caret'></b></a>
-		    <ul class='dropdown-menu'>
-		      <li><a href='feed/bulletin.php'>Updates</a></li>
-		      <li class='divider'></li>
-		      <li><a href='feed/bulletin.php'>Promotions</a></li>
-		      <li class='divider'></li>
-		      <li><a href='feed/bulletin.php'>Events</a></li>
-		    </ul>
+		  <li>
+		    <div id="bulletinBox">
+		  		<div id="topBox">
+			    	<p id="appendTarget"style="color:white;">Bulletin Board <img src="../assets/right_arrow.png" height="12px" width="12px"></p>
+			    </div>	
+			    <div id="bottomBox">
+			        <p id="firstOne"><a href="../feed/bulletin.php">&nbsp;Updates</a></p>
+			        <p id="secondOne"><a href="../feed/bulletin.php">Promotions</a></p>
+			        <p id="thirdOne"><a href="../feed/bulletin.php">Events</a></p>
+			    </div>
+		    </div>
 		  </li>
 		</ul>
 		<p class='navbar-text navbar-right hidden-sm hidden-xs'>explore your community</p>
@@ -143,7 +150,7 @@ require 'fbconfig.php';
 				    </div>  
 			    </div>
 			</div>
-			<span class="bl-icon bl-icon-close">X</span>
+			<span class="bl-icon bl-icon-close"><img src="assets/closeWindow.png" /></span>
 		    </section>
 		    <section id="bl-work-section">
 			<div class="bl-box">
@@ -151,31 +158,78 @@ require 'fbconfig.php';
 			    <img src="assets/vs-icon.png">
 			</div>
 			<div class="bl-content">
-				<img src='https://graph.facebook.com/<?php echo $user; ?>/picture?height=117&width=117'>
-			    <h2><?php echo $fbfullname; ?> vs. Friend</h2>
-				<p>Beginner</p>
-				<p>Expert</p>
-			<span class="bl-icon bl-icon-close">X</span>
+			    <h2>Socially Outward Status</h2>
+			    <div id="vs">VS.</div>
+			    <div class="SO-user">
+				<p><?php echo $fbfullname; ?>
+				<br><img src='https://graph.facebook.com/<?php echo $user; ?>/picture?height=117&width=117'></p>
+			    </div>
+			    <div class="SO-choose">
+				community or friend
+			    </div>
+			<span class="bl-icon bl-icon-close"><img src="assets/closeWindow.png" /></span>
 		    </section>
 		    <section>
 			<div class="bl-box">
 			    <h2 class="bl-icon bl-icon-blog">Recent Activity</h2>
 			    <img src="assets/feed-icon.png">
 			</div>
-			<div class="bl-content">
-			    <h2>What's the 411 in CH</h2>
-			    <div>
-				<h3>Random Thing</h3>
-				<p>extra deets</p>
-			        <hr />
+			<div class="bl-content overflow-scroll">
+			    <div class="row">
+				<div class="col-md-9">
+				    <h2>What's the 411 in Chapel Hill?</h2>
+				    <div class="activityBox">
+					<div class="activityIcon"><img src="assets/event-small.png" style="width: 50px;" /> </div>
+					<div class="activityFeed">
+					    <p>What
+					    <br>Who
+					    <br>When</p>
+					</div>
+				    </div>
+				    <div class="activityBox">
+					<div class="activityIcon">picture</div>
+					<div class="activityFeed">
+					    <p>What
+					    <br>Who
+					    <br>When</p>
+					</div>
+				    </div>
+				    <div class="activityBox">
+					<div class="activityIcon">picture</div>
+					<div class="activityFeed">
+					    <p>What
+					    <br>Who
+					    <br>When</p>
+					</div>
+				    </div>
+				    <div class="activityBox">
+					<div class="activityIcon">picture</div>
+					<div class="activityFeed">
+					    <p>What
+					    <br>Who
+					    <br>When</p>
+					</div>
+				    </div>
+				    <div class="activityBox">
+					<div class="activityIcon">picture</div>
+					<div class="activityFeed">
+					    <p>What
+					    <br>Who
+					    <br>When</p>
+					</div>
+				    </div>
+				</div>
+				<div class="col-md-3">
+				    <div class="activity-sidebar">
+					<button class="btn">web</button>
+					<button class="btn">event</button>
+					<button class="btn">message</button>
+				    </div>
+				</div>
 			    </div>
-			    <div>
-				<h3>Random Thing</h3>
-				<p>extra deets</p>
-				<hr />
-			    </div>
+			    
 			</div>
-			<span class="bl-icon bl-icon-close">X</span>
+			<span class="bl-icon bl-icon-close"><img src="assets/closeWindow.png" /></span>
 		    </section>
 		    <section>
 			<div class="bl-box">
@@ -183,10 +237,18 @@ require 'fbconfig.php';
 			    <img src="assets/explore-icon.png">
 			</div>
 			<div class="bl-content">
-			    <h2>Cool stuff in Raleigh</h2>
-			    <p>blah blah blah</p>
+			    <h2>What's Hot Nearby</h2>
+			    <hr>
+			    <h3><b>Promotion 1</b></h3>
+			    <p>Promotion from business feed</p>
+			    <hr>
+			    <h3><b>Activity 1</b></h3>
+			    <p>Local activity</p>
+			    <hr>
+			    <h3><b>Activity 2</b></h3>
+			    <p>Local activity</p>
 			</div>
-			<span class="bl-icon bl-icon-close">X</span>
+			<span class="bl-icon bl-icon-close"><img src="assets/closeWindow.png" /></span>
 		    </section>
 		</div>
 	    </div> <!-- end #content -->

@@ -27,6 +27,7 @@ require '../fbconfig.php';
     <script src="http://code.createjs.com/createjs-2013.02.12.min.js"></script>
     <script src="../js/clearInterests.js"></script>
     <script src="../js/sideMenu.js"></script>
+    <script type="text/javascript" src="../js/slideBulletinMenu.js"></script>
     
 	<link rel="stylesheet" href="components/bootstrap3/css/bootstrap.css">
 	<link rel="stylesheet" href="css/calendar.css">
@@ -37,6 +38,7 @@ require '../fbconfig.php';
     <link href="../css/navigationTemplate.css" type="text/css" rel="stylesheet">
     <link href="../css/styles.css" type="text/css" rel="stylesheet">
     <link href="../css/buttonSidebar.css" type="text/css" rel="stylesheet">
+   <link type="text/css" href="../css/bulletinBoxStyle.css" rel="stylesheet" />
 
 	<style type="text/css">
 		.btn-twitter {
@@ -74,15 +76,17 @@ require '../fbconfig.php';
 		  <li><a href="../calendar/events.php">Events</a></li>
 		  <li><a href="../neighbors.php">Neighbors</a></li>
 		  <li><a href="../community.php">Community</a></li>
-		  <li class="dropdown">
-		    <a href="bulletin.php" class="dropdown-toggle" data-toggle="dropdown">Bulletin Board <b class="caret"></b></a>
-		    <ul class="dropdown-menu">
-		      <li><a href="../feed/bulletin.php">Updates</a></li>
-		      <li class="divider"></li>
-		      <li><a href="../feed/bulletin.php">Promotions</a></li>
-		      <li class="divider"></li>
-		      <li><a href="../feed/bulletin.php">Events</a></li>
-		    </ul>
+		  <li>
+		    <div id="bulletinBox">
+		  		<div id="topBox">
+			    	<p id="appendTarget"style="color:white;">Bulletin Board <img src="../assets/right_arrow.png" height="12px" width="12px"></p>
+			    </div>	
+			    <div id="bottomBox">
+			        <p id="firstOne"><a href="../feed/bulletin.php">&nbsp;Updates</a></p>
+			        <p id="secondOne"><a href="../feed/bulletin.php">Promotions</a></p>
+			        <p id="thirdOne"><a href="../feed/bulletin.php">Events</a></p>
+			    </div>
+		    </div>
 		  </li>
 		</ul>
 		<p class="navbar-text navbar-right hidden-sm hidden-xs">explore your community</p>

@@ -101,16 +101,16 @@
 
 .bl-main > section .bl-icon-close {
 	position: absolute;
-	top: 20px;
-	right: 20px;
+	top: 5px;
+	right: 5px;
 	cursor: pointer;
 	z-index: 100;
 	opacity: 0;
 	pointer-events: none;
 }
 
-.bl-icon-close:before {
-	content: "\e005";
+.bl-main > section .bl-icon-close > img{
+	height: 25px;
 }
 
 .bl-content, 
@@ -124,6 +124,10 @@ div.bl-panel-items > div > div {
 	bottom: 15px;
 	padding: 0 20px;
 	overflow: hidden;
+}
+
+.overflow-scroll{
+    overflow: scroll;
 }
 
 /* Custom content */

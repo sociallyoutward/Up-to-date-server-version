@@ -10,7 +10,7 @@
 
 body{
     background-color: white;
-    font-family: 'capsuula', Tahoma, Arial, sans-serif;
+    font-family: 'lato', Tahoma, Arial, sans-serif;
     font-size: 20px;
 }
 
@@ -29,6 +29,17 @@ body{
     text-align: center;
 }
 
+@font-face {
+    font-family: 'lato';
+    src: url('fonts/Lato-Lig.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.lato{
+    font-family: 'lato';
+}
+
 .container{
     padding: 0;
     margin: 0;
@@ -38,6 +49,15 @@ body{
     margin-top: 80px;
     padding-left: 85px;
     display: block;
+}
+
+#name a{
+    color: white;
+}
+
+#name a:hover{
+    color: black;
+    text-decoration: none;
 }
 
 a:active,a:focus {
@@ -69,7 +89,7 @@ a:active,a:focus {
     background-color: white;
     border: 1px solid #ccc;
     border-bottom-color: #7094DB;
-    width: 108px;
+    width: 130x;
 }
 
 .nav-tabs>li>a:hover {

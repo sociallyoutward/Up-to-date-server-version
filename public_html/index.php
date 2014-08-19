@@ -39,7 +39,7 @@ if(isset($_COOKIE['user']))
 
 <body>
     <div class="header row">
-	<a href="memberprofile.php"><img src="assets/brand.png" height="80px" /></a>
+	<a href="memberprofile.php"><img src="assets/brand.png" height="90px" /></a>
     </div>
 
     <form id='login_form'>
@@ -57,7 +57,7 @@ if(isset($_COOKIE['user']))
 	    <a href='newmember.php'><input type="button" value="create new account" id="up" class="subbutton"></input></a>
 	</div>
 	
-	<div class="centerButton"></div><a href="<?php echo $loginUrl; ?>"><div id="fb_button"><img src="assets/fb.png" style="height: 25px; margin-right: 10px; vertical-align: middle;" />Sign in with FaceBook</div></a></div>
+	<div class="centerButton"></div><a href="<?php echo $loginUrl; ?>"><img src="assets/fb-login.png" style="width: 200px; margin-top: 20px" /></a></div>
 	
     </form>
 

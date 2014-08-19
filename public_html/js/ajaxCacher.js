@@ -10,37 +10,41 @@ var chooseInterestCache = {};    //cache 2
 //Check for cached data...   This will either be interestID, centralNode, t[1] etc.
 function checkIfCached(data, cache) {
 
-	var objectName = data;
-	var cacheName = objectName.toLowerCase();
+	var cacheName = data;
+
 	if (cache == "1"){
-		if (profileDataCache[cacheName] != "undefined"){
+		if (!profileDataCache[cacheName] == "undefined"){
 			//Not undefined, so fetch from cache
-			fetchFromCache(cacheName, 1);
+			return true;
 		}
 		else {
-			//undefined, so make ajax request and cache result
-			
+			return false;
 		};
 	}
 	else {
-		if (chooseInterestCache[cacheName] != "undefined"){
-			fetchFromCache(cacheName, 2);
+		if (!chooseInterestCache[cacheName] == "undefined"){
+			return true;
+		}
+		else{
+			return false;
 		};
 	};
+	
 };
 
 
 
 
 //store data in cache
-function cacheResults(data, cache){
+function cacheResults(name, data, cache){
 	//manipulate data somehow...       need to look at how requests are made, and if that will work as unique index names
 	if (cache == "1"){
-		profileDataCache[data.name] = data.name;     //maybe data name?
+		profileDataCache[name] = data;     //maybe data name?
 	}
 	else {
-		chooseInterestCache[data.name] = data.name;
+		chooseInterestCache[name] = data;
 	};
+	console.log("results cached...");
 };
 
 //Fetch from cache
@@ -51,6 +55,7 @@ function fetchFromCache(objectIndex, cache){
 	else{
 		return chooseInterestCache[objectIndex];
 	};
+	console.log("fetched from cache...");
 };
 
 

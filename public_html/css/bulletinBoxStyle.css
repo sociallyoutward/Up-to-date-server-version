@@ -1,5 +1,5 @@
 #bulletinBox{
-	width:435px;
+	width:475px;
 	height:50px;
 }
 
@@ -15,8 +15,9 @@
 }
 
 #topBox{
-	width:31%;
+	width:34%;
 	background-color:#7094DB;
+	border-right:1px solid #7094DB;
 }
 
 #topBox p, #bottomBox ul li{
@@ -30,9 +31,8 @@
 }
 
 #bottomBox{
-	border-radius:10px;
 	left:34%;
-	width:71%;
+	width:75%;
 	display:none;
 	opacity:0.0;
 	background-color:#BACBED;

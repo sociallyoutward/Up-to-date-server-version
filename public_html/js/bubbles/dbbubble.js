@@ -14,6 +14,8 @@ var currCenter = "Central";
 //Used to iterate through array of interests, starting with [0]
 var currInterest = 0;
 
+var ajaxData;
+
 var profileWebPopulated = false;
 
 var bubbleCalc = function(centralNode,init,nav)
@@ -23,15 +25,40 @@ var bubbleCalc = function(centralNode,init,nav)
 	currLevel++;
 	if(!init)
 	setNav(centralNode,false);
-	$.ajax('/php/iNodes.php',
-	{
-		type: 'GET',
-		data: {parent:centralNode},
-		cache: true,
-		success: function (data) {console.log("bubbleCalc 'data' : " + data); currCNode = centralNode; bubbleGeom(data,false,false); allData[currCNode - 1] = data; bubbleContainer.mouseEnabled = true;},
-		error: function () {alert('Central node provided does not exist (BC)');}
- 	});
+	
+	var isCached = checkIfCached(centralNode, 2);
+	console.log("is cached? " + isCached);
+	currCNode = centralNode;
+	
+	
+	if (isCached){
+		bubbleGeom(fetchFromCache(centralNode, 2), false, false); 
+		allData[currCNode - 1] = fetchFromCache(centralNode, 2); 
+	}
+	else{
+		ajaxRequest(centralNode);
+		console.log("JQuery active? = " + $.active);
+		allData[currCNode - 1] = ajaxData;
+	};
+		
+	bubbleContainer.mouseEnabled = true;	
  	
+};
+
+function ajaxRequest(get){
+	console.log("ajaxRequest function call...");
+	$.ajax('/php/iNodes.php',
+		{
+			type: 'GET',
+			data: {parent:get},
+			cache: true,
+			success: function (data) {console.log("data:" + data); setData(data); cacheResults(get, ajaxData, 2); bubbleGeom(ajaxData, false, false);},
+			error: function () {alert('Central node provided does not exist (BC)');}
+	 	});
+	 	
+	 	function setData(data){
+	 		ajaxData = data;
+        };
 };
 
 
@@ -58,7 +85,7 @@ var bubbleGeom = function(nodeArr,me,init)
 {
 	allData = nodeArr;
 
-	//Make bubbles smaller when there are a lot of nodes, so canvas is not cramped
+	//Make bubbles smaller when there are a lot of nodes, so bubbles don't overlay
 	if (nodeArr.length > 7){
 		radius -= 8;
 	};
@@ -103,12 +130,14 @@ var bubbleGeom = function(nodeArr,me,init)
         //First element in array is parent, central bubble
 	    index = 0;
 	    createBubble(0,0,nodeArr[index],initial,me, true);
+
 	}
 	else
 	{
 		//"ME"
 	    index = -1;
 	    createBubble(0,0,"Me",initial,me, true);
+
 	};
 
 	var r2 = Math.pow(r,2);
@@ -281,6 +310,7 @@ var getNextColor = function(){
 
 var createBubble = function(x,y,t,init,me, isFirst)
 {
+
 	var ibc = new createjs.Container();
 	ibc.x = x;
 	ibc.y = y;
@@ -314,7 +344,8 @@ var createBubble = function(x,y,t,init,me, isFirst)
 	
 	if(add)
 	{
-		addToMe(t[0]);
+		addToMe(t[0]);         //Here need to toggle div containing plus quadrant instead of painting it with createjs
+		//some function... togglePlus
 	}
 
 	ibc.addChild(circle);
@@ -374,6 +405,10 @@ var adjustFontSize = function(ibContainer,x,y,tex,colorChoice, bubbleColor, isFi
  	    updateNavColorAndText(bubbleColor, t, currLevel+1);
  	}
 
+};
+
+var togglePlus = function (){
+	
 };
 
 //var iid = id number of chosen interest

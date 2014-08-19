@@ -1,6 +1,10 @@
 
 /*  Friends and Neighbors Profile */
 
+body{
+    overflow: scroll;
+}
+
 .profileBox{
     height: 282px;
     width: 200px;
@@ -11,7 +15,8 @@
 
 .boxContent{
     height: 200px;
-    background-color: #afafe9;
+    border-left: solid 2px #ccc;
+    border-right: solid 2px #ccc;
 }
 
 .front img{
@@ -44,6 +49,18 @@
     height: 20px;
     display: inline;
     background-color: red;
+}
+
+.web{
+    display: inline;
+    float: center;
+    padding-left: 50px;
+}
+
+.bubble{
+    float: right;
+    padding-right: 10px;
+    display: inline;
 }
 
 .2{

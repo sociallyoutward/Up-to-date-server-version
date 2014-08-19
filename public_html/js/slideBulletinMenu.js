@@ -11,11 +11,11 @@ function animate(){
 	    if (!$("#bottomBox").is(":animated") && !$("#thirdOne").is(":animated")) {
             makeBoxVisible();
       
-            setTimeout(function(){changeOpacity("#firstOne", 250);}, 300);
-            setTimeout(function(){changeOpacity("#secondOne", 300);}, 425);
-			setTimeout(function(){changeOpacity("#thirdOne", 400);}, 600);
+            setTimeout(function(){changeOpacity("#firstOne", 250);}, 500);
+            setTimeout(function(){changeOpacity("#secondOne", 300);}, 625);
+			setTimeout(function(){changeOpacity("#thirdOne", 400);}, 775);
 			
-			changeArrow();
+			setTimeout(function(){changeArrow();}, 350);
             
             //swellText('#firstOne', 100);
             //swellText('#secondOne', 100);
@@ -31,7 +31,7 @@ function animate(){
 
 function makeBoxVisible() {
 	if ($("#bottomBox").css("opacity") == "0"){
-		$("#bottomBox").toggle(200, "linear");
+		$("#bottomBox").toggle(300, "swing");     //default params
 		$("#bottomBox").animate({
 		    opacity: 1.0
 	    }, 200, function(){
@@ -39,7 +39,7 @@ function makeBoxVisible() {
 	    });
 	}
 	else{
-		$("#bottomBox").toggle(10, "linear");
+		$("#bottomBox").toggle(100, "linear");
 		$("#bottomBox").animate({
 		    opacity: 0.0
 	    }, 10, function(){
@@ -92,7 +92,7 @@ function changeArrow(){
     else{
     	var string = "Bulletin Board" + originalImg.substr(0, 21) + 'right_arrow.png"' + " height='12px' " + " width='12px'>";
     	$("#appendTarget").html(string);
-    }
+    };
 };
 
 

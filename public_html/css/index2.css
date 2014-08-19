@@ -27,9 +27,8 @@ time, mark, audio, video {
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 1.1em;
     color: white;
-    font-family: 'capsuula', Tahoma, Arial, sans-serif;
+    font-family: 'lato', Tahoma, Arial, sans-serif;
     vertical-align: baseline;
 }
 
@@ -202,17 +201,4 @@ right: -50px;
 
     width: 67px;
 
-}
-
-#fb_button{
-    width: 362px;
-    background-color: #3c599f;
-    color: white;
-    border: 2px solid white;
-    border-radius: 2px;
-    text-align: center;
-    padding: 5px;
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
 }

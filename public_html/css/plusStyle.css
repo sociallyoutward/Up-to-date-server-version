@@ -1,0 +1,49 @@
+#plusDiv {
+	border:1px dashed black;
+	position:relative;
+	top:;
+	left:;
+	height:60px;
+	width:69px;
+    visibility:hidden;
+}
+
+#bottomStick, .pushy {
+	height:23px;
+}
+#bottomStick {
+	border:1px solid green;
+}
+
+#wrap {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -4em;
+
+}
+
+#plusDiv img {
+	position:relative;
+	top:0px;
+	left:0px;
+}
+
+.corner{
+	height:53px;
+	width:62px;
+	display:none;
+}
+
+.corner1, .corner2 {
+	float:left;
+}
+
+.corner3, .corner4 {
+	float:right;
+}
+
+.corner1, .corner4 {
+	position:absolute;
+	bottom:0px;
+}
