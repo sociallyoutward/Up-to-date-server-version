@@ -46,6 +46,10 @@ require 'fbconfig.php';
     <!--Size document to browser viewport-->
     <script src="js/windowDimensions.js" type="text/javascript"></script>
 </head>
+<?php
+// flush the buffer
+flush();
+?>
 
 <body>
     <div class='container'>

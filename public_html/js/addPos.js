@@ -53,9 +53,9 @@ function expansionHandler() {
 	$("#plusDiv").click(function(event){
 		if ($("#plusDiv").css("visibility") == "visible"){
 			console.log(event.target.nodeName + ' is indeed visible!!!');
-	        $("#plusDiv img").first().fadeTo("slow", 0.0, function(){
+	        $("#wholePlus").first().fadeTo("slow", 0.0, function(){
 	        	console.log("Animation complete, removing img");
-	        	$("#plusDiv img").first().remove();
+	        	$("#wholePlus").first().remove();
 	        });
 	        $(".corner").css("display", "inline");
 	        expandDiv();
@@ -71,14 +71,15 @@ function expandDiv() {
 	$("#plusDiv").animate({
 		height: "500px",
 		top: "80"
-	}, 800, function() {
-		// Animation complete.
+	}, 400, function() {
+		// Height animation complete.
 		$("#plusDiv").animate({
 			width: "500px"
-		}, 800, function() {
-		   //Animation complete
+		}, 400, function() {
+		   // Width animation complete
 		});
 	});
+	$(".interestItem").css("display", "block");
 };
 
 
