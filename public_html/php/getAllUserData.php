@@ -1,11 +1,16 @@
 <?php
 
 require once ('orm/m_i.php');
+require '../lib/FirePHPCore/fb.php';
 
 if ($_SERVER['REQUEST_METHOD'] == 'GET'){
 	if(!is_null($_GET['member'])){
         $mid = $_GET['member'];
-		$firephp->log("$mid: " + $mid);
+		FB::log('Log message');
+		FB::info('Info message');
+		FB::warn('Warn message');
+		FB::error('Error message');
+		FB::info("$mid: " + $mid);
 		$allData = m_i::findByMID($mid);
 		if (is_null($allData))
           {

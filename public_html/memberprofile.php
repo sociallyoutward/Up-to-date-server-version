@@ -37,6 +37,7 @@ require 'fbconfig.php';
     <script src='js/bubbles/dbinitialize2.js'></script>
     <script src='js/bubbles/resize.js'></script>
     <script src='js/bubbles/dbbubble.js'></script>
+    <script type="text/javascript" src="js/ajaxCacher.js"></script>
     <script src='js/clearInterests.js'></script>
     <script type='text/javascript' src='js/showMenu.js'></script>
     <script src='js/sideMenu.js'></script>

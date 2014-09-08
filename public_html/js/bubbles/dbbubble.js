@@ -25,24 +25,24 @@ var bubbleCalc = function(centralNode,init,nav)
 	currLevel++;
 	if(!init)
 	setNav(centralNode,false);
-	
-	var isCached = checkIfCached(centralNode, 2);
-	console.log("is cached? " + isCached);
+
+	var isCached = checkIfCached(centralNode + 'p');
+	alert("Is cached? " + isCached);
 	currCNode = centralNode;
 	
 	
 	if (isCached){
-		bubbleGeom(fetchFromCache(centralNode, 2), false, false); 
-		allData[currCNode - 1] = fetchFromCache(centralNode, 2); 
+		bubbleGeom(reformDataArray(getNamesByParent(centralNode)), false, false); 
+		setData(reformDataArray(getNamesByParent(centralNode)));
+		allData[currCNode - 1] = ajaxData; 
 	}
 	else{
 		ajaxRequest(centralNode);
-		console.log("JQuery active? = " + $.active);
 		allData[currCNode - 1] = ajaxData;
 	};
 		
 	bubbleContainer.mouseEnabled = true;	
- 	
+
 };
 
 function ajaxRequest(get){
@@ -52,7 +52,7 @@ function ajaxRequest(get){
 			type: 'GET',
 			data: {parent:get},
 			cache: true,
-			success: function (data) {console.log("data:" + data); setData(data); cacheResults(get, ajaxData, 2); bubbleGeom(ajaxData, false, false);},
+			success: function (data) {setData(data); parseData(data); bubbleGeom(ajaxData, false, false);},
 			error: function () {alert('Central node provided does not exist (BC)');}
 	 	});
 	 	
@@ -69,6 +69,10 @@ var bubbleCalcMe = function(member,centralNode,init,nav)
 	    currLevel++;
 	if(!init)
 	    setNav(centralNode,false);
+	    
+	    //check if data is cached...  central node?
+	    //console.log(checkIfCached(centralNode));
+	    
 	$.ajax('/php/m_is.php',
 	{
 		type: 'GET',
@@ -124,6 +128,7 @@ var bubbleGeom = function(nodeArr,me,init)
 		    add = true;
 		};
 	    createBubble(0,0,nodeArr[index],initial,me, true);
+	    
 	}
 	else if(!initial)
 	{
@@ -137,7 +142,6 @@ var bubbleGeom = function(nodeArr,me,init)
 		//"ME"
 	    index = -1;
 	    createBubble(0,0,"Me",initial,me, true);
-
 	};
 
 	var r2 = Math.pow(r,2);
@@ -363,14 +367,22 @@ var createBubble = function(x,y,t,init,me, isFirst)
 	//This branch for non-central memberProfile bubbles
 	else if(!init)
 	{
-		$.ajax('/php/iNodes.php',
-		{
-			type: 'GET',
-			data: {id:t[1]},
-			cache: true,
-			success: function (data) {console.log("member interests 'data.name' : " + data.name); adjustFontSize(ibc,x,y,data.name,choice, color, isFirst);},
-			error: function () {alert('Central node provided does not exist.');}
- 		});
+		var isCached = checkIfCached(t[1]);
+		if (isCached) {
+			var name = getNameById(t[1]);
+			console.log('fetched from cache: ' + name);
+			adjustFontSize(ibc,x,y,name,choice, color, isFirst);
+		}
+		else {
+			$.ajax('/php/iNodes.php',
+			{
+				type: 'GET',
+				data: {id:t[1]},
+				cache: true,
+				success: function (data) {storeIdName(data.id, data.name); console.log('results cached: ' + data.id + ", " + data.name); adjustFontSize(ibc,x,y,data.name,choice, color, isFirst);},
+				error: function () {alert('Central node provided does not exist.');}
+	 		});
+	 	};	
 	}
 	else
 	//This branch for central node on memberProfile page
