@@ -1,5 +1,5 @@
 <?php
-require 'fbconfig.php';   // Include fbconfig.php file
+require 'fbconfigNew.php';   // Include fbconfig.php file
 if(isset($_COOKIE['user']))
 {
     header('location: memberprofile.php');

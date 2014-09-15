@@ -3,7 +3,14 @@ if(!isset($_COOKIE['user']))
     {
 	header('location: index.php');
     }
-require 'fbconfig.php';
+session_start();
+
+
+if(!isset($_SESSION['fb_token']))
+{
+	include 'reauthenticate.php';
+}
+require 'getLogout.php';
 ?>
 <html>
 <head>
@@ -99,14 +106,14 @@ flush();
 		<div class='col-xs-10'>
 		    <div id='sideNav side-Navigation' class='sNav'>
 			<div id='sNav-inner'>
-			<p id='name' class='pushover'><?php echo $fbfullname; ?></p>
-			<img id='profpic' class='spaceUnder pushover' src='https://graph.facebook.com/<?php echo $user; ?>/picture?height=350&width=350'>
+			<p id='name' class='pushover'><?php echo $_SESSION["fb_name"]; ?></p>
+			<img id='profpic' class='spaceUnder pushover' src='https://graph.facebook.com/<?php echo $_SESSION["fb_id"]; ?>/picture?height=350&width=350'>
 			<ul class='po'>
 			    <li class='spaceUnder'><a href='memberprofile.php'>Home</a></li>
 			    <li class='spaceUnder'><a href='messages.php'>Messages</a></li>
 			    <li class='spaceUnder'><a href='settings.php'>Settings</a></li>
 			    <li class='spaceUnder'><a href='chooseInterests.php'>Choose Interests</a></li>
-			    <li class='spaceUnder'><a href='<?php echo $logoutUrl; ?>'>Logout</a></li>
+			    <li class='spaceUnder'><a href='<?php echo $logoutUrl?>'>Logout</a></li>
 			</ul>
 		    </div>
 		    </div>
@@ -121,8 +128,8 @@ flush();
 		<div class='col-xs-10'>
 		    <div id='sideNav side-Navigation' class='sNav'>
 			<div id='sNav-inner'>
-			<p id='name' class='pushover'><?php echo $fbfullname; ?></p>
-			<img id='profpic' class='spaceUnder pushover' src='https://graph.facebook.com/<?php echo $user; ?>/picture?height=350&width=350'>
+			<p id='name' class='pushover'><?php echo $_SESSION["fb_name"]; ?></p>
+			<img id='profpic' class='spaceUnder pushover' src='https://graph.facebook.com/<?php echo $_SESSION["fb_id"]; ?>/picture?height=350&width=350'>
 			<ul class='po'>
 			    <li class='spaceUnder'><a href='memberprofile.php'>Home</a></li>
 			    <li class='spaceUnder'><a href='messages.php'>Messages</a></li>
@@ -166,8 +173,8 @@ flush();
 			    <h2>Socially Outward Status</h2>
 			    <div id="vs">VS.</div>
 			    <div class="SO-user">
-				<p><?php echo $fbfullname; ?>
-				<br><img src='https://graph.facebook.com/<?php echo $user; ?>/picture?height=117&width=117'></p>
+				<p><?php echo $_SESSION['fb_name']; ?>
+				<br><img src='https://graph.facebook.com/<?php echo $_SESSION["fb_id"]; ?>/picture?height=117&width=117'></p>
 			    </div>
 			    <div class="SO-choose">
 				community or friend
