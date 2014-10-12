@@ -14,8 +14,7 @@ while($row = $result->fetch_assoc()){
         'id' => $row['id'],
         'title' => $row['title'],
         'url' => 'extension of ' . $row['id'],
-        'start' => strtotime($row['start']) . '000',
-        'end' => strtotime($row['end']) . '000'
+        'start' => strtotime($row['start']) . '000'
     );
 }
 
