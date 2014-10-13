@@ -756,7 +756,6 @@ if(!String.prototype.formatNum) {
 		var year, month, day;
 
 		if(this.options.day == 'now') {
-			var date = new Date();
 			year = date.getFullYear();
 			month = date.getMonth();
 			day = date.getDate();
@@ -859,6 +858,7 @@ if(!String.prototype.formatNum) {
 			case 'string':
 				if(source.length) {
 					loader = function() {
+						var d = new Date();
 						var events = [];
 						var params = {from: self.options.position.start.getTime(), to: self.options.position.end.getTime()};
 						if(browser_timezone.length) {
@@ -866,6 +866,7 @@ if(!String.prototype.formatNum) {
 						}
 						$.ajax({
 							url:      buildEventsUrl(source, params),
+							data: {}
 							dataType: 'json',
 							type:     'GET',
 							async:    false

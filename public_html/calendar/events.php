@@ -227,7 +227,7 @@ require '../fbconfig.php';
 				</div>
 			</div>
 		</div>
-	
+	    <!-- Bootstrap Calendar Scripts -->
 		<script type="text/javascript" src="components/jquery/jquery.min.js"></script>
 		<script type="text/javascript" src="components/underscore/underscore-min.js"></script>
 		<script type="text/javascript" src="components/bootstrap3/js/bootstrap.min.js"></script>
@@ -244,6 +244,7 @@ require '../fbconfig.php';
 		<script type="text/javascript" src="js/language/ru-RU.js"></script>
 		<script type="text/javascript" src="js/language/sv-SE.js"></script>
 		<script type="text/javascript" src="js/language/cs-CZ.js"></script>
+		<script type="text/javascript" src="js/yyyymmdd.js"></script>
 		<script type="text/javascript" src="js/calendar.js"></script>
 		<script type="text/javascript" src="js/app.js"></script>
 	

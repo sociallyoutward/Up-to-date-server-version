@@ -1,14 +1,14 @@
 (function($) {
 
 	"use strict";
-
+	var d  = new Date();
 	var options = {
 		events_source: 'events.json.php',
 		view: 'month',
 		tmpl_path: 'tmpls/',
 		tmpl_cache: false,
 		modal: '#events-modal',
-		day: '2013-03-12',
+		day: d.yyyymmdd(),
 		onAfterEventsLoad: function(events) {
 			if(!events) {
 				return;
