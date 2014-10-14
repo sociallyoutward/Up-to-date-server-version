@@ -29,20 +29,33 @@ $(function(){
 		{
 		startDate = new Date(startDate).toLocalISOString().slice(0, 19).replace('T', ' ');
 		endDate = new Date(endDate).toLocalISOString().slice(0, 19).replace('T', ' ');
-		console.log(startDate);
-		console.log(endDate);
 
-		// $.ajax('addEvent.php',
-		// {
-		// 	type: 'POST',
-		// 	data: {name:eventName, start:startDate, end:endDate},
-		// 	cache: true,
-		// 	success: function (data) {$('#refreshCal').trigger("click"); $('#myModal').modal('hide'); }, //dismiss modal
-		// 	error: function () {alert("Add failed");}
- 	// 	});
+		$.ajax('addEvent.php',
+		{
+			type: 'POST',
+			data: {name:eventName, start:startDate, end:endDate},
+			cache: true,
+			success: function (data) {$('#refreshCal').trigger("click"); $('#myModal').modal('hide'); }, //dismiss modal
+			error: function () {alert("Add failed");}
+ 		});
 		}
 
-	})
+	});
+
+	$('#deleteEvents').click(function(){
+		if(confirm("Are you sure you would like to delete all events from the calendar?"))
+		{
+			$.ajax('deleteAllEvents.php',
+			{
+				type: 'POST',
+				cache: true,
+				success: function (data) {$('#refreshCal').trigger("click");}, //dismiss modal
+				error: function () {alert("delete failed");}
+ 			});
+		}
+
+	});
+
 
 
 });

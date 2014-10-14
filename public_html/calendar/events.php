@@ -211,6 +211,7 @@ require '../fbconfig.php';
 					<button class="btn active" data-calendar-view="month">Month</button>
 					<button class="btn" data-calendar-view="week">Week</button>
 					<button class="btn" data-calendar-view="refresh" id="refreshCal">Refresh</button>
+					<button class="btn" id="deleteEvents">Delete All Events</button>
 				</div>
 			</div>
 		</div>
