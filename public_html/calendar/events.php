@@ -14,7 +14,7 @@ require '../fbconfig.php';
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
     
     <!-- JQuery -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     
     <!-- Bootstrap 3.1.1 Latest compiled and minified JavaScript -->
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
@@ -40,6 +40,13 @@ require '../fbconfig.php';
     <link href="../css/buttonSidebar.css" type="text/css" rel="stylesheet">
    <link type="text/css" href="../css/bulletinBoxStyle.css" rel="stylesheet" />
 
+   <!-- jQuery UI/Timepicker Addon -->
+   <script src="//code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+   <script src="js/timepicker.js"></script>
+   <script src="js/eventSubmit.js"></script>
+   <link href=" https://code.jquery.com/ui/1.11.1/themes/black-tie/jquery-ui.css" type="text/css" rel="stylesheet">
+   <link href="css/timepicker.css" type="text/css" rel="stylesheet">
+
 	<style type="text/css">
 		.btn-twitter {
 			padding-left: 30px;
@@ -49,8 +56,6 @@ require '../fbconfig.php';
 			background-position:  -21px -16px;
 		}
 	</style>
-	
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="ajax-form.js"></script>
 	
 	<!--Size document to browser viewport-->
@@ -147,17 +152,17 @@ require '../fbconfig.php';
 					<form role="form">
 						<div class="form-group">
 							<label>Name</label>
-							<input type="title" class="form-control" placeholder="Name">
+							<input id="eventName" type="text" class="form-control" placeholder="Name">
 						</div>
 					</form>
 					<form class="form-inline" role="form">
 						<div class="form-group">
-							<label>Date</label>
-							<input type="date" class="form-control" placeholder="date">
+							<label>Start</label>
+							<input id="startDate" type="datetime" class="form-control" placeholder="Start Date">
 						</div>
 						<div class="form-group">
-							<label>Time</label>
-							<input type="time" class="form-control" placeholder="time">
+							<label>End</label>
+							<input id="endDate" type="datetime" class="form-control" placeholder="End Date">
 						</div>
 						<div class="form-group">
 							<label>Type</label>
@@ -189,7 +194,7 @@ require '../fbconfig.php';
 				      
 				      <div class="modal-footer">
 					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-					<button type="submit" class="btn btn-primary">Submit Event</button>
+					<button id="submitEvent" type="button" class="btn btn-primary">Submit Event</button>
 				      </div>
 				    </div>
 				  </div>
@@ -228,7 +233,6 @@ require '../fbconfig.php';
 			</div>
 		</div>
 	    <!-- Bootstrap Calendar Scripts -->
-		<script type="text/javascript" src="components/jquery/jquery.min.js"></script>
 		<script type="text/javascript" src="components/underscore/underscore-min.js"></script>
 		<script type="text/javascript" src="components/bootstrap3/js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="components/jstimezonedetect/jstz.min.js"></script>
