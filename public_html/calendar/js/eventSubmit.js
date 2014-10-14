@@ -1,4 +1,5 @@
 $(function(){
+	//add datetimepicker to input fields
 	$('#startDate').datetimepicker({timeFormat: "hh:mm tt"});
 	$('#endDate').datetimepicker({timeFormat: "hh:mm tt"});
 
@@ -9,6 +10,7 @@ $(function(){
 		console.log(eventName);
 		var startDate = $('#startDate').val();
 		var endDate = $('#endDate').val();
+		//validate event entry form
 		if(eventName=="")
 		{
 			alert("Please enter an event name");
@@ -33,7 +35,7 @@ $(function(){
 		$.ajax('addEvent.php',
 		{
 			type: 'POST',
-			data: {name:eventName, start:startDate, end:endDate},   //parent = window memberprofile.php    // member = id of user   
+			data: {name:eventName, start:startDate, end:endDate},
 			cache: true,
 			success: function (data) {$('#myModal').modal('hide'); }, //dismiss modal
 			error: function () {alert("Add failed");}
