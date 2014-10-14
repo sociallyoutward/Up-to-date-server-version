@@ -194,7 +194,7 @@ require '../fbconfig.php';
 				      
 				      <div class="modal-footer">
 					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-					<button id="submitEvent" type="button" class="btn btn-primary">Submit Event</button>
+					<button id="submitEvent" type="button" class="btn btn-primary" data-calendar-nav="today">Submit Event</button>
 				      </div>
 				    </div>
 				  </div>
@@ -210,6 +210,7 @@ require '../fbconfig.php';
 				<div class="btn-group">
 					<button class="btn active" data-calendar-view="month">Month</button>
 					<button class="btn" data-calendar-view="week">Week</button>
+					<button class="btn" data-calendar-view="refresh" id="refreshCal">Refresh</button>
 				</div>
 			</div>
 		</div>

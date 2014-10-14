@@ -46,7 +46,10 @@
 	$('.btn-group button[data-calendar-view]').each(function() {
 		var $this = $(this);
 		$this.click(function() {
-			calendar.view($this.data('calendar-view'));
+			if($this.data('calendar-view')=="refresh")
+				calendar.view(calendar.options.view);
+			else
+				calendar.view($this.data('calendar-view'));
 		});
 	});
 

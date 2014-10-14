@@ -2,10 +2,10 @@ $(function(){
 	//add datetimepicker to input fields
 	$('#startDate').datetimepicker({timeFormat: "hh:mm tt"});
 	$('#endDate').datetimepicker({timeFormat: "hh:mm tt"});
-
+	
 
 	$('#submitEvent').click(function(){
-
+		$('#calendar').view('year');
 		var eventName = $('#eventName').val();
 		console.log(eventName);
 		var startDate = $('#startDate').val();
