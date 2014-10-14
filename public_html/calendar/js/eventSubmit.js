@@ -2,12 +2,10 @@ $(function(){
 	//add datetimepicker to input fields
 	$('#startDate').datetimepicker({timeFormat: "hh:mm tt"});
 	$('#endDate').datetimepicker({timeFormat: "hh:mm tt"});
-	
+
 
 	$('#submitEvent').click(function(){
-		$('#calendar').view('year');
 		var eventName = $('#eventName').val();
-		console.log(eventName);
 		var startDate = $('#startDate').val();
 		var endDate = $('#endDate').val();
 		//validate event entry form
@@ -29,17 +27,19 @@ $(function(){
 		}
 		else
 		{
-		startDate = new Date(startDate).toISOString().slice(0, 19).replace('T', ' ');
-		endDate = new Date(endDate).toISOString().slice(0, 19).replace('T', ' ');
+		startDate = new Date(startDate).toLocalISOString().slice(0, 19).replace('T', ' ');
+		endDate = new Date(endDate).toLocalISOString().slice(0, 19).replace('T', ' ');
+		console.log(startDate);
+		console.log(endDate);
 
-		$.ajax('addEvent.php',
-		{
-			type: 'POST',
-			data: {name:eventName, start:startDate, end:endDate},
-			cache: true,
-			success: function (data) {$('#myModal').modal('hide'); }, //dismiss modal
-			error: function () {alert("Add failed");}
- 		});
+		// $.ajax('addEvent.php',
+		// {
+		// 	type: 'POST',
+		// 	data: {name:eventName, start:startDate, end:endDate},
+		// 	cache: true,
+		// 	success: function (data) {$('#refreshCal').trigger("click"); $('#myModal').modal('hide'); }, //dismiss modal
+		// 	error: function () {alert("Add failed");}
+ 	// 	});
 		}
 
 	})
@@ -47,3 +47,20 @@ $(function(){
 
 });
 
+Date.prototype.toLocalISOString = function(){
+// ISO 8601
+var d = this
+, pad = function (n){return n<10 ? '0'+n : n}
+, tz = d.getTimezoneOffset() //mins
+, tzs = (tz>0?"-":"+") + pad(parseInt(tz/60))
+if (tz%60 != 0)
+tzs += pad(tz%60)
+if (tz === 0) // Zulu time == UTC
+tzs = 'Z'
+return d.getFullYear()+'-'
++ pad(d.getMonth()+1)+'-'
++ pad(d.getDate())+'T'
++ pad(d.getHours())+':'
++ pad(d.getMinutes())+':'
++ pad(d.getSeconds()) + tzs
+}
