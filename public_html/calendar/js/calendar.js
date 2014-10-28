@@ -866,7 +866,7 @@ if(!String.prototype.formatNum) {
 						}
 						$.ajax({
 							url:      buildEventsUrl(source, params),
-							data: {}
+							data: {},
 							dataType: 'json',
 							type:     'GET',
 							async:    false

@@ -2,8 +2,14 @@
 
 	"use strict";
 	var d  = new Date();
+	var curURL = document.URL;
+	var whichpage = curURL.substring(curURL.lastIndexOf("/")+1,curURL.lastIndexOf("."));
+	var urlAddon = "main";
+	if(whichpage=="events")
+		urlAddon = "main";
+
 	var options = {
-		events_source: 'events.json.php',
+		events_source: 'events.json.php?cal='+urlAddon,
 		view: 'month',
 		tmpl_path: 'tmpls/',
 		tmpl_cache: false,

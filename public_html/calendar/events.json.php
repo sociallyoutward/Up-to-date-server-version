@@ -4,13 +4,21 @@ include "../dbconfig.php";
 
 $from = $_REQUEST['from']/1000;
 $to = $_REQUEST['to']/1000;
+$whichCal = $_REQUEST['cal'];
+
 
 //prep dates for database entry
 $startDate = $connection->real_escape_string(date('Y-m-d', $from));
 $endDate = $connection->real_escape_string(date('Y-m-d', $to));
 
-
-$sql   = "SELECT * FROM Event WHERE `start` BETWEEN '$startDate' and '$endDate'";
+if($whichCal=="main")
+{
+	$sql = "SELECT * FROM Event WHERE `start` BETWEEN '$startDate' and '$endDate'";
+}
+else if(is_numeric($whichCal))
+{
+	$sql = "SELECT * FROM Event WHERE `start` BETWEEN '$startDate' and '$endDate'"; //pull from user-event table
+}
 $out = array();
 $result = $connection->query($sql);
 
@@ -19,7 +27,7 @@ while($row = $result->fetch_assoc()){
     $out[] = array(
         'id' => $row['id'],
         'title' => $row['title'],
-        'url' => 'extension of ' . $row['id'],
+        'url' => 'eventpage.php?id='. $row['id'],
         'class' =>'event-success',
         'start' => strtotime($row['start']) . '000',
         'end' => strtotime($row['end']) . '000'
