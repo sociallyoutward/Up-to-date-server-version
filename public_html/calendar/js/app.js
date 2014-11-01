@@ -7,6 +7,8 @@
 	var urlAddon = "main";
 	if(whichpage=="events")
 		urlAddon = "main";
+	else if(whichpage=="mycal")
+		urlAddon = //**finish this
 
 	var options = {
 		events_source: 'events.json.php?cal='+urlAddon,
