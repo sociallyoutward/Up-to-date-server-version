@@ -8,6 +8,10 @@ $(function(){
 		var eventName = $('#eventName').val();
 		var startDate = $('#startDate').val();
 		var endDate = $('#endDate').val();
+		var pubpriv = $('#pubpriv').val();
+		var description = $('#description').val();
+		var interest = $('#interest').val();		
+
 		//validate event entry form
 		if(eventName=="")
 		{
@@ -25,6 +29,10 @@ $(function(){
 		{
 			alert("Please select an end date that is after the start date (time included)")
 		}
+		else if(description=="")
+		{
+			alert("Please enter an event description");
+		}
 		else
 		{
 		startDate = new Date(startDate).toLocalISOString().slice(0, 19).replace('T', ' ');
@@ -33,7 +41,7 @@ $(function(){
 		$.ajax('addEvent.php',
 		{
 			type: 'POST',
-			data: {name:eventName, start:startDate, end:endDate},
+			data: {name:eventName, start:startDate, end:endDate, description:description, pubpriv:pubpriv, interest:interest},
 			cache: true,
 			success: function (data) {$('#refreshCal').trigger("click"); $('#myModal').modal('hide'); }, //dismiss modal
 			error: function () {alert("Add failed");}

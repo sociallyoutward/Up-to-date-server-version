@@ -166,7 +166,7 @@ require '../fbconfig.php';
 						</div>
 						<div class="form-group">
 							<label>Type</label>
-							<select class="form-control">
+							<select class="form-control" id="pubpriv">
 							<option>Public</option>
 							<option>Private</option>
 						      </select>
@@ -176,16 +176,16 @@ require '../fbconfig.php';
 					<form>
 						<div class="form-group">
 							<label>Description</label>
-							<textarea type="text" class="form-control" rows="3"></textarea>
+							<textarea type="text" class="form-control" rows="3" id="description"></textarea>
 						</div>
 						<div class="form-group">
 							<label for="exampleInputPassword1">Interest</label>
-							<select class="form-control">
+							<select class="form-control" id="interest">
 							<option>Entertainment</option>
 							<option>Sports</option>
 							<option>Recreational Activities</option>
-							<option>Food & Beverage</option>
-							<option>Arts, Crafts, & Hobbies</option>
+							<option>Food &amp; Beverage</option>
+							<option>Arts, Crafts, &amp; Hobbies</option>
 							<option>Seasonal</option>
 						      </select>
 						</div>
