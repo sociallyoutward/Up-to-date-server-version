@@ -40,6 +40,9 @@ require '../fbconfig.php';
     <link href="../css/buttonSidebar.css" type="text/css" rel="stylesheet">
    <link type="text/css" href="../css/bulletinBoxStyle.css" rel="stylesheet" />
 
+   <!-- SO Calendar scripts -->
+   <script src="js/atmc.js"></script>
+
    <!-- jQuery UI/Timepicker Addon -->
    <script src="//code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
    <script src="js/timepicker.js"></script>
@@ -63,6 +66,7 @@ require '../fbconfig.php';
 	
 </head>
 <body>
+<div hidden="true" id="userid"><?php echo $_COOKIE['user'];?></div>
 <div class="container">
 	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 	    <div class="container-fluid">
@@ -227,6 +231,7 @@ require '../fbconfig.php';
 						<h4 class="modal-title">Event</h4>
 					</div>
 					<div class="modal-body" style="height: 400px">
+						
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

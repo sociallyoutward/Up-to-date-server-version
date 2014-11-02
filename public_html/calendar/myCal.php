@@ -63,6 +63,7 @@ require '../fbconfig.php';
 	
 </head>
 <body>
+<div hidden="true" id="userid"><?php echo $_COOKIE['user'];?></div>
 <div class="container">
 	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 	    <div class="container-fluid">

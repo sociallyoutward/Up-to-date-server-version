@@ -4,11 +4,13 @@
 	var d  = new Date();
 	var curURL = document.URL;
 	var whichpage = curURL.substring(curURL.lastIndexOf("/")+1,curURL.lastIndexOf("."));
+
 	var urlAddon = "main";
 	if(whichpage=="events")
 		urlAddon = "main";
-	else if(whichpage=="mycal")
-		urlAddon = //**finish this
+	else if(whichpage=="myCal")
+		urlAddon = $('#userid').html();
+
 
 	var options = {
 		events_source: 'events.json.php?cal='+urlAddon,

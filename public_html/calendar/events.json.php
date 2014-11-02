@@ -17,7 +17,7 @@ if($whichCal=="main")
 }
 else if(is_numeric($whichCal))
 {
-	$sql = "SELECT * FROM Event WHERE `start` BETWEEN '$startDate' and '$endDate'"; //pull from user-event table
+    $sql = "SELECT * FROM `Event` WHERE id in (select eventid from member_event where memberid = '$whichCal')";
 }
 $out = array();
 $result = $connection->query($sql);
